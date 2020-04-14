@@ -326,8 +326,13 @@ button:hover,
   z-index: 1;
   min-width: 100vw;
   height: 100%;
-  background-color: #EB3CF6;
+  background-color: #DD5339;
   visibility: hidden;
+}
+
+iframe {
+    width: 100vw;
+    height: 100vh;
 }
 
 .download {
