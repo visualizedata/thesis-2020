@@ -1,0 +1,90 @@
+Lcustom,Xnorm,tocName
+6,1.0,Meteorology
+8.3,2.0,Meteorological
+8.2,3.0,Laboratory
+8.1,4.0,Flight
+8,5.0,Instruments
+9.2,8.0,Technique
+9.1,11.0,Equipment
+9,14.0,Research Equipment and Techniques
+5,17.0,Materials
+5.1,20.0,Types
+5.3,23.0,Operating Stresses and Conditions
+5.2,26.0,Properties
+4.3,28.0,Structures
+4.2,30.0,Vibration and Flutter
+4.1,32.0,Loads
+4,34.0,Aircraft Loads and Construction
+1.7.6,35.0,Biplanes and Triplanes
+1.8,36.0,Stability and Control
+1.7.5,37.0,Airships
+1,38.0,Aerodynamics
+1.7.3,39.0,Rotating-Wing Aircraft
+1.7.2,40.0,Missiles
+1.8.2,41.0,Control
+1.7.4,42.0,Seaplanes
+1.8.3,43.0,Spinning
+1.10,44.0,Parachutes
+1.8.5,45.0,Flying Qualities
+1.8.6,46.0,Mass and Gyroscopic Problems
+1.8.7,47.0,Tumbling
+1.8.8,48.0,Automatic Stabilization
+1.8.9,49.0,Tracking
+1.9,50.0,Aeroelasticity
+1.7.1,51.0,Airplanes
+1.8.4,52.0,Stalling
+1.7,53.0,Aircraft
+1.8.1,54.0,Stability
+1.6.1,55.0,Theory
+1.1.1,56.0,Incompressible Flow
+1.1.2,57.0,Compressible Flow
+1.1.3,58.0,Viscous Flow
+1.1.4,59.0,Aerodynamics With Heat
+1.1.5,60.0,Flow of Rarefied Gases
+1.1.6,61.0,Time-Dependent Flow
+1.4,62.0,Internal Aerodynamics
+1.2,63.0,Wings
+1.2.1,64.0,Wing Sections
+1.2.2,65.0,Complete Wings
+1.3,66.0,Bodies
+1.3.1,67.0,Theory
+1.3.2,68.0,Shape Variables
+1.3.3,69.0,Canopies
+1.6.2,70.0,Experimental Studies
+1.3.4,71.0,Ducted Bodies
+1.4.1,72.0,Air Inlets
+1.4.3,73.0,Exits
+1.6,74.0,Rotating Wings
+1.5.7,75.0,Propeller-Spinner-Cowl Combinations
+1.5.6,76.0,Operating Conditions
+1.5.4,78.0,Slipstream
+1.5.3,79.0,Designated Types
+1.4.2,80.0,Ducts
+1.5.2,81.0,Design Variables
+1.5.1,82.0,Theory
+1.5,83.0,Propellers
+1.4.7,84.0,Boundary Layer
+1.4.6,85.0,Fans
+1.4.5,86.0,Cascades
+1.4.4,87.0,Jet Pumps and Thrust Augmentors
+1.1,88.0,Fundamental Aerodynamics
+1.3.5,89.0,Hulls
+3.6,90.0,Compression and Compressors
+3.12,91.0,Accessories and Accessory Functions
+3,92.0,Propulsion
+3.1,93.0,Complete Systems
+3.1,93.0,Cooling of Engines
+3.2,94.0,Control of Engines
+3.3,95.0,Auxiliary Booster Systems
+3.13,96.0,Vibration and Flutter
+3.4,97.0,Fuels
+3.7,98.0,Turbines
+3.8,99.0,Friction and Lubrication
+3.9,100.0,Heat Transfer
+3.11,102.0,Properties of Gases
+3.5,103.0,Combustion and Combustors
+7,106.0,Operating Problems
+2,108.0,Hydrodynamics
+10,108.33,Nomenclature
+11,108.66,Bibliographies
+12,108.99,Technical Summaries

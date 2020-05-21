@@ -1,0 +1,360 @@
+body {
+
+	font-family: 'Muli', sans-serif;
+	color: #fff;
+	background-color: #133b67;
+}
+
+.over-all {
+	background-image: url("../assets/graph_paper_long.jpg");
+	max-width: 1200px;
+	margin: auto;
+	background-color: #133b67;
+	background-size: cover;
+	background-repeat: repeat;
+	min-width: 1200px;
+}
+
+#top-intro {
+	width: 100%;
+	margin: 0 auto;
+}
+
+@font-face {
+	font-family: Akzidenz-grotesk-light;
+	src: url('../fonts/Akzidenz-grotesk-light.ttf');
+}
+@font-face {
+	font-family: Akzidenz-grotesk-roman;
+	src: url('../fonts/Akzidenz-grotesk-roman.ttf');
+}
+@font-face {
+	font-family: Gudea-Regular;
+	src: url('../fonts/Gudea-Regular.ttf');
+}
+@font-face {
+	font-family: tecnico-bold;
+	src: url('../fonts/tecnico-bold.ttf');
+}
+@font-face {
+	font-family: tecnico-regular;
+	src: url('../fonts/tecnico-regular.ttf');
+}
+@font-face {
+	font-family: tecnico-bolditalic;
+	src: url('../fonts/tecnico-bolditalic.ttf');
+}
+@font-face {
+	font-family: tecnico-regularitalic;
+	src: url('../fonts/tecnico-regularitalic.ttf');
+}
+
+#title-main {
+	padding-top: 20px;
+	font-size: 57px;
+	font-family: "Akzidenz-grotesk-roman", sans-serif, 'Cochin', Times, 'Times New Roman', serif;
+	margin-bottom: -12px;
+	margin-top: 20px;
+	justify-content: center;
+	display: flex;
+	width: 100%;
+	font-weight: 300;
+	color: #ddd;
+	letter-spacing: 1px;
+}
+
+#fromNtoN {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-right: 10%;
+	width: 60%;
+	opacity: 90%;
+}
+
+#title-logo {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	width: 100%;
+}
+
+#NACAwings {
+	width: 30%;
+	filter: invert(0.9);
+}
+
+
+
+#intro-title {
+	width: 46%;
+	display: inline-block;
+}
+#title-sub {
+	font-size: 22px;
+	margin-top: 18px;
+	font-family: "Courier";
+	font-weight: medium;
+	color: rgb(182, 194, 218);
+	/* word-spacing: 5px; */
+	text-align: center;
+	text-justify: inter-word;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-bottom: 15px;
+}
+#intro-text {
+	
+	display: flex;
+	text-align: justify;
+	text-justify: inter-character;
+	font-family: 'Courier', monospace;
+	/* font-size: 1em; */
+}
+#top-summary-left {
+	width: 44%;
+	padding-left: 4%;
+	padding-right: 2%;
+}
+#top-summary-right {
+	width: 44%;
+	padding-right: 4%;
+	padding-left: 2%;
+}
+
+
+
+
+/* --------------------- Images ---------------------*/
+.images-left {
+	width: 50%;
+	padding-left: 1.5%;
+	padding-right: 0;
+	margin: 0;
+	border: 0;
+}
+.images-right {
+	width: 50%;
+	padding-right: 1.5%;
+	padding-left: 0;
+	margin: 0;
+	border: 0;
+}
+#imagerow1 {
+	display: flex;
+	margin: 0;
+	margin-top: 4px;
+	padding: 1%;
+	border: 0;
+	margin: 0;
+	text-align: center;
+	/* height: 280px; */
+	overflow: hidden;
+}
+#imagerow2 {
+	display: flex;
+	margin: 0;
+	margin-top: 4px;
+	padding: 1%;
+	border: 0;
+	margin: 0;
+	text-align: center;
+	/* height: 280px; */
+	overflow: hidden;
+}
+#imagerow1 img {
+	border: 0;
+	margin: 0;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+	/* margin-top: 3px; */
+	width: 42%;
+}
+#imagerow2 img {
+	border: 0;
+	margin: 0;
+	padding-left: 0;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+	/* margin-top: 3px; */
+	width: 42%;
+	-webkit-filter: sepia(0.4);
+	filter: sepia(0.4) brightness(0.95) ;
+}
+
+
+#imagerow3 {
+	display: flex;
+	margin: 0;
+	margin-top: 4px;
+	padding: 1%;
+	border: 0;
+	margin: 0;
+	text-align: center;
+	/* height: 280px; */
+	overflow: hidden;
+}
+
+.images-left3 {
+	width: 50%;
+	padding-left: 1.5%;
+	padding-right: 0;
+	margin: 0;
+	border: 0;
+}
+.images-right3 {
+	width: 50%;
+	padding-right: 1.5%;
+	padding-left: 0;
+	margin: 0;
+	border: 0;
+}
+#imagerow3 img {
+	border: 0;
+	margin: 0;
+	padding-left: 3.5%;
+	padding-right: 3.5%;
+	/* margin-top: 3px; */
+	width: 92%;
+}
+#imagerow3 {
+	font-family: "tecnico-regularitalic";
+	font-size: 1.3em;
+}
+.imagerow4 {
+	display: flex;
+	margin: 0;
+	padding: 0;
+	padding-left: 3.5%;
+	/* padding-right: 3.5%; */
+	border: 0;
+	margin: 0;
+	text-align: center;
+	/* height: 280px; */
+	/* overflow: hidden; */
+}
+.imagerow4 img {
+	/* mix-blend-mode: difference; */
+	/* filter: invert(1) brightness(300%);; */
+	border: 0;
+	margin: 0;
+	/* padding-left: 1%; */
+	/* padding-right: 1%; */
+	/* margin-top: 3px; */
+	width: 13.7%;
+}
+
+
+/* --------------------- Titles ---------------------*/
+.viz-title p {
+	font-size: 1.8em;
+	margin-top: 50px;
+	font-family: "tecnico-regularitalic", Arial, Helvetica, sans-serif;
+	/* font-weight: medium; */
+	/* color: rgb(182, 194, 218); */
+	/* word-spacing: 5px; */
+	text-align: center;
+	text-justify: inter-word;
+}
+.viz-title hr {
+	border: 1px dashed;
+	opacity: 0.6;
+	margin-top: 80px;
+	margin-bottom: 80px;
+}
+
+
+
+/* --------------------- Main Slider ---------------------*/
+#slidercontainer {
+	width:100%;
+	height: 20px;
+	margin-top: 10px;
+	/* padding-top:10px; */
+	/* vertical-align: middle; */
+	text-align: center;
+	display:box;
+	box-pack:center;
+	box-align:center;
+}
+.slider {
+	display:box;
+	box-pack:center;
+	box-align:center;
+	/* vertical-align: middle; */
+	-webkit-appearance: none;
+	width: 100%;
+	height: 10px;
+	border-radius: 5px;
+	background: #d3d3d3;
+	outline: none;
+	opacity: 0.65;
+  }
+  .slider:hover {
+	opacity: 1;
+  }
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	/* background: rgba(221, 230, 232,200); */
+	background: rgba(255, 255, 255,220);
+	cursor: pointer;
+  }
+  .slider::-moz-range-thumb {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255,220);
+	cursor: pointer;
+  }
+
+#sketch-holder {
+	/* margin: 0; */
+	/* display: flex; */
+	text-align: center;
+	/* justify-content: center; */
+	/* width: 100%; */
+} 
+
+
+
+
+
+/* --------------------- Notes ---------------------*/
+#top-chrome-note {
+	font-size: 17px;
+	color: #f6f4ef;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: 300;
+}
+
+#credit {
+	font-family: 'Akzidenz-grotesk-roman;', sans-serif;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	margin-left: 30px;
+	line-height: 150%;
+}
+
+a,
+a:link,
+a:visited,
+a:active {
+	color: #ddece9;
+	border-bottom: 1px dotted rgba(231, 228, 202, .5);
+	text-decoration: none;
+}
+.images-left a,
+a:link,
+a:visited,
+a:active {
+	border-bottom: none;
+	text-decoration: none;
+}
+
+
+

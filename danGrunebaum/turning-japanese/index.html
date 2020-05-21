@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Turning Japanese</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+     <link
+        href="https://fonts.googleapis.com/css2?family=Faster+One&family=Taviraj:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Trade+Winds&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+    
+    <div class="top-container">
+        <h1 class='japanese'>日本語のグローバリゼーション</h1>
+        <h1 class='title'>TURNING JAPANESE</h1>
+        <img src="./images/japan-flag.png" alt="Japan flag" class="flag">
+        <div class="subtitle">The Globalization of Japanese Language and Concepts</div>
+        <h2 class="blurb">
+            In August 1945, Japan lay a smoldering ruin, yet within a generation, the nation was the world’s number two
+            economy, and within two, a global soft power. As we enter the Asian century, "Turning Japanese" investigates how Japan became a cultural
+            giant by tracing the journey of Japanese loanwords into English through the Oxford English Dictionary, New York
+            Times and Google Search.
+        </h2>
+
+    </div>
+
+    <div class="header" id="myHeader">
+        <span class="left">Japan History Timeline</span>
+        <span class="center">Oxford English Dictionary</span>
+        <span class="right">Visualizations</span>
+    </div>
+
+    <div class="content">
+
+        <timeline-div class="left-col">
+
+            <p id="sourcing">Timeline data: Japan Ministry of Foreign Affairs, Japan Guide, World Bank, BBC, Wikipedia and SEDAC.</p>
+
+        </timeline-div>
+
+        <word-div class="center-col">
+
+            <audio id="audioElement" src=""></audio>
+
+            <p id="sourcing">100 more frequent out of 530 total Japanese loanwords in the online edition of the <a
+                    href="http://oed.com">Oxford English Dictionary</a>. On a 1-8 scale, Band 3 contains words which
+                occur
+                between 0.01 and 0.1 times per million words in typical modern English usage. Band 4 words occur between
+                0.1 and 1.0 times per million words, and Band 5 words between 1 and 10 times per million words. The most
+                recent citation for a Japanese loanword in the OED is Sudoku, cited in 2000. Pronunciations are in American and British English.</p>
+
+        </word-div>
+
+        <div id="right-col">
+
+            <div id="bubbleChart">
+                <h3 class="categories">TOP TEN CATEGORIES OF JAPANESE LOANWORDS IN THE OED</h3>
+            </div>
+
+            <p class="bubble-text">
+                Food & Drink, Martial Arts and Arts & Crafts are the top three categories of Japanese words in the
+                Oxford
+                English Dictionary, indicating the impact of different aspects of Japanese culture on the
+                English-speaking world.
+            </p>
+
+            <container id="viz-container">
+
+                <h3>JAPANESE LOANWORD NATURALIZATION STAGES</h3>
+                <img src="./images/stages-of-naturalization-v9.png" alt="Loanword Naturalization Stages"
+                    class="naturalization">
+                <p>Linguists have developed measures to understand the naturalization process of loanwords. Kinjo Gakuin
+                    University researcher
+                    Schun Doi created this schematic to analyze Japanese loanwords in the Oxford English Dictionary, the
+                    world's most authoritative English lexicon. The schematic places loanwords on a continuum with three
+                    general stages in their transition from totally Japanese to full incorporation into the English
+                    lexicon.</p>
+
+                <div id="bars">
+                    <h3>{{ chartTitle }}</h3>
+
+                    <svg :width="svgWidth" :height="svgHeight">
+                        <g :transform="'translate(' + margin.left + ',' + margin.top + ')'">
+                            <g v-for="(element, index) in data">
+                                <rect :x="scale.x(element.name)" :y="scale.y(element.val)" :width="scale.x.bandwidth()"
+                                    :height="height - scale.y(element.val)" :fill="myFill(index)" />
+                                <text :x="scale.x(element.name) + 15" :y="scale.y(element.val) + 20"
+                                    :style="{fill: 'white', 'width': 'scale.x.bandwidth()'}">
+                                    {{ element.val }}
+                                </text>
+
+                            </g>
+                            <g v-axis:y="scale"></g>
+                            <g v-axis:x="scale" :transform="`translate(0, ${height})`"></g>
+                        </g>
+
+                    </svg>
+                </div>
+                <p>Japanese has contributed the second most loanwords to the Oxford English Dictionary among Asian
+                    languages. Japan's large contribution comes despite the nation's history of isolation and the fact
+                    that
+                    it was never colonized by an English-speaking country.</p>
+
+
+                <div id="histogram">
+                    <h3>{{ chartTitle }}</h3>
+
+                    <svg :width="svgWidth" :height="svgHeight">
+                        <g :transform="'translate(' + margin.left + ',' + margin.top + ')'">
+                            <g v-for="(element, index) in data">
+                                <rect :x="scale.x(element.decade) - 3" :y="scale.y(element.val)"
+                                :value="element.val"
+                                @mouseover="barover"
+                                @mouseleave="barleave"
+                                    :width="scale.x.bandwidth()" :height="height - scale.y(element.val)"
+                                    :fill="myFill()" />
+
+                            </g>
+                            <g v-axis:y="scale"></g>
+                            <g v-axis:x="scale" :transform="`translate(0, ${height})`"></g>
+                        </g>
+
+                    </svg>
+                </div>
+                <p>
+                    Historians point to three waves of Japanophilia: the first in the late 1800s after Japan opened to
+                    the world and Westerners experienced Japanese arts and crafts at events like the 1876 Philadelphia
+                    Expo; the second after WWII when Westerners discovered Zen Buddhism and Japanese poetry; and the
+                    third, pop culture-driven wave currently underway. The addition of loanwords to the OED reflects
+                    these waves. The surge of words in the 1720s shows the impact of the publication of Kæmpfer's History of Japan.
+                </p>
+
+                <h3>JAPANESE LOANWORDS IN THE NEW YORK TIMES</h3>
+
+                <div id="small_multiples"></div>
+                <p>
+                    Explore 12 Japanese loanwords ordered from their first appearance in the New York Times to the
+                    present. The terms progress from older waves of Japanophilia to recent terms representing the 'Cool
+                    Japan' boom. Spikes in interest can be observed, such as one for 'geisha' in the 2000s following the
+                    release of
+                    the book and film Memoirs of a Geisha.
+
+                </p>
+                <h3>ANIMATED WORD MAPS</h3>
+
+                <img src="images/cosplay.gif" alt="Word Maps" class="word-map-img">
+                <p class="google-blurb">View the rise and fall of Japanese loanwords geographically over time by Google Search interest.
+                    Single Words represent contemporary Japan; Word Pairs show the changing interest in words
+                    representing traditional and contemporary Japan.</p>
+                <button onclick="openSingle()">Single Words</button>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <button onclick="openPairs()">Word Pairs</button>
+
+            </container>
+        </div>
+
+
+    </div>
+
+    <div class="footer">
+        <!-- <p>&copy;All Rights Reserved.</p> -->
+        <a href="#top">Top</a>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>

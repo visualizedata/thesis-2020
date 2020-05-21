@@ -1,0 +1,380 @@
+html {
+    color: rgb(rgb(75, 75, 75));
+}
+
+body {
+    margin: 0;
+    background-color: rgb(253, 251, 246);
+    font-family: 'Taviraj', serif;
+}
+
+h1 {
+    font-family: 'Taviraj', serif;
+    font-size: 140px;
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+}
+
+h3 {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    font-size: 19px;
+    padding: 20px;
+    text-align: justify;
+}
+
+.top-container {
+    height: 1080px;
+    width: 98%;
+    text-align: center;
+    color: #D90404;
+    font-family: 'Taviraj', serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.japanese {
+    position: absolute;
+    top: 30px;
+    width: 98%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+    opacity: 0.2;
+    font-family: "Sawarabi Mincho"; 
+}
+
+.title {
+    width: 98%;
+    position: absolute;
+    top: 100px;
+    font-family: 'Taviraj', serif;
+    font-size: 140px;
+    font-weight: 300;
+    margin: 0 auto;
+}
+
+.subtitle {
+    position: absolute;
+    top: 300px;
+    font-size: 50px;
+    width: 98%;
+    margin: 0 auto;
+}
+
+.flag {
+    animation: rotation 120s infinite linear;
+    position: relative;
+    top: 415px;
+    width: 10%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-359deg);
+    }
+  }
+
+.blurb {
+    position: absolute;
+    top: 580px;
+    color: #D90404;
+    font-family: 'Taviraj', serif;
+    font-size: 32px;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.header {
+    font-family: 'Montserrat', sans-serif;
+    background-color: rgb(253, 251, 246);
+    padding: 45px 0px;
+    text-align: center;
+    opacity: 0.98;
+    z-index: 3;
+}
+
+/* sticky header */
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky+.content {
+    padding-top: 102px;
+}
+
+span {
+    color: #D90404;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+}
+
+span.left {
+    position: relative;
+    float: left;
+    width: 25%;
+}
+
+span.center {
+    position: relative;
+    width: 25%;
+    float: left;
+}
+
+span.right {
+    position: relative;
+    width: 50%;
+    float: left;
+}
+
+.content {
+    padding: 16px;
+}
+
+.left-col {
+    position: relative;
+    width: 25%;
+    float: left;
+    height: 5200px;
+}
+
+#sourcing {
+    position: absolute;
+    top: 4820px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.center-col {
+    position: relative;
+    width: 25%;
+    float: left;
+    height: 5200px;
+    box-shadow: 8px 0px 6px -6px lightgray;
+}
+
+#right-col {
+    height: 5200px;
+    width: 50%;
+    float: left;
+    font-weight: 700;
+    text-align: center;
+    font-size: 15px;
+}
+
+svg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+#viz-container {
+    position: relative;
+    top: 60px;
+}
+
+.naturalization {
+    height: auto;
+    max-width: 700px;
+    margin-left: 30px;
+}
+
+.bubble-text {
+    position: relative;
+    bottom: 150px;
+}
+
+.footer {
+    clear: both;
+    font-family: 'Montserrat', sans-serif;
+    color: #D90404;
+    text-align: center;
+    height: 100px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+a {
+    color: #D90404;
+}
+
+.oedtext {
+    shape-rendering: crispEdges;
+}
+
+.oedtext.active {
+    fill: black !important;
+}
+
+.nyt-word.active {
+    fill: black !important;
+}
+
+div.tooltip {
+    position: absolute;
+    line-height: 100%;
+    text-align: left;
+    width: 250px;
+    max-height: fit-content;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: white;
+    color: black;
+    pointer-events: none;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.div.tooltip:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+}
+
+#bubbleChart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-height: 780px;
+}
+
+.categories {
+    position: relative;
+    top: 50px;
+}
+
+.word-map-img {
+    max-width: 700px;
+    box-shadow: 0px 0px 10px 0px lightgray;
+}
+
+button {
+    font-size: 25px;
+    position: relative;
+    top: -18px;
+    border-radius: 6px;
+    margin: 50px;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(rgb(75, 75, 75))
+}
+
+button:hover {
+    box-shadow: 2px 8px 45px rgba(0, 0, 0, .15);
+    transform: translate3D(0, -2px, 0);
+}
+
+.grid line {
+    stroke: lightgrey;
+    stroke-opacity: 0.7;
+    shape-rendering: crispEdges;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.overlay {
+    fill: none;
+    stroke: none;
+    pointer-events: all;
+}
+
+div.card {
+    position: absolute;
+    line-height: 100%;
+    text-align: left;
+    width: 300px;
+    max-height: fit-content;
+    padding: 8px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: white;
+    color: black;
+    pointer-events: none;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.card-img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 250px;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .1);
+    border-radius: 12px;
+}
+
+.card-headline {
+    text-align: center;
+    padding: 1rem 1rem;
+    background-image: linear-gradient(120deg, rgb(125, 24, 41) 0%, #D90404 100%);
+    margin: 0 0 2rem 0;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.card-abstract {
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+.card-pubDate {
+    padding: 0 1rem 1rem;
+    margin: 0;
+}
+
+.category.active {
+    font-weight: bold !important;
+}
+
+.description.active {
+    fill: black !important;
+}
+
+@media (max-width: 1350px) {
+    .title {
+         font-size: 70px;
+         position: absolute;
+         top: 120px;
+     }
+     .subtitle {
+         font-size: 35px;
+         position: absolute;
+         top: 270px;
+     }
+     .flag {
+        position: relative;
+        top: 485px;
+     }
+ }
+
+ .google-blurb {
+     position: relative;
+     top: 23px;
+ }

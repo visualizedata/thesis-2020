@@ -1,0 +1,118 @@
+body {
+    background-color: rgb(253, 251, 246);
+    color: rgb(rgb(75, 75, 75));
+}
+
+.d3-tip {
+    position: absolute;
+    line-height: 100%;
+    text-align: left;
+    width: 225px;
+    max-height: fit-content;
+    padding: 4px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background: white;
+    /* color: rgb(125, 24, 41); */
+    color: rgb(rgb(75, 75, 75));
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, .1);
+    border-radius: 4px;
+    pointer-events: none;
+}
+
+map {
+    display: block !important;
+    margin-left: 150px;
+}
+
+#slider {
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: -40px;
+    margin-bottom: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.button {
+    margin-left: -100px;
+    font-size: 30px;
+    position: relative;
+    top: -22px;
+    color: black;
+}
+
+.button:hover {
+    color: #D90404;
+}
+
+.firstword {
+    color: rgb(35, 139, 69);
+    font-size: 55px;
+}
+
+.words {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color: rgb(75, 75, 75);
+}
+
+select {
+    margin-left: 100px;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(75, 75, 75);
+    position: relative;
+    top: -15px;
+}
+
+.wordchoice {
+    font-size: 20px;
+}
+
+.yearcount {
+    position: absolute;
+    left: 107px;
+    top: 210px;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+.yearcount span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    color: rgb(35, 139, 69);
+}
+
+.explainer {
+    position: absolute;
+    left: 100px;
+    bottom: -100px;
+    width: 500px;
+    height: 250px;
+    margin: 8px, 8px;
+    padding: 8px;
+    z-index: 10;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    color: rgb(75, 75, 75);
+}
+
+a {
+    color: #D90404;
+}
+
+.loading {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+    opacity: 50%;
+}
