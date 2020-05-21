@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika:wght@400&display=swap');
+
+
+body {
+    background: white;
+    font-family: 'Signika', sans-serif;
+}
+
+#top {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 2px solid #efefef;
+    margin-top: 7px;
+}
+
+.mainRow {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #efefef;
+    justify-content: flex-start;
+}
+
+#nav {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 25vw;
+    min-width: 250px;
+    max-width: 350px;
+    height: 80vh;
+    align-items: stretch;
+    flex-basis: auto;
+    overflow-y: auto;
+}
+
+#nav::-webkit-scrollbar {
+    display:none;
+}
+
+#main {
+    margin-left: 200px;
+}
+
+#firstNavRow {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    border-bottom: 2px solid #efefef;
+}
+
+#secondNavRow {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #efefef;
+}
+
+#thirdNavRow {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #efefef;
+}
+
+#fourthNavRow {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #efefef;
+}
+
+#rightside {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+#annotation {
+    height: 32vh;
+    width: 20vw;
+    overflow-y: auto;
+}
+
+#annotation p {
+    font-size: 1.3em;
+}
+
+#annotation::-webkit-scrollbar {
+    display:none;
+}
+
+.slide-enter-active {
+    transition: all 0.4s ease;
+}
+
+.slide-leave-active {
+    transition: all 0.4s ease;
+}
+
+.slide-enter, .slide-leave-to {
+    transform: translateX(200px);
+    transform: translateY(500px);
+    opacity: 0;
+}
+
+#table {
+    padding-top: 20px;
+}

@@ -1,0 +1,60 @@
+<head>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+</head>
+
+
+<body>
+    <div id="finviz">
+
+        <top-menu :company="company"></top-menu>
+
+        <div class="mainRow">
+            <div id=nav>
+                <div id="firstNavRow">
+                    <company-selector @companychange="updateCompany"></company-selector>
+
+                </div>
+                <div id="secondNavRow">
+                    <year-selectors :currentsel="currentsel" :basesel="basesel" @currentyearchange="getNewCurrent"
+                        @baseyearchange="getNewBase"></year-selectors>
+                </div>
+                <div id="thirdNavRow">
+                    <previous-button :company="company" @decrementyear="handlePrev"></previous-button>
+                    <next-button :company="company" @incrementyear="handleNext"></next-button>
+                </div>
+                <div id="fourthNavRow">
+                    <options-menu @toggletable="toggleTable" @toggleannotation="toggleAnnotation" :base="base"></options-menu>
+                </div>
+            </div>
+
+            <div id=main @click="backClick">
+                <svg :height="svg_height" :width="svg_width">
+                    <income-statement :totals="totals" :company="company" @showbar="useLabel" @hidebar="unuseLabel"></income-statement>
+                </svg>
+
+                <transition name="slide">
+                    <datatip :showing="showing" :totals="totals" :label="label" :position="position"></datatip>
+                </transition>
+            </div>
+
+            <div id="rightside">
+                <div id="annotation">
+                    <transition name="slide">
+                        <annotation :company="company" v-if="annotationVisible"></annotation>
+                    </transition>
+                </div>
+                <div id="table">
+                    <transition name="slide">
+                        <data-table :company="company" :base="base" v-if="tableVisible"></data-table>
+                    </transition>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="main.js"></script>
+</body>

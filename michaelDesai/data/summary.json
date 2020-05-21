@@ -1,0 +1,190 @@
+{
+    "fb": {
+        "2015": {
+            "operating_income": 6225,
+            "other_income_expense": -31,
+            "pretax_income": 6194,
+            "taxes": -2506,
+            "minority_interest": null,
+            "net_income": 3688,
+            "net_income_post_minority_interest": null
+        },
+        "2016": {
+            "operating_income": 12427,
+            "other_income_expense": 91,
+            "pretax_income": 12518,
+            "taxes": -2301,
+            "minority_interest": null,
+            "net_income": 10217,
+            "net_income_post_minority_interest": null
+        },
+        "2017": {
+            "operating_income": 20203,
+            "other_income_expense": 391,
+            "pretax_income": 20594,
+            "taxes": -4660,
+            "minority_interest": null,
+            "net_income": 15934,
+            "net_income_post_minority_interest": null
+        },
+        "2018": {
+            "operating_income": 24913,
+            "other_income_expense": 448,
+            "pretax_income": 25361,
+            "taxes": -3249,
+            "minority_interest": null,
+            "net_income": 22112,
+            "net_income_post_minority_interest": null
+        },
+        "2019": {
+            "operating_income": 23986,
+            "other_income_expense": 826,
+            "pretax_income": 24812,
+            "taxes": -6327,
+            "minority_interest": null,
+            "net_income": 18485,
+            "net_income_post_minority_interest": null
+        }
+    },
+    "goog": {
+        "2015": {
+            "operating_income": 19360,
+            "other_income_expense": 291,
+            "pretax_income": 19651,
+            "taxes": -3303,
+            "minority_interest": null,
+            "net_income": 16348,
+            "net_income_post_minority_interest": null
+        },
+        "2016": {
+            "operating_income": 23716,
+            "other_income_expense": 434,
+            "pretax_income": 24150,
+            "taxes": -4672,
+            "minority_interest": null,
+            "net_income": 19478,
+            "net_income_post_minority_interest": null
+        },
+        "2017": {
+            "operating_income": 26146,
+            "other_income_expense": 1047,
+            "pretax_income": 27193,
+            "taxes": -14531,
+            "minority_interest": null,
+            "net_income": 12662,
+            "net_income_post_minority_interest": null
+        },
+        "2018": {
+            "operating_income": 26321,
+            "other_income_expense": 8592,
+            "pretax_income": 34913,
+            "taxes": -4177,
+            "minority_interest": null,
+            "net_income": 30736,
+            "net_income_post_minority_interest": null
+        },
+        "2019": {
+            "operating_income": 34231,
+            "other_income_expense": 5394,
+            "pretax_income": 39625,
+            "taxes": -5282,
+            "minority_interest": null,
+            "net_income": 34343,
+            "net_income_post_minority_interest": null
+        }
+    },
+    "lng": {
+        "2015": {
+            "operating_income": -449,
+            "other_income_expense": -648,
+            "pretax_income": -1097,
+            "taxes": 0,
+            "minority_interest": 122,
+            "net_income": -1097,
+            "net_income_post_minority_interest": -975
+        },
+        "2016": {
+            "operating_income": -30,
+            "other_income_expense": -633,
+            "pretax_income": -663,
+            "taxes": -2,
+            "minority_interest": 55,
+            "net_income": -665,
+            "net_income_post_minority_interest": -610
+        },
+        "2017": {
+            "operating_income": 1388,
+            "other_income_expense": -822,
+            "pretax_income": 566,
+            "taxes": -3,
+            "minority_interest": -956,
+            "net_income": 563,
+            "net_income_post_minority_interest": -393
+        },
+        "2018": {
+            "operating_income": 2024,
+            "other_income_expense": -797,
+            "pretax_income": 1227,
+            "taxes": -27,
+            "minority_interest": -729,
+            "net_income": 1200,
+            "net_income_post_minority_interest": 471
+        },
+        "2019": {
+            "operating_income": 2361,
+            "other_income_expense": -1646,
+            "pretax_income": 715,
+            "taxes": 517,
+            "minority_interest": -584,
+            "net_income": 1232,
+            "net_income_post_minority_interest": 648
+        }
+    },
+    "tsla": {
+        "2015": {
+            "operating_income": -717,
+            "other_income_expense": -160,
+            "pretax_income": -876,
+            "taxes": -13,
+            "minority_interest": 0,
+            "net_income": -889,
+            "net_income_post_minority_interest": -889
+        },
+        "2016": {
+            "operating_income": -668,
+            "other_income_expense": -79,
+            "pretax_income": -746,
+            "taxes": -27,
+            "minority_interest": 98,
+            "net_income": -773,
+            "net_income_post_minority_interest": -675
+        },
+        "2017": {
+            "operating_income": -1632,
+            "other_income_expense": -577,
+            "pretax_income": -2209,
+            "taxes": -32,
+            "minority_interest": 279,
+            "net_income": -2241,
+            "net_income_post_minority_interest": -1962
+        },
+        "2018": {
+            "operating_income": -388,
+            "other_income_expense": -617,
+            "pretax_income": -1005,
+            "taxes": -58,
+            "minority_interest": 87,
+            "net_income": -1063,
+            "net_income_post_minority_interest": -976
+        },
+        "2019": {
+            "operating_income": -69,
+            "other_income_expense": -596,
+            "pretax_income": -665,
+            "taxes": -110,
+            "minority_interest": -87,
+            "net_income": -775,
+            "net_income_post_minority_interest": -862
+        }
+    }
+}

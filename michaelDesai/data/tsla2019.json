@@ -1,0 +1,152 @@
+{  
+    "entity_name": "Tesla Inc", 
+    "ticker": "TSLA",
+    "period": "12_31_2019",
+    "scale": 1000000,
+    "shares": [
+        {"component":["Shares Outstanding", 687286090]},
+        {"component":["Basic EPS", 49.59]},
+        {"component":["Diluted EPS", 49.16]},
+        {"component":["Weighted Average Shares Outstanding", 0]},
+        {"component":["Weighted Average Shares Oustanding, Diluted", 0]}
+    ], 
+    "balance_sheet": {
+        "assets": {
+            "current_assets":[
+                {"component":["Cash and Cash Equivalents", 18498]},
+                {"component":["Marketable Securities", 101177]},
+                {"component":["Accounts Receivable, net of allowance", 25326]},
+                {"component":["Income taxes receivable, net", 2166]},
+                {"component":["Inventory", 999]},
+                {"component":["Other Current Assets", 4412]}
+            ], 
+            "total_current_assets": 152578,
+            "non_current_assets": [
+                {"component":["Non-marketable Investments", 13078]},
+                {"component":["Deferred Income Taxes", 721]},
+                {"component":["Property and equipment, net", 73646]},
+                {"component":["Operating lease assets", 10941]},
+                {"component":["Intangible assets, net", 1979]},
+                {"component":["Goodwill", 20624]},
+                {"component":["Other non-current assets", 2342]} 
+            ],
+            "total_non_current_assets": 123331, 
+            "total_assets": 275909
+        },
+        "liabilities": {
+            "current_liabilities": [
+                {"component":["Accounts Payable", 5561]},
+                {"component":["Accrued compensation and benefits", 8495]},
+                {"component":["Accrued expenses and other current liabilities", 23067]},
+                {"component":["Accrued revenue share", 5916]},
+                {"component":["Deferred revenue", 1908]},
+                {"component":["Income taxes payable, net", 274]}
+            ],
+            "total_current_liabilities": 45221, 
+            "non_current_liabilities": [
+                {"component":["Long-term Debt", 4554]},
+                {"component":["Deferred revenue, non-current", 358]},
+                {"component":["Income taxes payable, non-current", 9885]},
+                {"component":["Deferred income taxes", 1701]},
+                {"component":["Operating lease liabilities", 10214]},
+                {"component":["Other long term liabilities", 2534]}
+            ], 
+            "total_non_current_liabilities": 29246,
+            "total_liabilities": 74467
+        }, 
+        "equity": {
+            "stock": [
+                {"component":["Common Stock", 50552]},
+                {"component":["Accumulated Other Comprehensive Income (Loss)", -1232]},
+                {"component":["Retained Earnings", 152122]}
+            ],
+            "preferred_stock": [],
+            "minority_interest": null, 
+            "total_equity": 201442
+        }
+    },
+    "income_statement": {
+        "revenue": [
+            { "component": ["Automotive Sales", 19952] },
+            { "component": ["Automotive Leases", 869] },
+            { "component": ["Energy Generation and Storage", 1531] },
+            { "component": ["Services and Other", 2226] }
+        ],
+        "total_revenue": 24578,
+        "operating_expenses": [
+            { "component": ["Cost of automotive sales", 15939]},
+            { "component": ["Cost of automotive leasing", 459]},
+            { "component": ["Cost of energy generation and storage", 1341]},
+            { "component": ["Cost of services and other", 2770]},
+            { "component": ["Research and development", 1343]},
+            { "component": ["Selling, general and administrative", 2646]},
+            { "component": ["Restructuring and other", 149]}
+        ],
+        "total_operating_costs": -24647,
+        "operating_income": -69,
+        "other_income_expense": [
+            { "component": ["Interest Income", 44] },
+            { "component": ["Interest Expense", -685] },
+            { "component": ["Other income (expense)", 45] }
+        ],
+        "total_other_income_expense": -596,
+        "pretax_income": -665,
+        "total_tax_provision": -110, 
+        "net_income_attributable_noncontrolling_interest": -87,
+        "net_income": -775,
+        "net_income_post_minority_interest": -862
+    }, 
+    "cash_flow_statement": {
+        "operating_cash_flows": {
+            "reconciliation_adjustments": [
+                {"component":["Depreciation and impairment of property and equipment", 10856]},
+                {"component":["Amortization and impairment of intangible assets", 925]},
+                {"component":["Stock-based compensation expense", 10794]},
+                {"component":["Deferred income taxes", 173]},
+                {"component":["(Gain) loss on debt and equity securities", -2798]},
+                {"component":["Other", -592]}
+            ],
+        "total_reconciliation_adjustments": 19358,
+            "working_capital_changes": [
+                {"component":["Accounts receivable", -4340]},
+                {"component":["Income taxes, net", -3128]},
+                {"component":["Other assets", -621]},
+                {"component":["Accounts payable", 428]},
+                {"component":["Accrued expenses and other liabilities", 7170]},
+                {"component":["Accrued revenue share", 1273]},
+                {"component":["Deferred revenue", 37]}
+            ],
+        "total_change_in_working_capital": 819,
+        "total_operating_cash_flows": 5452,
+        "investing_cash_flows": [
+            {"component":["Purchases of property and equipment", -23548]},
+            {"component":["Purchases of marketable securities", -100315]},
+            {"component":["Maturities and sales of marketable securities", 97825]},
+            {"component":["Purchases of non-marketable investments", -1932]},
+            {"component":["Maturities and sales of non-marketable investments", 405]},
+            {"component":["Acquisitions, net of cash acquired, and purchases of intangible assets", -2515]},
+            {"component":["Other investing activities", 589]}
+        ],
+        "total_investing_cash_flows": -29491, 
+        "financing_cash_flows": [
+            {"component":["Net payments related to stock-based award activities", -4765]},
+            {"component":["Repurchases of capital stock", -18396]},
+            {"component":["Proceeds from issuance of debt", 317]},
+            {"component":["Repayments of debt", -585]},
+            {"component":["Proceeds from sale of interest in consolidated entities", 220]}
+        ],
+        "total_financing_cash_flows": -23209,
+        "other_cash_effects": -23,
+        "change_in_cash": 1797,
+        "beginning_cash_balance": 16701,
+        "ending_cash_balance": 18498
+        }
+    },
+    "mda": [
+        {"paragraph": "Our mission is to accelerate the world’s transition to sustainable energy. We design, develop, manufacture, lease and sell high-performance fully electric vehicles, solar energy generation systems and energy storage products. We also offer maintenance, installation, operation and other services related to our products."},
+        {"paragraph": "Automotive"},
+        {"paragraph": "During 2019, we achieved annual vehicle delivery and production records of 367,656 and 365,232 total vehicles, respectively. We also laid the groundwork for our next phase of growth with the commencement of Model 3 production at Gigafactory Shanghai; preparations at the Fremont Factory for Model Y production, which commenced in the first quarter of 2020; the selection of Berlin, Germany as the site for our next factory for the European market; and the unveiling of Cybertruck. We also continued to enhance our user experience through improved Autopilot and FSD features, including the introduction of a new powerful on-board FSD computer and a new Smart Summon feature, and the expansion of a unique set of in-car entertainment options."},
+        {"paragraph": "Energy Generation and Storage"},
+        {"paragraph": "We revamped key aspects of our solar operations in 2019 by streamlining traditionally complex ordering, permitting, installation and back-end service processes to enhance the customer experience, especially for retrofit solar installations. Our solar deployments grew approximately 48% and 26%, quarter-over-quarter, in the second half of the year. We also deployed 1.65 GWh of energy storage in 2019, more than the aggregate of all prior years. Finally, we further evolved our product offerings by launching the third generation of the Solar Roof, for which we are expanding both our manufacturing and installation capabilities, and Megapack, our largest utility-scale energy storage product to date."}
+    ]
+}

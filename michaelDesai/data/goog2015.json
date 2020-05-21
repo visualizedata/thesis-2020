@@ -1,0 +1,157 @@
+
+
+{  
+    "entity_name": "Alphabet Inc", 
+    "ticker": "GOOG",
+    "period": "12_31_2015",
+    "scale": 1000000,
+    "shares": [
+        {"component":["Shares Outstanding", 687286090]},
+        {"component":["Basic EPS", 49.59]},
+        {"component":["Diluted EPS", 49.16]},
+        {"component":["Weighted Average Shares Outstanding", 0]},
+        {"component":["Weighted Average Shares Oustanding, Diluted", 0]}
+    ], 
+    "balance_sheet": {
+        "assets": {
+            "current_assets":[
+                {"component":["Cash and Cash Equivalents", 18498]},
+                {"component":["Marketable Securities", 101177]},
+                {"component":["Accounts Receivable, net of allowance", 25326]},
+                {"component":["Income taxes receivable, net", 2166]},
+                {"component":["Inventory", 999]},
+                {"component":["Other Current Assets", 4412]}
+            ], 
+            "total_current_assets": 152578,
+            "non_current_assets": [
+                {"component":["Non-marketable Investments", 13078]},
+                {"component":["Deferred Income Taxes", 721]},
+                {"component":["Property and equipment, net", 73646]},
+                {"component":["Operating lease assets", 10941]},
+                {"component":["Intangible assets, net", 1979]},
+                {"component":["Goodwill", 20624]},
+                {"component":["Other non-current assets", 2342]} 
+            ],
+            "total_non_current_assets": 123331, 
+            "total_assets": 275909
+        },
+        "liabilities": {
+            "current_liabilities": [
+                {"component":["Accounts Payable", 5561]},
+                {"component":["Accrued compensation and benefits", 8495]},
+                {"component":["Accrued expenses and other current liabilities", 23067]},
+                {"component":["Accrued revenue share", 5916]},
+                {"component":["Deferred revenue", 1908]},
+                {"component":["Income taxes payable, net", 274]}
+            ],
+            "total_current_liabilities": 45221, 
+            "non_current_liabilities": [
+                {"component":["Long-term Debt", 4554]},
+                {"component":["Deferred revenue, non-current", 358]},
+                {"component":["Income taxes payable, non-current", 9885]},
+                {"component":["Deferred income taxes", 1701]},
+                {"component":["Operating lease liabilities", 10214]},
+                {"component":["Other long term liabilities", 2534]}
+            ], 
+            "total_non_current_liabilities": 29246,
+            "total_liabilities": 74467
+        }, 
+        "equity": {
+            "stock": [
+                {"component":["Common Stock", 50552]},
+                {"component":["Accumulated Other Comprehensive Income (Loss)", -1232]},
+                {"component":["Retained Earnings", 152122]}
+            ],
+            "preferred_stock": [],
+            "minority_interest": null, 
+            "total_equity": 201442
+        }
+    },
+    "income_statement": {
+        "revenue": [
+            { "component": ["Google Properties", 52357] },
+            { "component": ["Google Network Members", 15033] },
+            { "component": ["Google Other Revenues", 7154] },
+            { "component": ["Other Bets", 445] }
+        ],
+        "total_revenue": 74989,
+        "operating_expenses": [
+            { "component": ["Cost of Revenues", 28164]},
+            { "component": ["Research and Development", 12282]},
+            { "component": ["Sales and Marketing", 9047]},
+            { "component": ["General and Administrative", 6136]}
+        ],
+        "total_operating_costs": -55629,
+        "operating_income": 19360,
+        "other_income_expense": [
+            { "component": ["Interest Income", 999] },
+            { "component": ["interest Expense", -104] },
+            { "component": ["Foreign currency exchange gain (loss), net", -422] },
+            { "component": ["Loss on marketable securities, net", -208] },
+            { "component": ["Loss on non-marketable investments, net", -126] },
+            { "component": ["Other", 152] }
+        ],
+        "total_other_income_expense": 291,
+        "pretax_income": 19651,
+        "total_tax_provision": -3303, 
+        "net_income_attributable_noncontrolling_interest": null,
+        "net_income": 16348,
+        "net_income_post_minority_interest": null
+    }, 
+    "cash_flow_statement": {
+        "operating_cash_flows": {
+            "reconciliation_adjustments": [
+                {"component":["Depreciation and impairment of property and equipment", 10856]},
+                {"component":["Amortization and impairment of intangible assets", 925]},
+                {"component":["Stock-based compensation expense", 10794]},
+                {"component":["Deferred income taxes", 173]},
+                {"component":["(Gain) loss on debt and equity securities", -2798]},
+                {"component":["Other", -592]}
+            ],
+        "total_reconciliation_adjustments": 19358,
+            "working_capital_changes": [
+                {"component":["Accounts receivable", -4340]},
+                {"component":["Income taxes, net", -3128]},
+                {"component":["Other assets", -621]},
+                {"component":["Accounts payable", 428]},
+                {"component":["Accrued expenses and other liabilities", 7170]},
+                {"component":["Accrued revenue share", 1273]},
+                {"component":["Deferred revenue", 37]}
+            ],
+        "total_change_in_working_capital": 819,
+        "total_operating_cash_flows": 5452,
+        "investing_cash_flows": [
+            {"component":["Purchases of property and equipment", -23548]},
+            {"component":["Purchases of marketable securities", -100315]},
+            {"component":["Maturities and sales of marketable securities", 97825]},
+            {"component":["Purchases of non-marketable investments", -1932]},
+            {"component":["Maturities and sales of non-marketable investments", 405]},
+            {"component":["Acquisitions, net of cash acquired, and purchases of intangible assets", -2515]},
+            {"component":["Other investing activities", 589]}
+        ],
+        "total_investing_cash_flows": -29491, 
+        "financing_cash_flows": [
+            {"component":["Net payments related to stock-based award activities", -4765]},
+            {"component":["Repurchases of capital stock", -18396]},
+            {"component":["Proceeds from issuance of debt", 317]},
+            {"component":["Repayments of debt", -585]},
+            {"component":["Proceeds from sale of interest in consolidated entities", 220]}
+        ],
+        "total_financing_cash_flows": -23209,
+        "other_cash_effects": -23,
+        "change_in_cash": 1797,
+        "beginning_cash_balance": 16701,
+        "ending_cash_balance": 18498
+        }
+    },
+    "mda": [
+        {"paragraph": "The following trends have contributed to the results of our consolidated operations, and we anticipate that they will continue to impact our future results:"},
+        {"paragraph": "Users' behaviors and advertising continue to shift online as the digital economy evolves. The continuing shift from an offline to online world has contributed to the growth of our business since inception, resulting in increasing revenues, and we expect that this online shift will continue to benefit our business."},
+        {"paragraph": "As online advertising evolves, we continue to expand our product offerings which may impact our monetization. As interactions between users and advertisers change, we continue to expand our product offerings to serve their changing needs. Over time, we expect our monetization trends to fluctuate. For example, we have seen an increase in YouTube engagement ads, which monetize at a lower rate than traditional search desktop ads. Additionally, advertisers are beginning to shift to programmatic buying which presents opportunities for advertisers to connect with the right user, in the right moment, in the right context. This may also have different monetization profiles to our existing advertising business. These trends will continue to affect our monetization in the future."},
+        {"paragraph": "Users are increasingly using multiple devices to access our products and services, and our advertising revenues are increasingly coming from mobile phones and other new formats. Our users are accessing the Internet via multiple devices. Mobile computing power continues to grow and users want to feel connected no matter where they are or what they are doing. We seek to expand our products and services to stay in front of this shift in order to maintain and grow our business. In this multi-device world, we generate our advertising revenues increasingly from mobile phones and newer advertising formats, and the margins from the advertising revenues from these sources have generally been lower than those from desktop computers and tablets. Our traffic acquisition cost (TAC) may also be impacted because the rates at which we share mobile revenues with our partners may differ from our traditional desktop and tablet formats. We expect both of these trends to continue to put pressure on our overall margins, particularly if we fail to realize the opportunities presented during the transition to a dynamic multi-screen environment."},
+        {"paragraph": "As users in developing economies increasingly come online, we generate increasing revenues from international markets, and movements in foreign exchange rates impact such revenues. The shift to online, as well as the advent of the multi-device world, has brought opportunities outside of the U.S., especially in emerging markets, and we continue to develop localized versions of our products and relevant advertising programs useful to our users in these markets. This has led to a trend of increased revenues from international markets over time and we expect that our results will continue to be impacted by our performance in these markets, particularly as low-cost mobile devices become more available. Our international revenues represent a significant proportion of our revenues and are subject to fluctuations in foreign currency exchange rates relative to the U.S. dollar. While we have a foreign exchange risk management program designed to reduce our exposure to these fluctuations, this program does not fully offset their effect on our revenues and earnings."},
+        {"paragraph": "The portion of our revenues that we derive from non-advertising revenues is increasing. Non-advertising revenues have grown over time. We expect this trend to continue as we focus on expanding our Google offerings to our users through products like Google Play, cloud and apps and hardware products. Across these initiatives, we currently derive non-advertising revenues primarily from sales of digital content products, hardware sales, service and licensing fees; the margins on these non-advertising businesses vary significantly and may be lower than the margins on our advertising business. A number of our Other Bets initiatives are in their initial development stages, and as such, the sources of revenues from these businesses could change over time and the revenues themselves could be volatile."},
+        {"paragraph": "As we continue to look for new ways to serve our users and expand our businesses, we will invest heavily in R&D and our capital expenditures will continue to fluctuate. We continue to make significant research and development (R&D) investments in areas of strategic focus for Google, such as search and advertising, as well as in new products and services across both Google and Other Bets. The amount of our capital expenditures has fluctuated and may continue to fluctuate in the long term as we invest heavily in our systems, data centers, real estate and facilities, and information technology infrastructure. In addition, acquisitions remain an important part of our strategy and use of capital, and we expect to continue to spend cash on acquisitions and other investments. These acquisitions generally enhance the breadth and depth of our offerings, as well as expanding our expertise in engineering and other functional areas."},
+        {"paragraph": "Our employees are critical to our success and we expect to continue investing in them. Our employees are among our best assets and are critical for our continued success. Their energy and talent drive Alphabet and create our success. We expect to continue hiring talented employees and to provide competitive compensation programs to our employees. As of December 31, 2015, we had 61,814 full-time employees: 23,336 in research and development, 19,082 in sales and marketing, 10,944 in operations, and 8,452 in general and administrative, an increase of 8,214 total headcount from December 31, 2014."}
+    ]
+}

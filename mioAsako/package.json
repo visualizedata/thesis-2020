@@ -1,0 +1,21 @@
+{
+  "name": "thesis-play",
+  "version": "1.0.0",
+  "description": "My neat Nuxt.js project",
+  "author": "Mio Akasako",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "d3": "^5.15.1",
+    "element-ui": "^2.4.11",
+    "nuxt": "^2.0.0",
+    "p5": "^1.0.0",
+    "vue-scrollto": "^2.18.1"
+  },
+  "devDependencies": {}
+}

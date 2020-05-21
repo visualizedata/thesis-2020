@@ -1,0 +1,97 @@
+
+rect, path, circle {
+    opacity: 0.7;
+    transition: 0.3s ease-in-out 0.3s;
+}
+
+rect {
+    stroke: #4393c3;
+    fill: #4393c3;
+}
+
+path {
+    fill: none;
+}
+
+rect:hover {
+    stroke-width: 6px;
+    stroke: black;
+    transition: all 0.1s ease-in-out;
+}
+
+.negative rect {
+    fill: #d6604d;
+    stroke: #d6604d;
+}
+
+.negative path {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.Other path {
+    stroke: black;
+}
+
+.negative rect:hover {
+    stroke-width: 6px;
+    stroke: black;
+    transition: all 0.1s ease-in;
+}
+
+.EBIT rect {
+    fill: #C0C0C0;
+    stroke: #C0C0C0;
+}
+
+.EBIT path {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.EBIT rect:hover {
+    stroke-width: 6px;
+    stroke: black;
+    transition: all 0.1s ease-in;
+}
+
+.Pretax rect {
+    fill: #C0C0C0;
+    stroke: #C0C0C0;
+}
+
+.Pretax path {
+    stroke: black;
+    stroke-width: 2px;
+}
+
+.Pretax rect:hover {
+    stroke-width: 6px;
+    stroke: black;
+    transition: all 0.1s ease-in;
+}
+
+.NetIncome rect {
+    fill: #C0C0C0;
+    stroke: #C0C0C0;
+}
+
+.NetIncome path {
+    stroke: black;
+}
+
+.NetIncome rect:hover {
+    stroke-width: 6px;
+    stroke: black;
+    transition: all 0.1s ease-in;
+}
+
+.zero path {
+    stroke-width: 3px;
+    stroke: black;
+}
+
+text {
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out 0.3s;
+}

@@ -1,0 +1,33 @@
+#top {
+    display: flex;
+    flex-direction: row;
+    margin-left: -100px;
+    justify-content: center;
+}
+
+#logo {
+    margin-left: 20px;
+}
+
+.company {
+    font-size: 1.9em;
+    margin-top: 20px;
+    float: left;
+    text-align: left;
+    font-weight: bold;   
+}
+
+.subtitle {
+    margin-top: 10px;
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    float: left;
+}
+
+

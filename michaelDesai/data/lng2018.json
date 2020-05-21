@@ -1,0 +1,149 @@
+
+
+{  
+    "entity_name": "Cheniere Energy Inc", 
+    "ticker": "LNG",
+    "period": "12_31_2018",
+    "scale": 1000000,
+    "shares": [
+        {"component":["Outstanding Shares", 257415723]},
+        {"component":["Basic EPS", 2.53]},
+        {"component":["Diluted EPS", 2.51]},
+        {"component":["Weighted Average Shares Outstanding", 256.2]},
+        {"component":["Diluted Weighted Average Shares Outstanding", 258.1]}
+    ], 
+    "balance_sheet": {
+        "assets": {
+            "current_assets": [
+                {"component":["Cash and Cash Equivalents", 981]},
+                {"component":["Restricted Cash", 2175]},
+                {"component":["Accounts and other receivables", 585]},
+                {"component":["Inventory", 316]},
+                {"component":["Derivative Assets", 63]},
+                {"component":["Other Current Assets", 114]}
+            ], 
+            "total_current_assets": 4234,
+            "non_current_assets": [
+                {"component":["Property Plant and Equipment, Net", 27245]},
+                {"component":["Debt issuance costs, net", 72]},
+                {"component":["Non-current Derivative Assets", 54]},
+                {"component":["Goodwill", 77]},
+                {"component":["Other non-current assets, net", 305]}
+            ],
+            "total_non_current_assets": 27753, 
+            "total_assets": 31987
+        },
+        "liabilities": {
+            "current_liabilities": [
+                {"component":["Accounts Payable", 58]},
+                {"component":["Accrued Liabilities", 1169]},
+                {"component":["Current Debt", 239]},
+                {"component":["Deferred Revenue", 139]},
+                {"component":["Derivative Liabilities", 128]},
+                {"component":["Other Current Liabilites", 9]}
+            ],
+            "total_current_liabilities": 1742, 
+            "non_current_liabilities": [
+                {"component":["Long-term debt, net", 28179]},
+                {"component":["Non-current capital lease obligations", 57]},
+                {"component":["Non-current derivative liabilities", 22]},
+                {"component":["Other non-current liabilities", 58]}
+            ], 
+            "total_non_current_liabilities": 28316,
+            "total_liabilities": 30058
+        }, 
+        "equity": {
+            "stock": [
+                {"component":["Common Stock", 1]},
+                {"component": ["Treasury Stock", -406]},
+                {"component": ["Additional Paid In Capital", 4035]},
+                {"component": ["Retained Earnings", -4156]}
+            ],
+            "preferred_stock": [{"component": ["Preferred Stock", 0]}],
+            "minority_interest": 2455, 
+            "total_equity": 1929
+        }
+    },
+    "income_statement": {
+        "revenue": [
+            {"component": ["LNG Contract Revenues", 7581] },
+            {"component": ["Regasification Revenues", 261] },
+            {"component": ["Other Revenues & Derivative Gains and Losses", 145] }
+        ],
+        "total_revenue": 7987,
+        "operating_expenses": [
+            {"component": ["Cost of Sales", 4597]},
+            {"component": ["Operating and Maintenance Expense", 613]},
+            {"component": ["Development Expense", 7]},
+            {"component": ["Selling, General Administrative_expense", 289]},
+            {"component": ["Depreciation and Amortization Expense", 449]},
+            {"component": ["Restructuring Expense", 0]},
+            {"component": ["Impairment Expense and Loss on Disposal of Assets", 8]}
+        ],
+        "total_operating_costs": -5963,
+        "operating_income": 2024,
+        "other_income_expense": [
+            {"component": ["Interest Expense, net of capitalized interest", -875]},
+            {"component": ["Loss on modification or extinguishment of debt", -27]},
+            {"component": ["Derivative Gain (Loss), net", 57]},
+            {"component": ["Other income (expense)", 48]}
+        ],
+        "total_other_income_expense": -797,
+        "pretax_income": 1227,
+        "total_tax_provision": -27, 
+        "net_income_attributable_noncontrolling_interest": -729,
+        "net_income": 1200,
+        "net_income_post_minority_interest": 471
+    }, 
+    "cash_flow_statement": {
+        "operating_cash_flows": {
+            "reconciliation_adjustments": [
+                ["Depreciation and Amortization Expense", 449],
+                ["Share-based compensation expense", 113],
+                ["Non-cash interest expense", 74],
+                ["Amortization of debt issuance costs, deferred commitment fees, premium and discount", 69],
+                ["Loss on modification or extinguishment of debt", 27],
+                ["Total losses (gains) on derivatives, net", 51],
+                ["Net cash provided by (used for) settlement of derivative instruments", 17],
+                ["Impairment expense and loss on disposal of assets", 8],
+                ["Other", -10]
+            ],
+            "total_reconciliation_adjustments": 798,
+            "working_capital_changes": [
+                ["Accounts and other receivables", -133],
+                ["Inventory", -73],
+                ["Accounts payable and accrued liabilities", 188],
+                ["Deferred revenue", 26],
+                ["Other, net", -16]
+            ],
+        "total_change_in_working_capital": -8,
+        "total_operating_cash_flows": 1990,
+        "investing_cash_flows": [
+            ["Property, plant and equipment, net", -3643],
+            ["Investment in equity method investment", -25],
+            ["Other", 14]
+        ],
+        "total_investing_cash_flows": -3654, 
+        "financing_cash_flows": [
+            ["Proceeds from the issuance of debt", 4285],
+            ["Repayments of Debt", -1391],
+            ["Debt issuance and deferred financing costs", -66],
+            ["Debt extinguishment costs", -17],
+            ["Distributions and dividends to non-controlling interest", -576],
+            ["Payments related to tax withholdings for share-based compensation", -20],
+            ["Other", -8]
+        ],
+        "total_financing_cash_flows": 2207,
+        "change_in_cash": 543,
+        "beginning_cash_balance": 2613,
+        "ending_cash_balance": 3156
+        }
+    },
+    "mda": [
+        {"paragraph": "Cheniere, a Delaware corporation, is a Houston-based energy company primarily engaged in LNG-related businesses. Our vision is to provide clean, secure and affordable energy to the world, while responsibly delivering a reliable, competitive and integrated source of LNG, in a safe and rewarding work environment. We own and operate the Sabine Pass LNG terminal in Louisiana through our ownership interest in and management agreements with Cheniere Partners, which is a publicly traded limited partnership that we created in 2007. As of December 31, 2018, we owned 100% of the general partner interest and 48.6% of the limited partner interest in Cheniere Partners. We are currently developing and constructing two natural gas liquefaction and export facilities. The liquefaction of natural gas into LNG allows it to be shipped economically from areas of the world where natural gas is abundant and inexpensive to produce to other areas where natural gas demand and infrastructure exist to economically justify the use of LNG."},
+        {"paragraph": "The Sabine Pass LNG terminal is located in Cameron Parish, Louisiana, on the Sabine-Neches Waterway less than four miles from the Gulf Coast. Cheniere Partners is developing, constructing and operating natural gas liquefaction facilities (the “SPL Project”) at the Sabine Pass LNG terminal adjacent to the existing regasification facilities through a wholly owned subsidiary, SPL. Cheniere Partners plans to construct up to six Trains, which are in various stages of development, construction and operations. Trains 1 through 4 are operational, Train 5 is undergoing commissioning and Train 6 is being commercialized and has all necessary regulatory approvals in place. Each Train is expected to have a nominal production capacity, which is prior to adjusting for planned maintenance, production reliability, potential overdesign and debottlenecking opportunities, of approximately 4.5 mtpa of LNG per Train, and run rate adjusted nominal production capacity of approximately 4.5 to 4.9 mtpa of LNG per Train. The Sabine Pass LNG terminal has operational regasification facilities owned by Cheniere Partners’ wholly owned subsidiary, SPLNG, that include pre-existing infrastructure of five LNG storage tanks with aggregate capacity of approximately 16.9 Bcfe, two marine berths that can each accommodate vessels with nominal capacity of up to 266,000 cubic meters and vaporizers with regasification capacity of approximately 4.0 Bcf/d. Cheniere Partners also owns a 94-mile pipeline that interconnects the Sabine Pass LNG terminal with a number of large interstate pipelines (the “Creole Trail Pipeline”) through a wholly owned subsidiary, CTPL."},
+        {"paragraph": "We are developing and constructing a second natural gas liquefaction and export facility at the Corpus Christi LNG terminal near Corpus Christi, Texas, and operate a 23-mile natural gas supply pipeline that interconnects the Corpus Christi LNG terminal with several interstate and intrastate natural gas pipelines (the “Corpus Christi Pipeline” and together with the liquefaction facilities, the “CCL Project”) through our wholly owned subsidiaries CCL and CCP, respectively. The CCL Project is being developed in stages with the first phase being three Trains (“Phase 1”), with expected aggregate nominal production capacity, which is prior to adjusting for planned maintenance, production reliability, potential overdesign and debottlenecking opportunities, of approximately 13.5 mtpa of LNG, three LNG storage tanks with aggregate capacity of approximately 10.1 Bcfe and two marine berths that can each accommodate vessels with nominal capacity of up to 266,000 cubic meters. The first stage (“Stage 1”) includes Trains 1 and 2, two LNG storage tanks, one complete marine berth and a second partial berth and all of the CCL Project’s necessary infrastructure facilities. The second stage (“Stage 2”) includes Train 3, one LNG storage tank and the completion of the second partial berth. Trains 1 and 2 are undergoing commissioning and Train 3 is under construction."},
+        {"paragraph": "Additionally, separate from the CCH Group, we are developing an expansion of the Corpus Christi LNG terminal adjacent to the CCL Project (“Corpus Christi Stage 3”) and filed an application with FERC in June 2018 for seven midscale Trains with an expected aggregate nominal production capacity of approximately 9.5 mtpa and one LNG storage tank."},
+        {"paragraph": "We remain focused on expansion of our existing sites by leveraging existing infrastructure. We are also in various stages of developing other projects, including infrastructure projects in support of natural gas supply and LNG demand, which, among other things, will require acceptable commercial and financing arrangements before we make a final investment decision (“FID”). We have made an equity investment in Midship Holdings, LLC (“Midship Holdings”), which manages the business and affairs of Midship Pipeline Company, LLC (“Midship Pipeline”). Midship Pipeline is developing a pipeline (the “Midship Project”) with expected capacity of up to 1.44 million Dekatherms per day that will connect new gas production in the Anadarko Basin to Gulf Coast markets, including markets serving the SPL Project and the CCL Project. Construction of the Midship Project will commence based upon, among other things, obtaining the required authorization from the FERC and adequate financing to construct the proposed project."}
+    ]
+}

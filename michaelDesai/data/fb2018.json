@@ -1,0 +1,146 @@
+{  
+    "entity_name": "Facebook Inc", 
+    "ticker": "FB",
+    "period": "12_31_2018",
+    "scale": 1000000,
+    "shares": [
+        {"component":["Shares Outstanding", 687286090]},
+        {"component":["Basic EPS", 49.59]},
+        {"component":["Diluted EPS", 49.16]},
+        {"component":["Weighted Average Shares Outstanding", 0]},
+        {"component":["Weighted Average Shares Oustanding, Diluted", 0]}
+    ], 
+    "balance_sheet": {
+        "assets": {
+            "current_assets":[
+                {"component":["Cash and Cash Equivalents", 18498]},
+                {"component":["Marketable Securities", 101177]},
+                {"component":["Accounts Receivable, net of allowance", 25326]},
+                {"component":["Income taxes receivable, net", 2166]},
+                {"component":["Inventory", 999]},
+                {"component":["Other Current Assets", 4412]}
+            ], 
+            "total_current_assets": 152578,
+            "non_current_assets": [
+                {"component":["Non-marketable Investments", 13078]},
+                {"component":["Deferred Income Taxes", 721]},
+                {"component":["Property and equipment, net", 73646]},
+                {"component":["Operating lease assets", 10941]},
+                {"component":["Intangible assets, net", 1979]},
+                {"component":["Goodwill", 20624]},
+                {"component":["Other non-current assets", 2342]} 
+            ],
+            "total_non_current_assets": 123331, 
+            "total_assets": 275909
+        },
+        "liabilities": {
+            "current_liabilities": [
+                {"component":["Accounts Payable", 5561]},
+                {"component":["Accrued compensation and benefits", 8495]},
+                {"component":["Accrued expenses and other current liabilities", 23067]},
+                {"component":["Accrued revenue share", 5916]},
+                {"component":["Deferred revenue", 1908]},
+                {"component":["Income taxes payable, net", 274]}
+            ],
+            "total_current_liabilities": 45221, 
+            "non_current_liabilities": [
+                {"component":["Long-term Debt", 4554]},
+                {"component":["Deferred revenue, non-current", 358]},
+                {"component":["Income taxes payable, non-current", 9885]},
+                {"component":["Deferred income taxes", 1701]},
+                {"component":["Operating lease liabilities", 10214]},
+                {"component":["Other long term liabilities", 2534]}
+            ], 
+            "total_non_current_liabilities": 29246,
+            "total_liabilities": 74467
+        }, 
+        "equity": {
+            "stock": [
+                {"component":["Common Stock", 50552]},
+                {"component":["Accumulated Other Comprehensive Income (Loss)", -1232]},
+                {"component":["Retained Earnings", 152122]}
+            ],
+            "preferred_stock": [],
+            "minority_interest": null, 
+            "total_equity": 201442
+        }
+    },
+    "income_statement": {
+        "revenue": [
+            { "component": ["Advertising", 55013] },
+            { "component": ["Other Revenue", 825] }
+        ],
+        "total_revenue": 55838,
+        "operating_expenses": [
+            { "component": ["Cost of Revenue", 12770]},
+            { "component": ["Research and development", 13600]},
+            { "component": ["Marketing and sales", 9876]},
+            { "component": ["General and administrative", 10465]}
+        ],
+        "total_operating_costs": -30925,
+        "operating_income": 24913,
+        "other_income_expense": [
+            { "component": ["Interest Income", 661] },
+            { "component": ["Interest Expense", -9] },
+            { "component": ["FX Translation Losses", -213] },
+            { "component": ["Other", 9] }
+        ],
+        "total_other_income_expense": 448,
+        "pretax_income": 25361,
+        "total_tax_provision": -3249, 
+        "net_income_attributable_noncontrolling_interest": null,
+        "net_income": 22112,
+        "net_income_post_minority_interest": null
+    }, 
+    "cash_flow_statement": {
+        "operating_cash_flows": {
+            "reconciliation_adjustments": [
+                {"component":["Depreciation and impairment of property and equipment", 10856]},
+                {"component":["Amortization and impairment of intangible assets", 925]},
+                {"component":["Stock-based compensation expense", 10794]},
+                {"component":["Deferred income taxes", 173]},
+                {"component":["(Gain) loss on debt and equity securities", -2798]},
+                {"component":["Other", -592]}
+            ],
+        "total_reconciliation_adjustments": 19358,
+            "working_capital_changes": [
+                {"component":["Accounts receivable", -4340]},
+                {"component":["Income taxes, net", -3128]},
+                {"component":["Other assets", -621]},
+                {"component":["Accounts payable", 428]},
+                {"component":["Accrued expenses and other liabilities", 7170]},
+                {"component":["Accrued revenue share", 1273]},
+                {"component":["Deferred revenue", 37]}
+            ],
+        "total_change_in_working_capital": 819,
+        "total_operating_cash_flows": 5452,
+        "investing_cash_flows": [
+            {"component":["Purchases of property and equipment", -23548]},
+            {"component":["Purchases of marketable securities", -100315]},
+            {"component":["Maturities and sales of marketable securities", 97825]},
+            {"component":["Purchases of non-marketable investments", -1932]},
+            {"component":["Maturities and sales of non-marketable investments", 405]},
+            {"component":["Acquisitions, net of cash acquired, and purchases of intangible assets", -2515]},
+            {"component":["Other investing activities", 589]}
+        ],
+        "total_investing_cash_flows": -29491, 
+        "financing_cash_flows": [
+            {"component":["Net payments related to stock-based award activities", -4765]},
+            {"component":["Repurchases of capital stock", -18396]},
+            {"component":["Proceeds from issuance of debt", 317]},
+            {"component":["Repayments of debt", -585]},
+            {"component":["Proceeds from sale of interest in consolidated entities", 220]}
+        ],
+        "total_financing_cash_flows": -23209,
+        "other_cash_effects": -23,
+        "change_in_cash": 1797,
+        "beginning_cash_balance": 16701,
+        "ending_cash_balance": 18498
+        }
+    },
+    "mda": [
+        {"paragraph": "Our key community metrics and financial results for 2018 are as follows:"},
+        {"paragraph": "User growth: Daily active users (DAUs) were 1.52 billion on average for December 2018, an increase of 9% year-over-year. Monthly active users (MAUs) were 2.32 billion as of December 31, 2018, an increase of 9% year-over-year."},
+        {"paragraph": "Financial results: Revenue was $55.84 billion, up 37% year-over-year, and ad revenue was $55.01 billion, up 38% year-over-year. Total costs and expenses were $30.93 billion. Income from operations was $24.91 billion. Net income was $22.11 billion with diluted earnings per share of $7.57. Capital expenditures were $13.92 billion. Effective tax rate was 13%. Cash and cash equivalents, and marketable securities were $41.11 billion as of December 31, 2018. Headcount was 35,587 as of December 31, 2018, an increase of 42% year-over-year."}
+    ]
+}

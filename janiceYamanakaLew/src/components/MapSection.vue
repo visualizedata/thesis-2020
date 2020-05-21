@@ -1,0 +1,376 @@
+<template>
+  <div id="map" />
+</template>
+<script>
+/* eslint-disable */
+mapboxgl.accessToken =
+  'pk.eyJ1Ijoid2NoYXNlMTQiLCJhIjoiY2p2dnYwOXBvMGJvNDQzcDkxcTZqNWd3dCJ9.UqxE9xtZJevAQem-lKCYnA'
+let bounds = [-180, -90, 180, 90]
+
+export default {
+  name: 'Map',
+  mounted() {
+    this.buildMap()
+  },
+  methods: {
+    buildMap: () => {
+      let map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/wchase14/ck3x8x2tw1yqy1cpv6i3rdx62',
+        zoom: 12.6,
+        maxBounds: bounds,
+        center: [-74.471819, 40.708655],
+      })
+
+      // disable map zoom when using scroll
+      map.scrollZoom.disable()
+
+      map.on('load', function() {
+        map.addSource('mask', {
+          type: 'geojson',
+          data: polyMask(mask, bounds),
+        })
+
+        map.addSource('habitat_points', {
+          type: 'geojson',
+          data: {
+            type: 'FeatureCollection',
+            features: [
+              {
+                type: 'Feature',
+                properties: {
+                  description:
+                    '<h3 class="forest-brown">Forest</h3><p>Endangered Indiana bat, state listed barred owl, blue-spotted salamander, red-shouldered hawk.</p>',
+                  color: '#754d24',
+                  layer: 'woods',
+                  title: 'Forest',
+                },
+                geometry: {
+                  type: 'Point',
+                  coordinates: [-74.48301315307617, 40.705172476790494],
+                },
+              },
+              {
+                type: 'Feature',
+                properties: {
+                  description:
+                    '<h3 class="wetlands-blue">Wetlands</h3><p>Federally endangered bog turtle, wood turtle, fall migrating waterfowl such as the Great Blue Heron, Snowy Egret, Common Loon. Northern water snake and the blue-spotted salamander.</p>',
+                  color: '#307391',
+                  layer: 'wetland',
+                  title: 'Wetlands',
+                },
+                geometry: {
+                  type: 'Point',
+                  coordinates: [-74.45786476135254, 40.7125245446439],
+                },
+              },
+              {
+                type: 'Feature',
+                properties: {
+                  description:
+                    '<h3 class="meadow-green">Meadows</h3><p>Bobolink, eastern Meadowlark, bluebirds, Northern harrier.</p>',
+                  color: '#5a8627',
+                  layer: 'meadow',
+                  title: 'Meadow',
+                },
+                geometry: {
+                  type: 'Point',
+                  coordinates: [-74.5039, 40.7121],
+                },
+              },
+            ],
+          },
+        })
+
+        map.addLayer({
+          id: 'zmask',
+          source: 'mask',
+          type: 'fill',
+          paint: {
+            'fill-color': 'white',
+            'fill-opacity': 0.15,
+          },
+        })
+
+        map.addLayer({
+          id: 'points',
+          source: 'habitat_points',
+          type: 'circle',
+          paint: {
+            'circle-radius': 10,
+            'circle-color': ['get', 'color'],
+            'circle-stroke-color': '#ededed',
+            'circle-stroke-width': 1,
+          },
+        })
+
+        map.addLayer({
+          id: 'point-labels',
+          type: 'symbol',
+          source: 'habitat_points',
+          layout: {
+            'symbol-placement': 'point',
+            'text-font': ['Open Sans Regular'],
+            'text-field': ['get', 'title'],
+            'text-size': 16,
+          },
+          paint: {
+            'text-translate': [0, 20],
+            'text-color': '#ededed',
+          },
+        })
+
+        //initialize variables for interactions
+        let layer
+        let clicked = false
+        let popup
+        let openLayers = []
+        let layerToClose
+
+        //all this openLayers and layerToClose hoopla is because
+        //there seems to be a bug with mapbox where if you click
+        //between points before closing the previous popup
+        //it fires an 'open' event on the second point, then
+        //immediately fires a 'close' event on that same point
+        //but doesn't fire a 'close' event on the previous point
+        //so this tracks which layers are open and if people are closing
+        //the popups or clicking between them
+
+        map.on('click', 'points', function(e) {
+          //set clicked to keep track of whether popup is open
+          //so that we disable hover interactions while popup is open
+          clicked = true
+
+          let coordinates = e.features[0].geometry.coordinates.slice()
+          let description = e.features[0].properties.description
+
+          // Ensure that if the map is zoomed out such that multiple
+          // copies of the feature are visible, the popup appears
+          // over the copy being pointed to.
+          while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+            coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360
+          }
+
+          popup = new mapboxgl.Popup()
+            .setLngLat(coordinates)
+            .setHTML(description)
+            .addTo(map)
+
+          //set the layer to the current point clicked and highlight layer
+          layer = e.features[0].properties.layer
+          map.setPaintProperty(layer, 'fill-opacity', 0.9)
+
+          //add clicked layer to beginning of openLayers array
+          openLayers.unshift(layer)
+          //if user clicks between points before closing popup
+          //set the layerToClose to the previous clicked layer
+          if (openLayers.length > 1) {
+            layerToClose = openLayers[1]
+          }
+          // console.log(`${layer} popup opened`);
+          // console.log(`clicked is ${clicked}`);
+          // console.log(openLayers);
+
+          popup.on('close', function() {
+            //if the user clicked between points before closing popup
+            //fade the previous layer, unless they double clicked on the same point
+            // else, if they actually closed the popup, fade that layer + set clicked to false
+            if (openLayers.length > 1) {
+              if (layerToClose !== layer) {
+                map.setPaintProperty(layerToClose, 'fill-opacity', 0.5)
+              }
+            } else {
+              clicked = false
+              map.setPaintProperty(layer, 'fill-opacity', 0.5)
+            }
+
+            //remove previous layer from openLayers array
+            openLayers.pop()
+            // console.log(openLayers);
+            // console.log(`${layer} popup closed`);
+            // console.log(`clicked is ${clicked}`);
+          })
+        })
+
+        // get layer of hovered point and show that layer
+        map.on('mouseenter', 'points', function(e) {
+          layer = e.features[0].properties.layer
+          map.getCanvas().style.cursor = 'pointer'
+          if (!clicked) {
+            map.setPaintProperty(layer, 'fill-opacity', 0.9)
+          }
+        })
+
+        // remove layer on mouseout, unless the point is clicked
+        map.on('mouseleave', 'points', function() {
+          map.getCanvas().style.cursor = ''
+          if (!clicked) {
+            map.setPaintProperty(layer, 'fill-opacity', 0.3)
+          }
+        })
+      })
+
+      //masking solution from https://stackoverflow.com/questions/40772764/mask-mapbox-gl-map-with-arbitrary-polygon
+      function polyMask(mask, bounds) {
+        var bboxPoly = turf.bboxPolygon(bounds)
+        return turf.difference(bboxPoly, mask)
+      }
+
+      let mask = turf.polygon([
+        [
+          [-74.5274019, 40.7242498],
+          [-74.5272302, 40.7221032],
+          [-74.5244836, 40.7188507],
+          [-74.5211362, 40.716769],
+          [-74.5240545, 40.7153377],
+          [-74.5241403, 40.7135812],
+          [-74.5262431, 40.711174],
+          [-74.5246553, 40.7087017],
+          [-74.5236253, 40.7083438],
+          [-74.522046, 40.7086301],
+          [-74.5214795, 40.7077843],
+          [-74.5203122, 40.7072898],
+          [-74.5196943, 40.7065676],
+          [-74.5186042, 40.7061707],
+          [-74.5179347, 40.705494],
+          [-74.5175571, 40.7041602],
+          [-74.5165614, 40.7032622],
+          [-74.5168982, 40.7020301],
+          [-74.5152311, 40.7021626],
+          [-74.514289, 40.7011712],
+          [-74.5142011, 40.7008091],
+          [-74.5142869, 40.6998721],
+          [-74.51386, 40.6998846],
+          [-74.5138578, 40.6991823],
+          [-74.5133685, 40.6968137],
+          [-74.5036868, 40.6991238],
+          [-74.502511, 40.6963712],
+          [-74.5138234, 40.6944384],
+          [-74.5138063, 40.6912301],
+          [-74.510107, 40.6916531],
+          [-74.5099096, 40.6902669],
+          [-74.5137119, 40.6897462],
+          [-74.5136947, 40.6875854],
+          [-74.5123214, 40.6863814],
+          [-74.5112657, 40.6857826],
+          [-74.5053434, 40.6862382],
+          [-74.5047597, 40.6842856],
+          [-74.4983482, 40.6850992],
+          [-74.4931983, 40.6855027],
+          [-74.49234, 40.6845394],
+          [-74.4905633, 40.6847868],
+          [-74.490426, 40.6858281],
+          [-74.4888639, 40.6856654],
+          [-74.4886753, 40.6847765],
+          [-74.4845723, 40.6847542],
+          [-74.4843835, 40.686492],
+          [-74.4792251, 40.6875659],
+          [-74.4782809, 40.6888026],
+          [-74.4773969, 40.6888546],
+          [-74.4768819, 40.6871493],
+          [-74.4766759, 40.6873055],
+          [-74.4767446, 40.6883208],
+          [-74.4750623, 40.6888872],
+          [-74.4739122, 40.6895705],
+          [-74.4741868, 40.6905467],
+          [-74.4738607, 40.6943733],
+          [-74.4724529, 40.6943096],
+          [-74.4652588, 40.6939841],
+          [-74.4650029, 40.6925317],
+          [-74.4641275, 40.6921086],
+          [-74.4628572, 40.692382],
+          [-74.4615182, 40.694484],
+          [-74.459012, 40.6950697],
+          [-74.4576816, 40.6938657],
+          [-74.4556993, 40.6953195],
+          [-74.453845, 40.6967942],
+          [-74.441142, 40.7053834],
+          [-74.4400262, 40.7106535],
+          [-74.4395971, 40.7124427],
+          [-74.4347905, 40.7124427],
+          [-74.4218371, 40.7232157],
+          [-74.4217782, 40.7232673],
+          [-74.4189119, 40.7256483],
+          [-74.4190872, 40.7259555],
+          [-74.4202852, 40.728055],
+          [-74.4283265, 40.7334165],
+          [-74.4302603, 40.734705],
+          [-74.431006, 40.7351806],
+          [-74.4325053, 40.7361968],
+          [-74.4362926, 40.7387213],
+          [-74.43758, 40.7347867],
+          [-74.4400262, 40.7312421],
+          [-74.4430303, 40.7278273],
+          [-74.4505834, 40.7306242],
+          [-74.4522142, 40.7276322],
+          [-74.4628884, 40.7314778],
+          [-74.4707782, 40.728009],
+          [-74.4722986, 40.7311445],
+          [-74.4670401, 40.7327297],
+          [-74.4697629, 40.7367588],
+          [-74.4722186, 40.7350227],
+          [-74.4760223, 40.7335374],
+          [-74.4771909, 40.7356322],
+          [-74.4793863, 40.7336599],
+          [-74.4891214, 40.7311445],
+          [-74.4906511, 40.7292955],
+          [-74.494357, 40.727372],
+          [-74.5201921, 40.7195012],
+          [-74.5231961, 40.7235994],
+          [-74.5241403, 40.7251605],
+          [-74.5274019, 40.7242498],
+        ],
+      ])
+    },
+  },
+}
+</script>
+<style>
+#map {
+  position: absolute;
+  left: 4200px;
+  top: 0;
+  height: 100vh;
+  width: 1200px;
+  background-color: darkolivegreen;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+#map h3 {
+  font-size: 23px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  margin-top: 0.1em;
+  margin-bottom: 0.3em;
+}
+#map p {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  color: black;
+  line-height: 1.4em;
+  margin: 0px;
+}
+.mapboxgl-popup-anchor-bottom,
+.mapboxgl-popup-anchor-top {
+  max-width: 350px !important;
+}
+.mapboxgl-popup-close-button {
+  font-size: 30px;
+}
+.mapboxgl-popup-content {
+  background-color: rgba(255, 255, 255, 0.50);
+}
+.meadow-green {
+  color: #5a8627;
+}
+.forest-brown {
+  color: #754d24;
+}
+.wetlands-blue {
+  color: #307391;
+}
+</style>

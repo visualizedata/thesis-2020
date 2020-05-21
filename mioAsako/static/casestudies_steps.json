@@ -1,0 +1,17 @@
+[ 
+    { "label": "1"
+    , "description": "Here we have case studies of fifteen perpetrators of misconduct whose cases resulted in initial outcomes in 2018. Each bar represents a broad timeline of events of a single perpetrator. The midpoint, or zero-point, signifies the year at which the first sexual harassment complaint was filed."
+    },
+    { "label": "2"
+    , "description": "The extent each bar goes to the left signifies how many years prior to the complaint the first known incident occurred."  
+    },
+    { "label": "3"
+    , "description": "The extent each bar goes to the right signifies how many years it took for investigations to initiate and conclude after the first complaint."    
+    },
+    { "label": "4"
+    , "description": "The US Department of Education OFfice for Civil Rights (OCR) previously indicated that a typical investigation should take 60-90 calendar days following receipt of the complaint. However, in 2017, it issued a guidance saying there is no fixed time frame under which a school must complete a Title IX investigation, only indicating that it will 'evaluate a school's good faith effort to conduct a fair, impartial investigation in a timely manner'. Some of these cases have spanned decades, with no action on part of the institutions upon first complaint. For each of these cases, there is more than one woman who has had to come forward in order for their voices to be heard (spanning several women to 300 women)."
+    },
+    { "label": "5"
+    , "description": "Learn of the events that occurred in each perpetrator's story arc by hovering over the bars."    
+    }
+]
