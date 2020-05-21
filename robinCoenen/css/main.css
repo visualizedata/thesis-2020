@@ -1,0 +1,296 @@
+/* General */
+
+@font-face {
+  font-family: "Simplon-Regular";
+  src: url("./fonts/SimplonMono-Regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Simplon-Regular-Italic";
+  src: url("./fonts/SimplonMono-RegularItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Simplon-Medium_Italic";
+  src: url("./fonts/SimplonMono-MediumItalic.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Simplon-Bold";
+  src: url("./fonts/SimplonMono-Bold.woff") format("woff2");
+}
+
+#moreInfoButton{
+  position:fixed;
+  top:48%;
+  left: 1.8%;
+  z-index:990000000000000;
+  font-size:46px;
+  color:white;
+  mix-blend-mode: difference;
+  -webkit-filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, 0.9));
+  filter: drop-shadow( 4px 4px 4px rgba(0, 0, 0, 0.9));
+  border: none !important;
+}
+
+#InfoSidebar {
+  height: 250px;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 6.5%;
+  transition: 0.5s;
+}
+#InfoSidebar.in {
+  width: 40%;
+  height: 100vh;
+  padding-left: 7%;
+  padding-right: 1.8%;
+}
+
+:hover{color: "white"}
+
+b {
+  font-family: "Simplon-Bold";
+}
+
+html {
+  background-color: black;
+}
+
+body {
+  font-family: "Simplon-Regular";
+  color: "#000 !important";
+  background: #fff;
+  margin-top: 0rem !important;
+  margin-left: 0rem !important;
+  margin-right: 0rem !important;
+}
+.navbar{
+  z-index:999999999999999999999999;
+  padding: .1rem 1rem;
+}
+.navbar-text {
+  font-family: "Simplon-Medium_Italic";
+  font-size: 28px;
+  color: black !important;
+  margin-left: 40px;
+}
+
+.btn-link {
+  font-size: 18px;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+  border:1px solid black;;
+  padding-top:0.5px;
+  padding-bottom:0.5px;
+
+
+}
+
+.bg-light {
+  background-color: white !important;
+}
+
+a {
+  font-size: 18px;
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.card {
+  background-color: white !important;
+height:100vh;
+z-index: 9999;
+
+
+}
+#index {
+  z-index: 999999999999;
+  background-color:grey !important;
+}
+/* Overview*/
+
+#overview{display:flex; word-spacing: -0.1em;}
+        #scenarios{width:47%;text-align:right;  margin-right:1.2%;}
+        #policies{flex-grow:1; width: 48%;}
+
+
+#overview{ 
+  font-family: "Simplon-Regular-Italic";
+    font-size: 18px;
+    color: black !important;
+    margin-left: 13%;
+    margin-right: 10%;
+  }
+
+.text-center {
+  padding-top: 60px;
+}
+
+#imprint {
+  padding-top: 20px;
+  font-size:18px !important;
+}
+
+#heading {
+  margin-top:2%;
+  font-family: "Simplon-Bold";
+  font-size: 56px;
+  line-height: 1em;
+}
+
+#sub-heading {
+  padding-bottom: 60px;
+  font-family: "Simplon-Regular";
+  font-size: 28px;
+  line-height: 1em;
+}
+
+.text-right {
+  padding-top: 50px;
+  padding-right: 250px;
+  font-family: "Simplon-Regular";
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+#questions {
+  padding-left: 20%;
+  margin-right: 15%;
+  font-family: "Simplon-Regular";
+  font-size: 28px;
+  line-height: 1.2em;
+}
+
+.popover {
+  z-index: -1 !important;
+  background: transparent !important;
+}
+
+#main {
+  padding-top: 300px;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* LandingPage */
+
+
+
+#video-compare-container {
+  display: inline-block;
+  line-height: 0;
+  position: relative;
+  width: 100%;
+  padding-top: 0%;
+}
+#video-compare-container > video {
+  width: 100%;
+  position: relative;
+  top: 0;
+}
+#video-cover {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+#video-cover video {
+  width: 100%;
+  position: absolute;
+}
+
+#landing {
+  position: absolute;
+  z-index: 9999999999;
+  bottom: 25%;left:40%;
+  font-size: 24px;
+  mix-blend-mode: difference;
+  color: white;
+  border-color: white;
+}
+
+/* Vignette 1 */
+
+.leaflet-control-attribution {
+  visibility: hidden;
+}
+
+.leaflet-tooltip-right:before {
+  display: none;
+  box-shadow: none;
+}
+
+h6 {
+  color: white;
+}
+.leaflet-tooltip {
+  font-family: "Simplon-Regular";
+  color: white;
+  position: absolute;
+  margin-left: 200px;
+  padding: 6px;
+  background-color: black;
+  opacity: 1;
+  width: 250px;
+  border: none;
+  border-radius: 0px;
+  color: #222;
+  white-space: pre-wrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  pointer-events: none;
+  box-shadow: none;
+  color: black;
+}
+
+
+/* Vignette 2 */
+#zoomImg {
+  position:absolute;
+  z-index: -9999;
+  width: 100%;
+  margin-top:68px;
+}
+
+
+/* Vignette 3 */
+h6{
+  font-size:14px;
+  color: white;
+  background-color: black;
+
+}
+
+#area_size {
+  background-color: black;
+}
+
+
+/* Vignette 3 */
+
+/* Vignette 4 */
+
+/* Vignette 5 */
+
+/* Vignette 6 */
+
+#diplomatic_Notes{
+  background-color: black;
+
+}
+
+/* Dashboard */

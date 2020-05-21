@@ -1,0 +1,329 @@
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+ 
+ html{
+   font-family: 'Montserrat', sans-serif;
+ }
+ body{
+   background-color:#0d0d0d;
+   color: #f2f2f2;
+ }
+ .active {
+    color: #D93644 !important;
+    font-weight: 600 !important;
+  }
+  .bar1 {
+    font-size: 1em;
+    font-weight: 400;
+    margin-bottom: 1%;
+    padding-right: 25px;
+    cursor: pointer;
+    /*font-family: "avenir next", Arial, sans-serif;*/
+  }
+  .alias-label {
+    /*font-family: "avenir next", Arial, sans-serif;*/
+    font-size: 12px;
+  }
+  .bar {
+    font-size: 0.70em;
+    font-weight: 200;
+    margin-bottom: 10px;
+    padding-right: 25px;
+    cursor: pointer;
+    /*font-family: "avenir next", Arial, sans-serif;*/
+  }
+  .names {
+    fill: none;
+    stroke: #f2f2f2;
+    stroke-linejoin: round;
+  }
+
+  /* Tooltip CSS */
+  .d3-tip {
+    font-size:0.6em;
+    line-height: 1.5;
+    font-weight: 400;
+    /*font-family: "avenir next", Arial, sans-serif;*/
+    padding: 1%;
+    background: rgba(0, 0, 0, 0.6);
+    color: #f2f2f2;
+    border-radius: 1%;
+    pointer-events: none;
+  }
+
+  /* Creates a small triangle extender for the tooltip */
+  .d3-tip:after {
+    box-sizing: border-box;
+    display: inline;
+    font-size: 0.6em;
+    width: 100%;
+    line-height: 1.5;
+    color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    pointer-events: none;
+
+  }
+
+  /* Northward tooltips */
+  .d3-tip.n:after {
+    content: "\25BC";
+    margin: -1px 0 0 0;
+    top: 100%;
+    left: 0;
+    text-align: center;
+  }
+
+  /* Eastward tooltips */
+  .d3-tip.e:after {
+    content: "\25C0";
+    margin: -4px 0 0 0;
+    top: 50%;
+    left: -8px;
+  }
+
+  /* Southward tooltips */
+  .d3-tip.s:after {
+    content: "\25B2";
+    margin: 0 0 1px 0;
+    top: -8px;
+    left: 0;
+    text-align: center;
+  }
+
+  /* Westward tooltips */
+  .d3-tip.w:after {
+    content: "\25B6";
+    margin: -4px 0 0 -1px;
+    top: 50%;
+    left: 100%;
+  }
+
+  .parent-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: stretch;
+    height: 30px;
+    background-color: #f2f2f2;
+  }
+
+.child-bar-1 {
+  width: 40%;
+  background-color: #268C16;
+  cursor: pointer;
+}
+
+.child-bar-2 {
+  width: 30%;
+  background-color: #FFC300;
+  cursor: pointer;
+}
+
+.child-bar-3 {
+  width: 30%;
+  background-color: #0C59F2;
+  cursor: pointer;
+}
+
+.parent-alias {
+  display: flex;
+	flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+}
+.child-alias {
+  display: flex;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.child-alias-box {
+  width : 15px;
+  height: 15px;
+  margin-right: 10px;
+}
+.child-alias-box-1 {
+  background-color: #268C16
+}
+
+.child-alias-box-2 {
+  background-color: #FFC300
+}
+
+.child-alias-box-3 {
+  background-color: #0C59F2
+}
+
+  .details {
+    color: white;
+  }
+
+#map{
+  border: 0.1em solid;
+  margin-bottom: 1%;
+  border-color: rgba(242, 242, 242, 0.2);
+}
+
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
+ 
+/* body{*/
+/*   background-color:#0d0d0d;*/
+/*   color: #f2f2f2;*/
+/* }*/
+
+
+/*#map_style{*/
+/*  font-family: 'Montserrat', sans-serif;*/
+/*  padding-bottom:5%;*/
+/*  background-color:#0d0d0d;*/
+/*}*/
+/* .active {*/
+/*    color: #D93644 !important;*/
+/*    font-weight: 600 !important;*/
+/*  }*/
+/*  .bar1 {*/
+/*    font-size: 1em;*/
+/*    font-weight: 400;*/
+/*    margin-bottom: 1%;*/
+/*    padding-right: 25px;*/
+/*    cursor: pointer;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*  }*/
+/*  .alias-label {*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    font-size: 0.75em;*/
+/*  }*/
+/*  .bar {*/
+/*    font-size: 0.7em;*/
+/*    font-weight: 200;*/
+/*    margin-bottom: 10px;*/
+/*    padding-right: 25px;*/
+/*    cursor: pointer;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*  }*/
+/*  .names {*/
+/*    fill: none;*/
+/*    stroke: #f2f2f2;*/
+/*    stroke-linejoin: round;*/
+/*  }*/
+
+/*   Tooltip CSS */
+/*  .d3-tip {*/
+/*    font-size:0.6em;*/
+/*    line-height: 1.5;*/
+/*    font-weight: 400;*/
+/*    font-family: 'Montserrat', sans-serif;*/
+/*    padding: 1%;*/
+/*    background: rgba(0, 0, 0, 0.6);*/
+/*    color: #f2f2f2;*/
+/*    border-radius: 1%;*/
+/*    pointer-events: none;*/
+/*  }*/
+
+/*   Creates a small triangle extender for the tooltip */
+/*  .d3-tip:after {*/
+/*    box-sizing: border-box;*/
+/*    display: inline;*/
+/*    font-size: 0.6em;*/
+/*    width: 100%;*/
+/*    line-height: 1.5;*/
+/*    color: rgba(0, 0, 0, 0.6);*/
+/*    position: absolute;*/
+/*    pointer-events: none;*/
+
+/*  }*/
+
+/*   Northward tooltips */
+/*  .d3-tip.n:after {*/
+/*    content: "\25BC";*/
+/*    margin: -1px 0 0 0;*/
+/*    top: 100%;*/
+/*    left: 0;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*   Eastward tooltips */
+/*  .d3-tip.e:after {*/
+/*    content: "\25C0";*/
+/*    margin: -4px 0 0 0;*/
+/*    top: 50%;*/
+/*    left: -8px;*/
+/*  }*/
+
+/*   Southward tooltips */
+/*  .d3-tip.s:after {*/
+/*    content: "\25B2";*/
+/*    margin: 0 0 1px 0;*/
+/*    top: -8px;*/
+/*    left: 0;*/
+/*    text-align: center;*/
+/*  }*/
+
+/*   Westward tooltips */
+/*  .d3-tip.w:after {*/
+/*    content: "\25B6";*/
+/*    margin: -4px 0 0 -1px;*/
+/*    top: 50%;*/
+/*    left: 100%;*/
+/*  }*/
+
+/*  .parent-bar {*/
+/*    display: flex;*/
+/*    flex-direction: row;*/
+/*    flex-wrap: nowrap;*/
+/*    justify-content: flex-start;*/
+/*    align-items: stretch;*/
+/*    align-content: stretch;*/
+/*    height: 30px;*/
+/*    background-color: #f2f2f2;*/
+/*  }*/
+
+/*.child-bar-1 {*/
+/*  width: 40%;*/
+/*  background-color: #268C16;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.child-bar-2 {*/
+/*  width: 30%;*/
+/*  background-color: #FFC300;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.child-bar-3 {*/
+/*  width: 30%;*/
+/*  background-color: #0C59F2;*/
+/*  cursor: pointer;*/
+/*}*/
+
+/*.parent-alias {*/
+/*  display: flex;*/
+/*	flex-direction: column;*/
+/*  align-items: flex-start;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.child-alias {*/
+/*  display: flex;*/
+/*  margin-bottom: 10px;*/
+/*  cursor: pointer;*/
+/*}*/
+/*.child-alias-box {*/
+/*  width : 15px;*/
+/*  height: 15px;*/
+/*  margin-right: 10px;*/
+/*}*/
+/*.child-alias-box-1 {*/
+/*  background-color: #268C16*/
+/*}*/
+
+/*.child-alias-box-2 {*/
+/*  background-color: #FFC300*/
+/*}*/
+
+/*.child-alias-box-3 {*/
+/*  background-color: #0C59F2*/
+/*}*/
+
+/*  .details {*/
+/*    color: white;*/
+/*  }*/

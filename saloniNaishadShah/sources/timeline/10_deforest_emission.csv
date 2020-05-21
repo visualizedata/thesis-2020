@@ -1,0 +1,52 @@
+cont,country,deforest,emission
+Africa,Benin,6911,1.74
+Africa,Cameroon,1064173,447.12
+Africa,Central African Republic,578061,212.53
+Africa,Chad,1273,0.3
+Africa,Congo,650425,262.44
+Africa,Cote d Ivoire,1700787,525.24
+Africa,Equatorial Guinea,105943,48.34
+Africa,Ethiopia,238388,89.97
+Africa,Gabon,391293,173.21
+Africa,Ghana,743749,227.34
+Africa,Guinea,433317,119.3
+Africa,Guinea Bissau,59361,13.29
+Africa,Kenya,246436,90.45
+Africa,Liberia,1465832,452.75
+Africa,Madagascar,2980478,1075.7
+Africa,Malawi,68383,23.52
+Africa,Nigeria,350888,98.5
+Africa,Sudan,64526,0.02
+Africa,Tanzania,1187019,340.91
+Africa,Togo,10155,2.52
+Africa,Uganda,564488,179.16
+Africa,Zambia,687084,241.1
+Africa,Zimbabwe,105239,41.32
+Asia-Pacific,Bangladesh,141685,54.35
+Asia-Pacific,Bhutan,17471,8.46
+Asia-Pacific,Cambodia,1974249,855.96
+Asia-Pacific,India,1492486,597.25
+Asia-Pacific,Laos,2847508,1114.98
+Asia-Pacific,Myanmar,3117723,1260.09
+Asia-Pacific,Nepal,36632,18.02
+Asia-Pacific,Papua New Guinea,1384797,733.26
+Asia-Pacific,Philippines,1134625,466.12
+Asia-Pacific,Solomon Islands,161186,83.75
+Asia-Pacific,Sri Lanka,151797,41.06
+Asia-Pacific,Viet Nam,2390156,896.12
+Asia-Pacific,Thailand,1745522,708.57
+Caribbean-Latin,Bolivia,4566840,1509.39
+Caribbean-Latin,Colombia,3969651,1581.03
+Caribbean-Latin,Costa Rica,224758,80.17
+Caribbean-Latin,Dominican Republic,274337,80.15
+Caribbean-Latin,Ecuador,766612,346.08
+Caribbean-Latin,El Salvador,66507,20.21
+Caribbean-Latin,Guatemala,1346111,428.99
+Caribbean-Latin,Guyana,181596,89.23
+Caribbean-Latin,Honduras,963898,326.44
+Caribbean-Latin,Jamaica,44581,16.23
+Caribbean-Latin,Mexico,3363697,855.44
+Caribbean-Latin,Panama,370857,145.17
+Caribbean-Latin,Paraguay,3383953,626.58
+Caribbean-Latin,Peru,2857708,1366.5
+Caribbean-Latin,Suriname,164948,93.8

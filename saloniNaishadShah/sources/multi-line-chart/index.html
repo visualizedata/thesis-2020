@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="multiline.css">
+    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <!--<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>-->
+    <!--<script src="https://d3js.org/d3.v5.min.js"></script>-->
+</head>
+<body>
+<div class="chart-wrapper" id="chart-line1"></div>
+
+<script type="text/javascript">
+    d3.csv('multiline_data.csv', function(error, data) {
+    data.forEach(function (d) {
+        d.year = +d.year;
+        d.FAO = +d.FAO;
+        d.UNFCCC = +d.UNFCCC;
+        d.Research = +d.Research;
+    });
+
+    var chart = makeLineChart(data, 'year', {
+        'FAO': {column: 'FAO'},
+        'UNFCCC': {column: 'UNFCCC'},
+        'Research': {column: 'Research'},
+    }, {xAxis: 'YEARS', yAxis: 'DEFORESTATION (IN MILLION HECTARES)'});
+    chart.bind("#chart-line1");
+    chart.render();
+
+});
+</script>
+<script src="multiline.js" charset="utf-8"></script>
+</body>
+</html>

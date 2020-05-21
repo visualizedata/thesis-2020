@@ -1,0 +1,973 @@
+cont,country,year,value,deforest_30,deforest_50
+Africa,Benin,2001,17791,3749,1882
+Africa,Benin,2002,20419,3480,924
+Africa,Benin,2003,30092,3476,805
+Africa,Benin,2004,3985,684,115
+Africa,Benin,2005,35046,1591,249
+Africa,Benin,2006,12139,1795,318
+Africa,Benin,2007,56662,4660,844
+Africa,Benin,2008,5881,482,81
+Africa,Benin,2009,77488,4929,803
+Africa,Benin,2010,2732,529,99
+Africa,Benin,2011,7844,655,95
+Africa,Benin,2012,61098,2865,522
+Africa,Benin,2013,36789,1313,29
+Africa,Benin,2014,42560,1358,23
+Africa,Benin,2015,21937,598,8
+Africa,Benin,2016,26183,2016,59
+Africa,Benin,2017,43952,2238,37
+Africa,Benin,2018,45889,1826,18
+Africa,Cameroon,2001,42080,39204,34078
+Africa,Cameroon,2002,32782,28767,24965
+Africa,Cameroon,2003,26471,25345,22752
+Africa,Cameroon,2004,25055,23003,19882
+Africa,Cameroon,2005,27443,25159,22356
+Africa,Cameroon,2006,45697,35986,30864
+Africa,Cameroon,2007,57822,45916,38306
+Africa,Cameroon,2008,45004,35142,28689
+Africa,Cameroon,2009,40731,36072,32964
+Africa,Cameroon,2010,71934,57992,51758
+Africa,Cameroon,2011,31833,27652,24547
+Africa,Cameroon,2012,57396,51268,45406
+Africa,Cameroon,2013,98441,84612,74194
+Africa,Cameroon,2014,195288,181851,161615
+Africa,Cameroon,2015,83742,78970,71595
+Africa,Cameroon,2016,120535,116619,106407
+Africa,Cameroon,2017,195468,187281,166374
+Africa,Cameroon,2018,128022,120814,107421
+Africa,Central African Republic,2001,33014,31282,27144
+Africa,Central African Republic,2002,37269,34418,28554
+Africa,Central African Republic,2003,14378,13727,12309
+Africa,Central African Republic,2004,16153,14589,12968
+Africa,Central African Republic,2005,31280,29317,24406
+Africa,Central African Republic,2006,64659,57883,39351
+Africa,Central African Republic,2007,41622,37308,30492
+Africa,Central African Republic,2008,36135,31860,22509
+Africa,Central African Republic,2009,51725,48253,42231
+Africa,Central African Republic,2010,51182,48554,42414
+Africa,Central African Republic,2011,51546,49140,41872
+Africa,Central African Republic,2012,61205,57314,47159
+Africa,Central African Republic,2013,54317,44182,28556
+Africa,Central African Republic,2014,69849,57852,39744
+Africa,Central African Republic,2015,34160,27316,17526
+Africa,Central African Republic,2016,55561,51152,44214
+Africa,Central African Republic,2017,76542,63910,49107
+Africa,Central African Republic,2018,53235,40913,27505
+Africa,Chad,2001,24496,884,85
+Africa,Chad,2002,33064,1958,189
+Africa,Chad,2003,6615,194,34
+Africa,Chad,2004,15705,457,20
+Africa,Chad,2005,11121,472,50
+Africa,Chad,2006,66426,2982,214
+Africa,Chad,2007,18399,1001,49
+Africa,Chad,2008,69242,3402,154
+Africa,Chad,2009,27713,1066,52
+Africa,Chad,2010,5158,255,15
+Africa,Chad,2011,14706,920,75
+Africa,Chad,2012,45062,2491,129
+Africa,Chad,2013,53473,2895,13
+Africa,Chad,2014,65100,3001,19
+Africa,Chad,2015,43141,2591,26
+Africa,Chad,2016,42623,3166,17
+Africa,Chad,2017,84282,6765,77
+Africa,Chad,2018,73212,6932,55
+Africa,Congo,2001,27837,27031,25332
+Africa,Congo,2002,25092,24310,22773
+Africa,Congo,2003,19160,18515,17615
+Africa,Congo,2004,14406,13833,12605
+Africa,Congo,2005,19489,18853,17814
+Africa,Congo,2006,23000,22154,21037
+Africa,Congo,2007,30803,29765,27851
+Africa,Congo,2008,18590,17374,15343
+Africa,Congo,2009,20896,19073,16860
+Africa,Congo,2010,48085,44665,41107
+Africa,Congo,2011,30408,28374,25801
+Africa,Congo,2012,34848,32144,29291
+Africa,Congo,2013,60481,54641,48895
+Africa,Congo,2014,77450,72891,65407
+Africa,Congo,2015,50434,47823,41829
+Africa,Congo,2016,116256,114303,105851
+Africa,Congo,2017,66216,63875,57207
+Africa,Congo,2018,63644,62698,57807
+Africa,Cote d Ivoire,2001,145211,122711,94921
+Africa,Cote d Ivoire,2002,177066,144560,111569
+Africa,Cote d Ivoire,2003,104455,86282,64599
+Africa,Cote d Ivoire,2004,70813,48048,34582
+Africa,Cote d Ivoire,2005,104545,65321,38279
+Africa,Cote d Ivoire,2006,136028,97781,69245
+Africa,Cote d Ivoire,2007,128810,90865,61084
+Africa,Cote d Ivoire,2008,183456,127555,87928
+Africa,Cote d Ivoire,2009,128510,108876,84306
+Africa,Cote d Ivoire,2010,127562,92492,69137
+Africa,Cote d Ivoire,2011,161016,124683,96297
+Africa,Cote d Ivoire,2012,111601,96129,74344
+Africa,Cote d Ivoire,2013,249585,175759,106061
+Africa,Cote d Ivoire,2014,426865,346793,187644
+Africa,Cote d Ivoire,2015,207530,152432,86549
+Africa,Cote d Ivoire,2016,298380,221100,107505
+Africa,Cote d Ivoire,2017,527274,357273,163631
+Africa,Cote d Ivoire,2018,463621,324740,163106
+Africa,Democratic Republic of the Congo,2001,464103,455517,434259
+Africa,Democratic Republic of the Congo,2002,525608,514477,481141
+Africa,Democratic Republic of the Congo,2003,284621,274740,245923
+Africa,Democratic Republic of the Congo,2004,409159,400044,375117
+Africa,Democratic Republic of the Congo,2005,498991,485293,450441
+Africa,Democratic Republic of the Congo,2006,463024,453171,430001
+Africa,Democratic Republic of the Congo,2007,478450,462903,425810
+Africa,Democratic Republic of the Congo,2008,414474,404831,374827
+Africa,Democratic Republic of the Congo,2009,655453,635215,589052
+Africa,Democratic Republic of the Congo,2010,841000,810712,747463
+Africa,Democratic Republic of the Congo,2011,438897,429540,399874
+Africa,Democratic Republic of the Congo,2012,648567,631000,573649
+Africa,Democratic Republic of the Congo,2013,952203,920604,863637
+Africa,Democratic Republic of the Congo,2014,1380483,1337961,1255968
+Africa,Democratic Republic of the Congo,2015,951563,928116,878803
+Africa,Democratic Republic of the Congo,2016,1412342,1381278,1315928
+Africa,Democratic Republic of the Congo,2017,1499303,1467957,1380535
+Africa,Democratic Republic of the Congo,2018,1395752,1373807,1291774
+Africa,Equatorial Guinea,2001,3599,3585,3543
+Africa,Equatorial Guinea,2002,2994,2986,2958
+Africa,Equatorial Guinea,2003,1974,1961,1925
+Africa,Equatorial Guinea,2004,426,421,406
+Africa,Equatorial Guinea,2005,1617,1609,1589
+Africa,Equatorial Guinea,2006,1271,1256,1215
+Africa,Equatorial Guinea,2007,3209,3142,2985
+Africa,Equatorial Guinea,2008,4875,4822,4686
+Africa,Equatorial Guinea,2009,5722,5685,5584
+Africa,Equatorial Guinea,2010,6653,6593,6417
+Africa,Equatorial Guinea,2011,7767,7706,7515
+Africa,Equatorial Guinea,2012,4991,4953,4848
+Africa,Equatorial Guinea,2013,7355,7290,7171
+Africa,Equatorial Guinea,2014,19362,19211,18855
+Africa,Equatorial Guinea,2015,7510,7469,7345
+Africa,Equatorial Guinea,2016,9590,9545,9425
+Africa,Equatorial Guinea,2017,12000,11938,11791
+Africa,Equatorial Guinea,2018,7884,7823,7685
+Africa,Ethiopia,2001,14426,11947,8206
+Africa,Ethiopia,2002,17273,13074,7777
+Africa,Ethiopia,2003,16901,13936,10482
+Africa,Ethiopia,2004,17316,13396,9095
+Africa,Ethiopia,2005,20833,15869,9447
+Africa,Ethiopia,2006,14873,12076,7899
+Africa,Ethiopia,2007,31739,25609,18897
+Africa,Ethiopia,2008,31231,24009,14045
+Africa,Ethiopia,2009,34559,29279,18015
+Africa,Ethiopia,2010,25569,20184,12801
+Africa,Ethiopia,2011,18997,15463,10449
+Africa,Ethiopia,2012,49061,41632,27749
+Africa,Ethiopia,2013,45446,30851,17317
+Africa,Ethiopia,2014,49479,32725,17522
+Africa,Ethiopia,2015,16841,10276,5624
+Africa,Ethiopia,2016,33111,19582,9429
+Africa,Ethiopia,2017,49511,35404,22277
+Africa,Ethiopia,2018,27663,18894,11357
+Africa,Gabon,2001,15344,15083,14514
+Africa,Gabon,2002,14062,13852,13337
+Africa,Gabon,2003,16982,16845,16463
+Africa,Gabon,2004,10191,9982,9498
+Africa,Gabon,2005,17991,17699,17188
+Africa,Gabon,2006,20072,19301,17540
+Africa,Gabon,2007,17081,16501,15595
+Africa,Gabon,2008,18071,17367,16049
+Africa,Gabon,2009,18524,18252,17844
+Africa,Gabon,2010,10942,10674,10270
+Africa,Gabon,2011,18704,18161,17070
+Africa,Gabon,2012,17983,17476,16490
+Africa,Gabon,2013,46374,44449,42164
+Africa,Gabon,2014,49906,48752,47099
+Africa,Gabon,2015,25815,25473,24888
+Africa,Gabon,2016,32401,32151,31303
+Africa,Gabon,2017,39142,38644,37803
+Africa,Gabon,2018,27078,26788,26178
+Africa,Ghana,2001,53798,43644,34044
+Africa,Ghana,2002,84978,78395,66582
+Africa,Ghana,2003,30358,24955,19515
+Africa,Ghana,2004,21632,17625,14890
+Africa,Ghana,2005,51110,41346,33591
+Africa,Ghana,2006,35996,27136,21846
+Africa,Ghana,2007,54916,40172,32264
+Africa,Ghana,2008,51367,37849,27719
+Africa,Ghana,2009,54996,38253,31562
+Africa,Ghana,2010,28134,19500,14012
+Africa,Ghana,2011,47538,36243,28096
+Africa,Ghana,2012,44857,36626,27597
+Africa,Ghana,2013,134400,81228,54268
+Africa,Ghana,2014,166611,120298,78958
+Africa,Ghana,2015,80020,57407,36709
+Africa,Ghana,2016,150916,119245,71839
+Africa,Ghana,2017,175965,115286,61736
+Africa,Ghana,2018,189642,151446,88521
+Africa,Guinea,2001,24956,18572,10425
+Africa,Guinea,2002,37881,28933,17868
+Africa,Guinea,2003,12060,9229,5276
+Africa,Guinea,2004,30027,17158,6920
+Africa,Guinea,2005,25054,14581,5462
+Africa,Guinea,2006,22766,15306,6968
+Africa,Guinea,2007,54844,33821,16530
+Africa,Guinea,2008,38475,21481,8674
+Africa,Guinea,2009,40604,23388,10008
+Africa,Guinea,2010,45061,16046,6663
+Africa,Guinea,2011,45982,27638,9366
+Africa,Guinea,2012,37856,24486,10202
+Africa,Guinea,2013,209590,146184,43279
+Africa,Guinea,2014,191411,132716,41958
+Africa,Guinea,2015,228149,161820,46852
+Africa,Guinea,2016,302998,216012,66686
+Africa,Guinea,2017,360214,231588,71082
+Africa,Guinea,2018,299165,182895,49098
+Africa,Guinea Bissau,2001,3265,2362,703
+Africa,Guinea Bissau,2002,7419,6074,2901
+Africa,Guinea Bissau,2003,1362,1022,497
+Africa,Guinea Bissau,2004,5799,3539,1265
+Africa,Guinea Bissau,2005,6788,3928,1623
+Africa,Guinea Bissau,2006,3561,2018,855
+Africa,Guinea Bissau,2007,9679,6044,2003
+Africa,Guinea Bissau,2008,4124,3248,1441
+Africa,Guinea Bissau,2009,11828,7964,3505
+Africa,Guinea Bissau,2010,6692,4900,2750
+Africa,Guinea Bissau,2011,6080,4284,2085
+Africa,Guinea Bissau,2012,7328,3511,1615
+Africa,Guinea Bissau,2013,40451,20704,7819
+Africa,Guinea Bissau,2014,18928,12859,5727
+Africa,Guinea Bissau,2015,19898,12661,5202
+Africa,Guinea Bissau,2016,26443,16120,6643
+Africa,Guinea Bissau,2017,26820,16437,6693
+Africa,Guinea Bissau,2018,23131,14394,6034
+Africa,Kenya,2001,22555,19027,16210
+Africa,Kenya,2002,24331,20288,17631
+Africa,Kenya,2003,20794,13553,10606
+Africa,Kenya,2004,21878,16988,12941
+Africa,Kenya,2005,22656,12745,9344
+Africa,Kenya,2006,26666,20656,16719
+Africa,Kenya,2007,31614,26103,21373
+Africa,Kenya,2008,25938,19224,14237
+Africa,Kenya,2009,27248,17696,12812
+Africa,Kenya,2010,26318,22693,18998
+Africa,Kenya,2011,22437,17300,13313
+Africa,Kenya,2012,25783,17899,14032
+Africa,Kenya,2013,23788,13564,8842
+Africa,Kenya,2014,26629,15357,10043
+Africa,Kenya,2015,20275,15616,11427
+Africa,Kenya,2016,28831,19048,12505
+Africa,Kenya,2017,33086,22163,14865
+Africa,Kenya,2018,23060,15908,10538
+Africa,Liberia,2001,29261,29186,28552
+Africa,Liberia,2002,57098,56984,55817
+Africa,Liberia,2003,21743,21605,21002
+Africa,Liberia,2004,6250,6234,6117
+Africa,Liberia,2005,11356,11324,11016
+Africa,Liberia,2006,36411,36221,35085
+Africa,Liberia,2007,44484,44282,43106
+Africa,Liberia,2008,36377,36172,35143
+Africa,Liberia,2009,75342,75136,73699
+Africa,Liberia,2010,20416,20358,19941
+Africa,Liberia,2011,34554,34444,33662
+Africa,Liberia,2012,72388,72114,70149
+Africa,Liberia,2013,156675,155536,147977
+Africa,Liberia,2014,165693,164049,155474
+Africa,Liberia,2015,187002,186010,178901
+Africa,Liberia,2016,169614,168586,160770
+Africa,Liberia,2017,204577,203292,193876
+Africa,Liberia,2018,206630,204933,195545
+Africa,Madagascar,2001,91391,86957,77606
+Africa,Madagascar,2002,103516,89318,77814
+Africa,Madagascar,2003,110092,84248,66890
+Africa,Madagascar,2004,93657,81845,71174
+Africa,Madagascar,2005,109687,93628,77344
+Africa,Madagascar,2006,99524,71034,49819
+Africa,Madagascar,2007,208614,188580,156678
+Africa,Madagascar,2008,141075,123502,102096
+Africa,Madagascar,2009,153915,136537,117029
+Africa,Madagascar,2010,125609,107219,91190
+Africa,Madagascar,2011,169926,162323,146202
+Africa,Madagascar,2012,138863,128468,111113
+Africa,Madagascar,2013,319483,299350,253480
+Africa,Madagascar,2014,450211,416682,320150
+Africa,Madagascar,2015,324167,301789,245544
+Africa,Madagascar,2016,413096,383656,317199
+Africa,Madagascar,2017,558246,510357,401749
+Africa,Madagascar,2018,396361,366620,297401
+Africa,Malawi,2001,4597,2488,1324
+Africa,Malawi,2002,6415,4190,2551
+Africa,Malawi,2003,11655,7113,3238
+Africa,Malawi,2004,10378,5712,2783
+Africa,Malawi,2005,18434,9445,3860
+Africa,Malawi,2006,8997,5563,2911
+Africa,Malawi,2007,12798,7494,3632
+Africa,Malawi,2008,17273,9724,4514
+Africa,Malawi,2009,7060,4030,1705
+Africa,Malawi,2010,7029,3982,1762
+Africa,Malawi,2011,15054,8216,3984
+Africa,Malawi,2012,16628,12173,6579
+Africa,Malawi,2013,17647,10562,3854
+Africa,Malawi,2014,26988,18587,7329
+Africa,Malawi,2015,16402,10785,4372
+Africa,Malawi,2016,20924,13509,4984
+Africa,Malawi,2017,25183,15308,4625
+Africa,Malawi,2018,24179,15487,4376
+Africa,Nigeria,2001,84264,43386,19225
+Africa,Nigeria,2002,69292,32347,17811
+Africa,Nigeria,2003,44866,13381,5435
+Africa,Nigeria,2004,37914,14644,8338
+Africa,Nigeria,2005,51923,13280,6289
+Africa,Nigeria,2006,59173,26168,13137
+Africa,Nigeria,2007,116509,24573,10422
+Africa,Nigeria,2008,85305,27471,12815
+Africa,Nigeria,2009,94164,25290,11186
+Africa,Nigeria,2010,64729,32782,18422
+Africa,Nigeria,2011,160426,53891,25997
+Africa,Nigeria,2012,164946,34971,15822
+Africa,Nigeria,2013,161373,43435,16518
+Africa,Nigeria,2014,200331,68637,25685
+Africa,Nigeria,2015,127999,40928,14113
+Africa,Nigeria,2016,150717,72189,29449
+Africa,Nigeria,2017,412391,171045,55876
+Africa,Nigeria,2018,279618,119822,44348
+Africa,Sudan,2001,10657,4906,2705
+Africa,Sudan,2002,13181,8149,3971
+Africa,Sudan,2003,4623,2063,1049
+Africa,Sudan,2004,18144,10443,4985
+Africa,Sudan,2005,16200,10566,4724
+Africa,Sudan,2006,15009,8963,3719
+Africa,Sudan,2007,16940,9524,4810
+Africa,Sudan,2008,14657,9009,4149
+Africa,Sudan,2009,17235,8058,3819
+Africa,Sudan,2010,7765,3879,2247
+Africa,Sudan,2011,13671,9012,5441
+Africa,Sudan,2012,16198,6707,3326
+Africa,Sudan,2013,11690,4931,2604
+Africa,Sudan,2014,11864,6751,4439
+Africa,Sudan,2015,3510,2460,1866
+Africa,Sudan,2016,4940,4068,3317
+Africa,Sudan,2017,9080,6856,5334
+Africa,Sudan,2018,3702,2641,2021
+Africa,Tanzania,2001,105575,82214,54939
+Africa,Tanzania,2002,112491,85081,55812
+Africa,Tanzania,2003,139166,84068,45465
+Africa,Tanzania,2004,92288,66892,41778
+Africa,Tanzania,2005,144824,91583,48323
+Africa,Tanzania,2006,151285,85296,44955
+Africa,Tanzania,2007,186170,121685,55732
+Africa,Tanzania,2008,238105,164250,89668
+Africa,Tanzania,2009,263823,143354,63256
+Africa,Tanzania,2010,196127,138486,82008
+Africa,Tanzania,2011,189863,137805,60903
+Africa,Tanzania,2012,246572,154433,79269
+Africa,Tanzania,2013,279783,181510,87219
+Africa,Tanzania,2014,292507,198228,93048
+Africa,Tanzania,2015,159157,111961,47944
+Africa,Tanzania,2016,224379,152854,69067
+Africa,Tanzania,2017,323115,194876,91001
+Africa,Tanzania,2018,261664,171708,76632
+Africa,Togo,2001,5947,2776,835
+Africa,Togo,2002,5131,2021,385
+Africa,Togo,2003,5442,2054,417
+Africa,Togo,2004,7036,2761,483
+Africa,Togo,2005,7465,2048,250
+Africa,Togo,2006,4225,1688,281
+Africa,Togo,2007,9274,3187,863
+Africa,Togo,2008,4188,1178,243
+Africa,Togo,2009,19083,5580,561
+Africa,Togo,2010,1221,514,143
+Africa,Togo,2011,2719,1256,409
+Africa,Togo,2012,5413,1747,345
+Africa,Togo,2013,14408,2953,528
+Africa,Togo,2014,12738,2526,375
+Africa,Togo,2015,3772,940,152
+Africa,Togo,2016,7741,3464,946
+Africa,Togo,2017,14795,7186,1676
+Africa,Togo,2018,13541,6784,1263
+Africa,Uganda,2001,31401,29659,25435
+Africa,Uganda,2002,12302,10841,7896
+Africa,Uganda,2003,13684,11980,9520
+Africa,Uganda,2004,20156,18077,14281
+Africa,Uganda,2005,31644,29172,24290
+Africa,Uganda,2006,30996,28448,23272
+Africa,Uganda,2007,39203,36627,31204
+Africa,Uganda,2008,40239,36926,30570
+Africa,Uganda,2009,26104,23293,18484
+Africa,Uganda,2010,35719,34149,30198
+Africa,Uganda,2011,69013,65067,54167
+Africa,Uganda,2012,32799,29141,23295
+Africa,Uganda,2013,60270,47750,32030
+Africa,Uganda,2014,70075,54913,36110
+Africa,Uganda,2015,60197,54021,37228
+Africa,Uganda,2016,75163,67486,45787
+Africa,Uganda,2017,136114,116902,69576
+Africa,Uganda,2018,101184,86230,51145
+Africa,Zambia,2001,41974,30124,19807
+Africa,Zambia,2002,65345,46240,22499
+Africa,Zambia,2003,68760,41955,21796
+Africa,Zambia,2004,55178,28488,14157
+Africa,Zambia,2005,114043,57518,23006
+Africa,Zambia,2006,78971,40501,19319
+Africa,Zambia,2007,89353,53654,23955
+Africa,Zambia,2008,136854,66180,22816
+Africa,Zambia,2009,199233,117827,61413
+Africa,Zambia,2010,237737,173984,91865
+Africa,Zambia,2011,84034,60076,33412
+Africa,Zambia,2012,165419,129519,66560
+Africa,Zambia,2013,153212,84832,32770
+Africa,Zambia,2014,226713,115221,38139
+Africa,Zambia,2015,165358,87591,33569
+Africa,Zambia,2016,259825,141637,55185
+Africa,Zambia,2017,366265,162681,56191
+Africa,Zambia,2018,305600,143944,50625
+Africa,Zimbabwe,2001,19143,8206,4221
+Africa,Zimbabwe,2002,23929,8016,3638
+Africa,Zimbabwe,2003,21858,7312,4204
+Africa,Zimbabwe,2004,30127,8422,4390
+Africa,Zimbabwe,2005,37125,11749,4985
+Africa,Zimbabwe,2006,33602,14883,9862
+Africa,Zimbabwe,2007,43880,9300,4246
+Africa,Zimbabwe,2008,23524,5435,1988
+Africa,Zimbabwe,2009,67084,19402,8681
+Africa,Zimbabwe,2010,26979,6635,2356
+Africa,Zimbabwe,2011,18933,9039,5420
+Africa,Zimbabwe,2012,35176,13803,7036
+Africa,Zimbabwe,2013,22095,9632,5974
+Africa,Zimbabwe,2014,22732,9645,5268
+Africa,Zimbabwe,2015,25082,12262,7866
+Africa,Zimbabwe,2016,23361,10955,6099
+Africa,Zimbabwe,2017,60035,25978,15848
+Africa,Zimbabwe,2018,19584,6557,3157
+Asia-Pacific,Bangladesh,2001,4609,4587,4507
+Asia-Pacific,Bangladesh,2002,4026,3995,3866
+Asia-Pacific,Bangladesh,2003,2177,2159,2087
+Asia-Pacific,Bangladesh,2004,4332,4283,4077
+Asia-Pacific,Bangladesh,2005,3319,3293,3197
+Asia-Pacific,Bangladesh,2006,6944,6863,6557
+Asia-Pacific,Bangladesh,2007,4060,3995,3762
+Asia-Pacific,Bangladesh,2008,4546,4480,4242
+Asia-Pacific,Bangladesh,2009,5699,5625,5355
+Asia-Pacific,Bangladesh,2010,4740,4668,4420
+Asia-Pacific,Bangladesh,2011,4261,4181,3976
+Asia-Pacific,Bangladesh,2012,5588,5359,5102
+Asia-Pacific,Bangladesh,2013,6806,6022,5482
+Asia-Pacific,Bangladesh,2014,13691,12061,11039
+Asia-Pacific,Bangladesh,2015,14349,12604,11338
+Asia-Pacific,Bangladesh,2016,24320,21196,19238
+Asia-Pacific,Bangladesh,2017,32070,28377,25939
+Asia-Pacific,Bangladesh,2018,22167,19343,17501
+Asia-Pacific,Bhutan,2001,308,298,276
+Asia-Pacific,Bhutan,2002,231,224,206
+Asia-Pacific,Bhutan,2003,562,544,472
+Asia-Pacific,Bhutan,2004,1043,1013,921
+Asia-Pacific,Bhutan,2005,791,770,706
+Asia-Pacific,Bhutan,2006,639,623,563
+Asia-Pacific,Bhutan,2007,519,508,468
+Asia-Pacific,Bhutan,2008,787,775,717
+Asia-Pacific,Bhutan,2009,1201,1175,1098
+Asia-Pacific,Bhutan,2010,4511,4354,3857
+Asia-Pacific,Bhutan,2011,1134,1091,958
+Asia-Pacific,Bhutan,2012,800,766,691
+Asia-Pacific,Bhutan,2013,533,485,406
+Asia-Pacific,Bhutan,2014,1303,1229,1093
+Asia-Pacific,Bhutan,2015,821,747,631
+Asia-Pacific,Bhutan,2016,2106,1963,1689
+Asia-Pacific,Bhutan,2017,2141,1972,1691
+Asia-Pacific,Bhutan,2018,1372,1240,1028
+Asia-Pacific,Cambodia,2001,29450,28491,25720
+Asia-Pacific,Cambodia,2002,57940,54862,46903
+Asia-Pacific,Cambodia,2003,58775,56840,51061
+Asia-Pacific,Cambodia,2004,80911,79251,73502
+Asia-Pacific,Cambodia,2005,65703,64649,60782
+Asia-Pacific,Cambodia,2006,81869,80507,76410
+Asia-Pacific,Cambodia,2007,79399,77676,72927
+Asia-Pacific,Cambodia,2008,84765,83499,80252
+Asia-Pacific,Cambodia,2009,123812,121021,114045
+Asia-Pacific,Cambodia,2010,242230,237882,223667
+Asia-Pacific,Cambodia,2011,196702,192155,184178
+Asia-Pacific,Cambodia,2012,206725,195569,181193
+Asia-Pacific,Cambodia,2013,208624,190096,173384
+Asia-Pacific,Cambodia,2014,179553,161797,140656
+Asia-Pacific,Cambodia,2015,149087,132701,115930
+Asia-Pacific,Cambodia,2016,196172,182418,161038
+Asia-Pacific,Cambodia,2017,131482,118333,100471
+Asia-Pacific,Cambodia,2018,129333,113205,92130
+Asia-Pacific,India,2001,63970,62361,58273
+Asia-Pacific,India,2002,54643,53005,48500
+Asia-Pacific,India,2003,49342,47751,43330
+Asia-Pacific,India,2004,76823,74129,66983
+Asia-Pacific,India,2005,64600,62505,56566
+Asia-Pacific,India,2006,69947,67411,60216
+Asia-Pacific,India,2007,76714,73907,66139
+Asia-Pacific,India,2008,89203,85953,77279
+Asia-Pacific,India,2009,82422,79203,71301
+Asia-Pacific,India,2010,52897,51317,46887
+Asia-Pacific,India,2011,93751,88460,76084
+Asia-Pacific,India,2012,100847,95069,83478
+Asia-Pacific,India,2013,88796,80866,70317
+Asia-Pacific,India,2014,150939,139138,121980
+Asia-Pacific,India,2015,124481,116308,104529
+Asia-Pacific,India,2016,188819,175362,156387
+Asia-Pacific,India,2017,204475,189421,169313
+Asia-Pacific,India,2018,146207,132233,114924
+Asia-Pacific,Indonesia,2001,748277,744088,734820
+Asia-Pacific,Indonesia,2002,859058,855276,845679
+Asia-Pacific,Indonesia,2003,546504,544810,540480
+Asia-Pacific,Indonesia,2004,1294320,1289043,1274925
+Asia-Pacific,Indonesia,2005,1186619,1182442,1170930
+Asia-Pacific,Indonesia,2006,1439374,1433150,1414754
+Asia-Pacific,Indonesia,2007,1393374,1387625,1371557
+Asia-Pacific,Indonesia,2008,1400823,1396251,1381812
+Asia-Pacific,Indonesia,2009,1950154,1944963,1927451
+Asia-Pacific,Indonesia,2010,1281788,1279332,1271074
+Asia-Pacific,Indonesia,2011,1548627,1543629,1530074
+Asia-Pacific,Indonesia,2012,2271472,2260261,2234684
+Asia-Pacific,Indonesia,2013,1153805,1139299,1113899
+Asia-Pacific,Indonesia,2014,1924739,1894361,1840272
+Asia-Pacific,Indonesia,2015,1773462,1746471,1697199
+Asia-Pacific,Indonesia,2016,2459868,2422072,2351383
+Asia-Pacific,Indonesia,2017,1332281,1300719,1249678
+Asia-Pacific,Indonesia,2018,1247351,1218733,1172038
+Asia-Pacific,Laos,2001,37785,36475,34212
+Asia-Pacific,Laos,2002,57825,55937,52405
+Asia-Pacific,Laos,2003,88679,87074,83838
+Asia-Pacific,Laos,2004,65546,64248,61647
+Asia-Pacific,Laos,2005,68885,68327,66954
+Asia-Pacific,Laos,2006,124938,122678,118226
+Asia-Pacific,Laos,2007,134846,132995,129345
+Asia-Pacific,Laos,2008,81967,80592,78025
+Asia-Pacific,Laos,2009,147939,145564,141008
+Asia-Pacific,Laos,2010,168899,167108,163450
+Asia-Pacific,Laos,2011,133514,130933,125786
+Asia-Pacific,Laos,2012,151727,147537,140136
+Asia-Pacific,Laos,2013,212437,205607,192946
+Asia-Pacific,Laos,2014,251319,243833,227168
+Asia-Pacific,Laos,2015,291849,285029,268035
+Asia-Pacific,Laos,2016,397152,388035,364581
+Asia-Pacific,Laos,2017,358972,349137,325175
+Asia-Pacific,Laos,2018,303118,294666,274571
+Asia-Pacific,Malaysia,2001,335435,332497,326084
+Asia-Pacific,Malaysia,2002,314308,312554,308556
+Asia-Pacific,Malaysia,2003,184642,183911,182120
+Asia-Pacific,Malaysia,2004,353089,351802,348711
+Asia-Pacific,Malaysia,2005,376473,375420,372693
+Asia-Pacific,Malaysia,2006,334480,333901,332281
+Asia-Pacific,Malaysia,2007,405723,405159,403486
+Asia-Pacific,Malaysia,2008,368432,367972,366672
+Asia-Pacific,Malaysia,2009,623446,622780,620776
+Asia-Pacific,Malaysia,2010,431018,430607,429379
+Asia-Pacific,Malaysia,2011,463587,463078,461843
+Asia-Pacific,Malaysia,2012,629879,628171,625171
+Asia-Pacific,Malaysia,2013,335264,333221,329940
+Asia-Pacific,Malaysia,2014,651257,645779,637593
+Asia-Pacific,Malaysia,2015,458258,454345,448589
+Asia-Pacific,Malaysia,2016,571591,565249,556067
+Asia-Pacific,Malaysia,2017,488605,483416,476230
+Asia-Pacific,Malaysia,2018,443211,437985,431089
+Asia-Pacific,Myanmar,2001,45892,44804,42344
+Asia-Pacific,Myanmar,2002,67753,66120,62065
+Asia-Pacific,Myanmar,2003,78872,77224,72737
+Asia-Pacific,Myanmar,2004,104501,102186,95856
+Asia-Pacific,Myanmar,2005,93540,91847,87217
+Asia-Pacific,Myanmar,2006,130925,127464,117618
+Asia-Pacific,Myanmar,2007,149636,146598,137944
+Asia-Pacific,Myanmar,2008,121882,119216,111841
+Asia-Pacific,Myanmar,2009,220298,216306,204580
+Asia-Pacific,Myanmar,2010,172724,169913,161506
+Asia-Pacific,Myanmar,2011,138805,135716,128114
+Asia-Pacific,Myanmar,2012,232861,225189,207731
+Asia-Pacific,Myanmar,2013,260994,248186,225984
+Asia-Pacific,Myanmar,2014,349412,331445,300048
+Asia-Pacific,Myanmar,2015,307565,293305,267558
+Asia-Pacific,Myanmar,2016,380891,362552,330841
+Asia-Pacific,Myanmar,2017,360721,341845,310081
+Asia-Pacific,Myanmar,2018,293350,278709,253658
+Asia-Pacific,Nepal,2001,1594,1523,1313
+Asia-Pacific,Nepal,2002,2226,2129,1824
+Asia-Pacific,Nepal,2003,2398,2292,1913
+Asia-Pacific,Nepal,2004,2659,2480,1893
+Asia-Pacific,Nepal,2005,2891,2758,2308
+Asia-Pacific,Nepal,2006,3399,3255,2658
+Asia-Pacific,Nepal,2007,3655,3466,2822
+Asia-Pacific,Nepal,2008,3144,2992,2415
+Asia-Pacific,Nepal,2009,5833,5524,4551
+Asia-Pacific,Nepal,2010,2522,2348,1808
+Asia-Pacific,Nepal,2011,2923,2816,2446
+Asia-Pacific,Nepal,2012,5292,5045,4309
+Asia-Pacific,Nepal,2013,948,835,671
+Asia-Pacific,Nepal,2014,1308,1162,925
+Asia-Pacific,Nepal,2015,694,579,503
+Asia-Pacific,Nepal,2016,1169,999,832
+Asia-Pacific,Nepal,2017,2600,2394,2042
+Asia-Pacific,Nepal,2018,1872,1672,1399
+Asia-Pacific,Papua New Guinea,2001,36078,36005,35783
+Asia-Pacific,Papua New Guinea,2002,54684,54576,54205
+Asia-Pacific,Papua New Guinea,2003,31851,31806,31679
+Asia-Pacific,Papua New Guinea,2004,58500,58329,57810
+Asia-Pacific,Papua New Guinea,2005,39081,39021,38819
+Asia-Pacific,Papua New Guinea,2006,56493,56388,56114
+Asia-Pacific,Papua New Guinea,2007,49245,49173,48962
+Asia-Pacific,Papua New Guinea,2008,71163,71045,70675
+Asia-Pacific,Papua New Guinea,2009,49295,49210,48949
+Asia-Pacific,Papua New Guinea,2010,68860,68761,68481
+Asia-Pacific,Papua New Guinea,2011,53152,53047,52801
+Asia-Pacific,Papua New Guinea,2012,73492,73342,73034
+Asia-Pacific,Papua New Guinea,2013,57236,56668,55916
+Asia-Pacific,Papua New Guinea,2014,106335,105664,104591
+Asia-Pacific,Papua New Guinea,2015,182073,180807,178565
+Asia-Pacific,Papua New Guinea,2016,179104,177926,175394
+Asia-Pacific,Papua New Guinea,2017,118531,117509,115924
+Asia-Pacific,Papua New Guinea,2018,118464,117935,117095
+Asia-Pacific,Philippines,2001,35389,35165,34460
+Asia-Pacific,Philippines,2002,32560,32309,31673
+Asia-Pacific,Philippines,2003,35377,35154,34667
+Asia-Pacific,Philippines,2004,48798,48579,48050
+Asia-Pacific,Philippines,2005,50089,49782,49095
+Asia-Pacific,Philippines,2006,57709,57429,56801
+Asia-Pacific,Philippines,2007,66868,66498,65675
+Asia-Pacific,Philippines,2008,38844,38703,38380
+Asia-Pacific,Philippines,2009,61284,60890,60008
+Asia-Pacific,Philippines,2010,103258,102649,101155
+Asia-Pacific,Philippines,2011,33395,33253,32958
+Asia-Pacific,Philippines,2012,60165,59587,58577
+Asia-Pacific,Philippines,2013,60409,58871,57407
+Asia-Pacific,Philippines,2014,106094,102456,99174
+Asia-Pacific,Philippines,2015,68441,65896,63877
+Asia-Pacific,Philippines,2016,134688,129110,124480
+Asia-Pacific,Philippines,2017,119167,114281,110284
+Asia-Pacific,Philippines,2018,73669,70534,67904
+Asia-Pacific,Solomon Islands,2001,2188,2187,2186
+Asia-Pacific,Solomon Islands,2002,3868,3866,3862
+Asia-Pacific,Solomon Islands,2003,2377,2375,2372
+Asia-Pacific,Solomon Islands,2004,3544,3543,3541
+Asia-Pacific,Solomon Islands,2005,6553,6549,6545
+Asia-Pacific,Solomon Islands,2006,5070,5068,5063
+Asia-Pacific,Solomon Islands,2007,5668,5665,5660
+Asia-Pacific,Solomon Islands,2008,8174,8171,8165
+Asia-Pacific,Solomon Islands,2009,6037,6035,6028
+Asia-Pacific,Solomon Islands,2010,6422,6418,6412
+Asia-Pacific,Solomon Islands,2011,5863,5861,5854
+Asia-Pacific,Solomon Islands,2012,8815,8807,8793
+Asia-Pacific,Solomon Islands,2013,9494,9471,9440
+Asia-Pacific,Solomon Islands,2014,16981,16939,16883
+Asia-Pacific,Solomon Islands,2015,15007,14970,14929
+Asia-Pacific,Solomon Islands,2016,18044,17993,17933
+Asia-Pacific,Solomon Islands,2017,19792,19761,19724
+Asia-Pacific,Solomon Islands,2018,17845,17825,17796
+Asia-Pacific,Sri Lanka,2001,3829,3760,3535
+Asia-Pacific,Sri Lanka,2002,3506,3428,3183
+Asia-Pacific,Sri Lanka,2003,3203,3149,2996
+Asia-Pacific,Sri Lanka,2004,5850,5599,4927
+Asia-Pacific,Sri Lanka,2005,4792,4682,4383
+Asia-Pacific,Sri Lanka,2006,7964,7730,7094
+Asia-Pacific,Sri Lanka,2007,10602,10242,9175
+Asia-Pacific,Sri Lanka,2008,6619,6500,6084
+Asia-Pacific,Sri Lanka,2009,14403,13975,12669
+Asia-Pacific,Sri Lanka,2010,7335,7231,6839
+Asia-Pacific,Sri Lanka,2011,15132,14737,13558
+Asia-Pacific,Sri Lanka,2012,15072,14428,13189
+Asia-Pacific,Sri Lanka,2013,8525,7953,7095
+Asia-Pacific,Sri Lanka,2014,13214,12350,10932
+Asia-Pacific,Sri Lanka,2015,7656,7403,6913
+Asia-Pacific,Sri Lanka,2016,18542,17490,15583
+Asia-Pacific,Sri Lanka,2017,13777,13066,11845
+Asia-Pacific,Sri Lanka,2018,13965,13161,11797
+Asia-Pacific,Viet Nam,2001,48843,47433,44363
+Asia-Pacific,Viet Nam,2002,51723,49625,45013
+Asia-Pacific,Viet Nam,2003,44199,43008,40011
+Asia-Pacific,Viet Nam,2004,75869,73881,69228
+Asia-Pacific,Viet Nam,2005,104634,102211,96097
+Asia-Pacific,Viet Nam,2006,80481,78777,74372
+Asia-Pacific,Viet Nam,2007,81711,80225,76520
+Asia-Pacific,Viet Nam,2008,111153,108286,101946
+Asia-Pacific,Viet Nam,2009,139917,137716,132692
+Asia-Pacific,Viet Nam,2010,177689,174256,166166
+Asia-Pacific,Viet Nam,2011,134304,130786,124749
+Asia-Pacific,Viet Nam,2012,188419,181242,170261
+Asia-Pacific,Viet Nam,2013,144234,132423,115552
+Asia-Pacific,Viet Nam,2014,237988,217342,188482
+Asia-Pacific,Viet Nam,2015,237391,217883,190410
+Asia-Pacific,Viet Nam,2016,383519,353446,311456
+Asia-Pacific,Viet Nam,2017,315376,286940,249049
+Asia-Pacific,Viet Nam,2018,249006,225155,193789
+Asia-Pacific,Thailand,2001,37936,36102,32935
+Asia-Pacific,Thailand,2002,64180,60882,54663
+Asia-Pacific,Thailand,2003,61869,58448,52269
+Asia-Pacific,Thailand,2004,96374,91835,82095
+Asia-Pacific,Thailand,2005,86817,84287,78978
+Asia-Pacific,Thailand,2006,105574,99821,89322
+Asia-Pacific,Thailand,2007,96777,92629,84335
+Asia-Pacific,Thailand,2008,82984,80143,74861
+Asia-Pacific,Thailand,2009,138169,132690,122303
+Asia-Pacific,Thailand,2010,140188,134984,124864
+Asia-Pacific,Thailand,2011,99894,94545,85593
+Asia-Pacific,Thailand,2012,124881,114508,99600
+Asia-Pacific,Thailand,2013,94559,84754,75501
+Asia-Pacific,Thailand,2014,150221,137615,123930
+Asia-Pacific,Thailand,2015,129852,120808,110346
+Asia-Pacific,Thailand,2016,185607,171639,154482
+Asia-Pacific,Thailand,2017,210635,196457,178881
+Asia-Pacific,Thailand,2018,144637,133533,120564
+Caribbean-Latin,Bolivia,2001,141889,140321,133411
+Caribbean-Latin,Bolivia,2002,180511,178808,170042
+Caribbean-Latin,Bolivia,2003,164901,163759,158708
+Caribbean-Latin,Bolivia,2004,205273,203251,190346
+Caribbean-Latin,Bolivia,2005,252563,250748,238167
+Caribbean-Latin,Bolivia,2006,217637,216315,206660
+Caribbean-Latin,Bolivia,2007,190720,189953,184564
+Caribbean-Latin,Bolivia,2008,372166,369851,348141
+Caribbean-Latin,Bolivia,2009,226462,225270,212937
+Caribbean-Latin,Bolivia,2010,453494,451759,436578
+Caribbean-Latin,Bolivia,2011,332089,330239,316823
+Caribbean-Latin,Bolivia,2012,275244,273544,260861
+Caribbean-Latin,Bolivia,2013,181862,179823,164472
+Caribbean-Latin,Bolivia,2014,259850,256901,240758
+Caribbean-Latin,Bolivia,2015,167838,166275,152102
+Caribbean-Latin,Bolivia,2016,476968,470601,439062
+Caribbean-Latin,Bolivia,2017,467638,463194,433995
+Caribbean-Latin,Bolivia,2018,304941,301856,279213
+Caribbean-Latin,Colombia,2001,231665,230055,223766
+Caribbean-Latin,Colombia,2002,183204,182229,178715
+Caribbean-Latin,Colombia,2003,123497,122417,118341
+Caribbean-Latin,Colombia,2004,255440,253840,248254
+Caribbean-Latin,Colombia,2005,189902,188744,184467
+Caribbean-Latin,Colombia,2006,191216,189964,185201
+Caribbean-Latin,Colombia,2007,270784,269029,262621
+Caribbean-Latin,Colombia,2008,233180,231849,227052
+Caribbean-Latin,Colombia,2009,239549,237891,231807
+Caribbean-Latin,Colombia,2010,198105,197067,193577
+Caribbean-Latin,Colombia,2011,190754,189829,186570
+Caribbean-Latin,Colombia,2012,229766,227707,222002
+Caribbean-Latin,Colombia,2013,140908,138898,135459
+Caribbean-Latin,Colombia,2014,205807,202028,195806
+Caribbean-Latin,Colombia,2015,143343,140856,136900
+Caribbean-Latin,Colombia,2016,296316,290956,282988
+Caribbean-Latin,Colombia,2017,433174,424870,412491
+Caribbean-Latin,Colombia,2018,358471,352434,343634
+Caribbean-Latin,Costa Rica,2001,15579,15462,14831
+Caribbean-Latin,Costa Rica,2002,13410,13289,12688
+Caribbean-Latin,Costa Rica,2003,8318,8261,8058
+Caribbean-Latin,Costa Rica,2004,9883,9767,9167
+Caribbean-Latin,Costa Rica,2005,16798,16563,15552
+Caribbean-Latin,Costa Rica,2006,10134,10059,9734
+Caribbean-Latin,Costa Rica,2007,11537,11448,11068
+Caribbean-Latin,Costa Rica,2008,22100,21875,20917
+Caribbean-Latin,Costa Rica,2009,22623,22465,21792
+Caribbean-Latin,Costa Rica,2010,13241,13145,12801
+Caribbean-Latin,Costa Rica,2011,10581,10496,10158
+Caribbean-Latin,Costa Rica,2012,10465,10367,10067
+Caribbean-Latin,Costa Rica,2013,7985,7786,7496
+Caribbean-Latin,Costa Rica,2014,11344,10934,10404
+Caribbean-Latin,Costa Rica,2015,3371,3300,3168
+Caribbean-Latin,Costa Rica,2016,14113,13791,13380
+Caribbean-Latin,Costa Rica,2017,22473,22096,21615
+Caribbean-Latin,Costa Rica,2018,12733,12338,11862
+Caribbean-Latin,Dominican Republic,2001,11415,11247,10504
+Caribbean-Latin,Dominican Republic,2002,10618,10436,9644
+Caribbean-Latin,Dominican Republic,2003,10903,10714,9991
+Caribbean-Latin,Dominican Republic,2004,19674,19388,18251
+Caribbean-Latin,Dominican Republic,2005,25361,25088,24023
+Caribbean-Latin,Dominican Republic,2006,13702,13414,12294
+Caribbean-Latin,Dominican Republic,2007,16323,16059,14971
+Caribbean-Latin,Dominican Republic,2008,21880,21612,20372
+Caribbean-Latin,Dominican Republic,2009,14178,13967,13004
+Caribbean-Latin,Dominican Republic,2010,14289,14103,13205
+Caribbean-Latin,Dominican Republic,2011,13195,12960,12139
+Caribbean-Latin,Dominican Republic,2012,18207,17906,17001
+Caribbean-Latin,Dominican Republic,2013,13814,12703,11205
+Caribbean-Latin,Dominican Republic,2014,14485,13678,12501
+Caribbean-Latin,Dominican Republic,2015,15821,15091,13925
+Caribbean-Latin,Dominican Republic,2016,25889,24907,23419
+Caribbean-Latin,Dominican Republic,2017,28464,27063,25283
+Caribbean-Latin,Dominican Republic,2018,14937,13970,12605
+Caribbean-Latin,Ecuador,2001,45216,45002,44048
+Caribbean-Latin,Ecuador,2002,29944,29818,29224
+Caribbean-Latin,Ecuador,2003,13920,13836,13442
+Caribbean-Latin,Ecuador,2004,37525,37250,36043
+Caribbean-Latin,Ecuador,2005,40622,40379,39239
+Caribbean-Latin,Ecuador,2006,35803,35603,34786
+Caribbean-Latin,Ecuador,2007,60961,60540,58697
+Caribbean-Latin,Ecuador,2008,52077,51890,51050
+Caribbean-Latin,Ecuador,2009,57961,57646,56343
+Caribbean-Latin,Ecuador,2010,33901,33772,33264
+Caribbean-Latin,Ecuador,2011,43766,43630,43158
+Caribbean-Latin,Ecuador,2012,74765,74206,72594
+Caribbean-Latin,Ecuador,2013,49706,48383,46056
+Caribbean-Latin,Ecuador,2014,31727,30905,29504
+Caribbean-Latin,Ecuador,2015,30523,30078,29220
+Caribbean-Latin,Ecuador,2016,44751,44043,42558
+Caribbean-Latin,Ecuador,2017,71899,71108,69539
+Caribbean-Latin,Ecuador,2018,39100,38709,37847
+Caribbean-Latin,El Salvador,2001,9672,9499,8601
+Caribbean-Latin,El Salvador,2002,4772,4667,4137
+Caribbean-Latin,El Salvador,2003,6097,5984,5322
+Caribbean-Latin,El Salvador,2004,4643,4555,4088
+Caribbean-Latin,El Salvador,2005,5983,5881,5344
+Caribbean-Latin,El Salvador,2006,4700,4604,4007
+Caribbean-Latin,El Salvador,2007,3035,2984,2682
+Caribbean-Latin,El Salvador,2008,3379,3325,3022
+Caribbean-Latin,El Salvador,2009,4351,4284,3904
+Caribbean-Latin,El Salvador,2010,2922,2873,2608
+Caribbean-Latin,El Salvador,2011,3296,3242,3009
+Caribbean-Latin,El Salvador,2012,2599,2536,2313
+Caribbean-Latin,El Salvador,2013,2211,2053,1718
+Caribbean-Latin,El Salvador,2014,2508,2320,1877
+Caribbean-Latin,El Salvador,2015,2545,2389,2052
+Caribbean-Latin,El Salvador,2016,5937,5744,5233
+Caribbean-Latin,El Salvador,2017,4982,4746,4165
+Caribbean-Latin,El Salvador,2018,2821,2704,2425
+Caribbean-Latin,Guatemala,2001,53879,53310,50532
+Caribbean-Latin,Guatemala,2002,55990,55601,53475
+Caribbean-Latin,Guatemala,2003,98942,98174,92505
+Caribbean-Latin,Guatemala,2004,56858,56449,54262
+Caribbean-Latin,Guatemala,2005,101411,100829,97026
+Caribbean-Latin,Guatemala,2006,52943,52558,50528
+Caribbean-Latin,Guatemala,2007,127183,126557,122873
+Caribbean-Latin,Guatemala,2008,77567,77173,75091
+Caribbean-Latin,Guatemala,2009,87302,86944,84994
+Caribbean-Latin,Guatemala,2010,59985,59668,58141
+Caribbean-Latin,Guatemala,2011,40840,40587,39546
+Caribbean-Latin,Guatemala,2012,84579,84044,81927
+Caribbean-Latin,Guatemala,2013,55695,55149,53972
+Caribbean-Latin,Guatemala,2014,62713,61831,60005
+Caribbean-Latin,Guatemala,2015,55013,54147,52243
+Caribbean-Latin,Guatemala,2016,180368,178397,174328
+Caribbean-Latin,Guatemala,2017,81240,79732,76706
+Caribbean-Latin,Guatemala,2018,72819,71161,67957
+Caribbean-Latin,Guyana,2001,10059,10040,9966
+Caribbean-Latin,Guyana,2002,4840,4827,4785
+Caribbean-Latin,Guyana,2003,7427,7419,7367
+Caribbean-Latin,Guyana,2004,4070,4062,4033
+Caribbean-Latin,Guyana,2005,5842,5832,5797
+Caribbean-Latin,Guyana,2006,5941,5934,5890
+Caribbean-Latin,Guyana,2007,5254,5250,5221
+Caribbean-Latin,Guyana,2008,9470,9460,9415
+Caribbean-Latin,Guyana,2009,8280,8267,8207
+Caribbean-Latin,Guyana,2010,10118,10099,10012
+Caribbean-Latin,Guyana,2011,8376,8363,8317
+Caribbean-Latin,Guyana,2012,13132,13112,13029
+Caribbean-Latin,Guyana,2013,7151,7117,7070
+Caribbean-Latin,Guyana,2014,12242,12154,12049
+Caribbean-Latin,Guyana,2015,13121,13084,13013
+Caribbean-Latin,Guyana,2016,26584,26512,26360
+Caribbean-Latin,Guyana,2017,19478,19434,19361
+Caribbean-Latin,Guyana,2018,11790,11761,11704
+Caribbean-Latin,Honduras,2001,42762,42380,40267
+Caribbean-Latin,Honduras,2002,31787,31528,29957
+Caribbean-Latin,Honduras,2003,33995,33625,31461
+Caribbean-Latin,Honduras,2004,26666,26455,25159
+Caribbean-Latin,Honduras,2005,40848,40472,38399
+Caribbean-Latin,Honduras,2006,42076,41631,38988
+Caribbean-Latin,Honduras,2007,42730,42412,40446
+Caribbean-Latin,Honduras,2008,43831,43299,40402
+Caribbean-Latin,Honduras,2009,51793,51514,49840
+Caribbean-Latin,Honduras,2010,46409,46085,44335
+Caribbean-Latin,Honduras,2011,52896,52572,50851
+Caribbean-Latin,Honduras,2012,32596,32305,31240
+Caribbean-Latin,Honduras,2013,44330,43632,42044
+Caribbean-Latin,Honduras,2014,58570,57482,55137
+Caribbean-Latin,Honduras,2015,51384,50242,47230
+Caribbean-Latin,Honduras,2016,192111,188443,177419
+Caribbean-Latin,Honduras,2017,115947,113474,107673
+Caribbean-Latin,Honduras,2018,77765,76254,73050
+Caribbean-Latin,Jamaica,2001,1255,1246,1202
+Caribbean-Latin,Jamaica,2002,1664,1648,1578
+Caribbean-Latin,Jamaica,2003,1045,1029,973
+Caribbean-Latin,Jamaica,2004,3933,3901,3795
+Caribbean-Latin,Jamaica,2005,7625,7598,7489
+Caribbean-Latin,Jamaica,2006,2830,2798,2700
+Caribbean-Latin,Jamaica,2007,1281,1270,1229
+Caribbean-Latin,Jamaica,2008,2045,2027,1965
+Caribbean-Latin,Jamaica,2009,3575,3538,3435
+Caribbean-Latin,Jamaica,2010,2379,2365,2309
+Caribbean-Latin,Jamaica,2011,2402,2385,2330
+Caribbean-Latin,Jamaica,2012,2626,2604,2555
+Caribbean-Latin,Jamaica,2013,1364,1328,1275
+Caribbean-Latin,Jamaica,2014,2914,2838,2721
+Caribbean-Latin,Jamaica,2015,2959,2903,2828
+Caribbean-Latin,Jamaica,2016,2042,1991,1934
+Caribbean-Latin,Jamaica,2017,2273,2200,2120
+Caribbean-Latin,Jamaica,2018,2308,2233,2143
+Caribbean-Latin,Mexico,2001,162345,158303,144740
+Caribbean-Latin,Mexico,2002,162544,158834,145678
+Caribbean-Latin,Mexico,2003,155833,152559,140228
+Caribbean-Latin,Mexico,2004,174171,169841,154229
+Caribbean-Latin,Mexico,2005,212727,206856,187027
+Caribbean-Latin,Mexico,2006,184196,179044,163616
+Caribbean-Latin,Mexico,2007,223883,218601,197895
+Caribbean-Latin,Mexico,2008,188814,184377,168050
+Caribbean-Latin,Mexico,2009,287486,281232,258812
+Caribbean-Latin,Mexico,2010,170272,166729,152008
+Caribbean-Latin,Mexico,2011,190782,186771,171847
+Caribbean-Latin,Mexico,2012,179502,174753,161229
+Caribbean-Latin,Mexico,2013,228385,219048,202952
+Caribbean-Latin,Mexico,2014,179458,170750,157509
+Caribbean-Latin,Mexico,2015,206825,197651,184992
+Caribbean-Latin,Mexico,2016,287252,274183,253141
+Caribbean-Latin,Mexico,2017,316932,298788,277663
+Caribbean-Latin,Mexico,2018,284697,267151,242081
+Caribbean-Latin,Panama,2001,18368,18264,17873
+Caribbean-Latin,Panama,2002,19341,19200,18717
+Caribbean-Latin,Panama,2003,11369,11283,10991
+Caribbean-Latin,Panama,2004,16950,16836,16434
+Caribbean-Latin,Panama,2005,12439,12349,12067
+Caribbean-Latin,Panama,2006,34592,34323,33355
+Caribbean-Latin,Panama,2007,20781,20645,20139
+Caribbean-Latin,Panama,2008,40260,39945,38950
+Caribbean-Latin,Panama,2009,37306,36947,35784
+Caribbean-Latin,Panama,2010,15472,15403,15203
+Caribbean-Latin,Panama,2011,23219,23104,22743
+Caribbean-Latin,Panama,2012,17189,17044,16656
+Caribbean-Latin,Panama,2013,14217,14041,13803
+Caribbean-Latin,Panama,2014,14279,14035,13700
+Caribbean-Latin,Panama,2015,10700,10554,10343
+Caribbean-Latin,Panama,2016,17549,17317,17023
+Caribbean-Latin,Panama,2017,31543,30879,29977
+Caribbean-Latin,Panama,2018,28634,27961,27099
+Caribbean-Latin,Paraguay,2001,158293,150239,106608
+Caribbean-Latin,Paraguay,2002,204292,195125,142233
+Caribbean-Latin,Paraguay,2003,275184,267309,208197
+Caribbean-Latin,Paraguay,2004,253685,247348,192190
+Caribbean-Latin,Paraguay,2005,269563,262651,162691
+Caribbean-Latin,Paraguay,2006,151063,148256,94729
+Caribbean-Latin,Paraguay,2007,433452,426216,257255
+Caribbean-Latin,Paraguay,2008,380506,376343,238662
+Caribbean-Latin,Paraguay,2009,356642,353184,218719
+Caribbean-Latin,Paraguay,2010,444644,442300,293737
+Caribbean-Latin,Paraguay,2011,460490,457196,274293
+Caribbean-Latin,Paraguay,2012,515745,510220,292275
+Caribbean-Latin,Paraguay,2013,323097,318564,159324
+Caribbean-Latin,Paraguay,2014,351113,345746,147431
+Caribbean-Latin,Paraguay,2015,284648,279375,120156
+Caribbean-Latin,Paraguay,2016,329227,319823,159532
+Caribbean-Latin,Paraguay,2017,373406,360058,204175
+Caribbean-Latin,Paraguay,2018,264855,258780,111746
+Caribbean-Latin,Peru,2001,86212,86014,85317
+Caribbean-Latin,Peru,2002,80660,80452,79687
+Caribbean-Latin,Peru,2003,74050,73869,73211
+Caribbean-Latin,Peru,2004,101523,101320,100625
+Caribbean-Latin,Peru,2005,163298,163023,161951
+Caribbean-Latin,Peru,2006,89083,88916,88284
+Caribbean-Latin,Peru,2007,115900,115743,115093
+Caribbean-Latin,Peru,2008,126791,126614,125945
+Caribbean-Latin,Peru,2009,178161,177914,176952
+Caribbean-Latin,Peru,2010,142508,142324,141529
+Caribbean-Latin,Peru,2011,125466,125265,124547
+Caribbean-Latin,Peru,2012,276071,275458,273536
+Caribbean-Latin,Peru,2013,210415,209307,207079
+Caribbean-Latin,Peru,2014,206566,205452,203194
+Caribbean-Latin,Peru,2015,167193,166500,164811
+Caribbean-Latin,Peru,2016,232266,230962,228047
+Caribbean-Latin,Peru,2017,305510,303281,298333
+Caribbean-Latin,Peru,2018,212722,211726,209567
+Caribbean-Latin,Suriname,2001,3692,3689,3675
+Caribbean-Latin,Suriname,2002,3722,3717,3699
+Caribbean-Latin,Suriname,2003,4556,4546,4469
+Caribbean-Latin,Suriname,2004,5437,5423,5363
+Caribbean-Latin,Suriname,2005,3518,3512,3495
+Caribbean-Latin,Suriname,2006,3408,3404,3387
+Caribbean-Latin,Suriname,2007,3630,3626,3609
+Caribbean-Latin,Suriname,2008,7518,7511,7478
+Caribbean-Latin,Suriname,2009,7372,7362,7295
+Caribbean-Latin,Suriname,2010,7005,7000,6976
+Caribbean-Latin,Suriname,2011,5699,5697,5683
+Caribbean-Latin,Suriname,2012,19524,19502,19441
+Caribbean-Latin,Suriname,2013,10223,10203,10170
+Caribbean-Latin,Suriname,2014,14820,14748,14664
+Caribbean-Latin,Suriname,2015,11958,11921,11879
+Caribbean-Latin,Suriname,2016,16957,16878,16775
+Caribbean-Latin,Suriname,2017,18072,18018,17943
+Caribbean-Latin,Suriname,2018,19040,19001,18947

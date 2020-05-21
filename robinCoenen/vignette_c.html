@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Vignette_C</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+  </head>
+  <body>
+    <!-- NAVHBAR -->
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="d-flex justify-content-start">
+        <!-- Question here -->
+
+        <span class="navbar-text">
+          Which stakeholder reacts to which claim?
+        </span>
+      </div>
+
+      <!-- Previous/Next Links here -->
+
+      <!--<a class="nav-link" href="#">Next Chapter</a>-->
+      <div class="d-flex justify-content-end">
+        <a class="nav-link" href="vignette_b.html" data-toggle="tooltip" data-placement="top" title="Previous Policy Section" >PREVIOUS</a>
+        <a class="nav-link" href="dashboard.html"  data-toggle="tooltip" data-placement="top" title="Next Section: Dashboard" >NEXT</a>
+        <button
+          class="btn btn-link"
+          type="button"
+          data-toggle="collapse"
+          data-target="#index"
+          aria-expanded="false"
+          aria-controls="collapseExample"
+        >
+          INDEX
+        </button>
+      </div>
+    </nav>
+
+      <!-- Tooltip Function -->
+
+<script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+    
+          <!-- More Info Button -->
+
+    <button
+    class="btn btn-link"
+    type="button"
+    id="moreInfoButton"
+    data-toggle="toggle"
+    data-target="#InfoSidebar"
+    aria-expanded="false"
+    aria-controls="collapseExample"
+    >
+      <svg
+        class="bi bi-plus-circle-fill"
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <!-- MoreInfo Content here -->
+
+    <h5 id="InfoSidebar">
+      Legend
+      <hr>
+      <img src="./img/legends/legend_stakeholder.svg">
+      </br>
+      </br>
+      Facsimile
+      <hr>
+      <img src="./img/content/diplomatic_notes.png" width="400" height="auto">
+     </br>
+      </br>
+      Context
+      <hr>
+      The UN archives publicly all written diplomatic exchanges related to the Claims in regard of the Continental Shelf. 
+      The image above shows such an verbal note as an example. 
+      This graph visualizes on a macro level, which stakeholder reacts to which claim (including answers to the reactions).
+      </br>
+      </br>
+      </h5>
+
+  </div>
+
+    <script>
+      $("[data-toggle='toggle']").click(function () {
+        var selector = $(this).data("target");
+        $(selector).toggleClass("in");
+      });
+
+    </script>
+
+ <!-- Index Content here -->
+      
+ <div class="collapse" id="index">
+  <div class="card card-body">
+    <p class="text-center" id="heading">With Compliments <br> to the Secretary General </p>
+
+    <p class="text-right">last updated <br> 05.05.2020</p>
+    <p class="text-center" id="sub-heading">Visualising Maritime Claims  <br> at the UN in regards <br> to the Continental Shelf</p>
+    <div id= "overview">
+      <div id ="scenarios"><b>Scenarios</b></br> 
+        <a href="./vignette_1.html">Is the sea a common property without borders?</a></br> 
+        <a href="./vignette_2.html"><u>How much area is claimed by who?</u></a></br>
+        <a href="./vignette_3.html">Does the UNCLOS aggregate or encounter existing inequalities?</a></br></div>
+      <div id ="policies"><b>Policies </b></br>
+        <a href="./vignette_a.html">Does the Convention on the Law of the Sea create an extractive imaginery?</a></br> 
+        <a href="./vignette_b.html">What is the diplomatic process of a claim?</a></br>
+        <a href="./vignette_c.html">Which stakeholder reacts to which claim?</a></br>
+      </div>
+    </div>
+    <p class="text-center" id = "imprint"><b><a href="./dashboard.html">Dashboard Tool</a></b></p>
+    <p class="text-center" id = "imprint"><a href="./imprint.html"></a>This project visualizes and contextualizes</br> all claims in regard of the contintental shelf at the UN. </br> Robin Coenen, 2020.</br></br><a href="./imprint.html"> Imprint, Methodology & Sources </a></p>
+
+      </div>
+</div>
+
+
+
+
+    <!-- VIGNETTE CONTENT HERE -->
+<div id="diplomatic_Notes"></div>
+   <script>
+// set the dimensions and margins of the graph
+var margin = {top: 0, right: 160, bottom: 150, left: 90},
+  width = 1790 - margin.left - margin.right,
+  height = 900 - margin.top - margin.bottom;
+
+// append the svg object to the body of the page
+var svg = d3.select("#diplomatic_Notes")
+  .append("svg")
+    .attr("width", width + margin.left + margin.right)
+    .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")");
+
+//data
+d3.json("./data/stakeholder_globalnorth-vs-south_group_b.json", function( data) {
+
+  // List of node names
+  var allNodes = data.nodes.map(function(d){return d.name})
+
+  // List of groups
+  var allGroups = data.nodes.map(function(d){return d.gr})
+  allGroups = [...new Set(allGroups)]
+
+  // A color scale for groups:
+  var color = d3.scaleOrdinal()
+    .domain(allGroups)
+    .range(["#3DB49C", "#A1D3C4","#E3F1ED","#9166A9","#BBA3CE" ]);
+
+  // A linear scale for node size
+  var size = d3.scaleLinear()
+    .domain([1,10])
+    .range([2,10]);
+
+  // A linear scale to position the nodes on the X axis
+  var x = d3.scalePoint()
+    .range([0, width])
+    .domain(allNodes)
+
+//link between this id and the name
+  var idToNode = {};
+  data.nodes.forEach(function (n) {
+    idToNode[n.id] = n;
+  });
+
+  // Add the links
+  var links = svg
+    .selectAll('mylinks')
+    .data(data.links)
+    .enter()
+    .append('path')
+    .attr('d', function (d) {
+      start = x(idToNode[d.source].name)
+      end = x(idToNode[d.target].name)  
+      return ['M', start, height-30,    
+        'A',                            
+        (start - end)/1.95, ',',    
+        (start - end)/1.95, 0, 0, ',',
+        start < end ? 1 : 0, end, ',', height-30] 
+        .join(' ');
+    })
+    .style("fill", "none")
+    .attr("stroke", "white")
+    .style("stroke-width", 1)
+
+  // Add the circle for the nodes
+  var nodes = svg
+    .selectAll("mynodes")
+    .data(data.nodes.sort(function(a,b) { return +b.n - +a.n }))
+    .enter()
+    .append("circle")
+      .attr("cx", function(d){ return(x(d.name))})
+      .attr("cy", height-30)
+      .attr("r", 7)
+      .style("fill", function(d){ return color(d.gr)})
+      .attr("stroke", "white")
+
+  // And give them a label
+  var labels = svg
+    .selectAll("mylabels")
+    .data(data.nodes)
+    .enter()
+    .append("text")
+      .attr("x", 0)
+      .attr("y", 0)
+      .text(function(d){ return(d.name)} )
+      .style("fill", "white")
+      .style("text-anchor", "end")
+      .attr("transform", function(d){ return( "translate(" + (x(d.name)) + "," + (height-18) + ")rotate(-90)")})
+      .style("font-size", 14)
+
+  // Add the highlighting functionality
+  nodes
+    .on('mouseover', function (d) {
+      // Highlight the nodes: every node is green except of him
+      nodes
+        .style('opacity', 1)
+      d3.select(this)
+        .style('opacity', 1)
+      // Highlight the connections
+      links
+        .style('stroke', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? color(d.gr) : '#b8b8b8';})
+        .style('stroke-opacity', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? 1 : .2;})
+        .style('stroke-width', function (link_d) { return link_d.source === d.id || link_d.target === d.id ? 4 : 1;})
+      labels
+        .style("font-size", function(label_d){ return label_d.name === d.name ? 18 : 13 } )
+        .attr("y", function(label_d){ return label_d.name === d.name ? 2 : 0 } )
+
+    })
+    .on('mouseout', function (d) {
+      nodes.style('opacity', 1)
+      links
+        .style('stroke', 'white')
+        .style('stroke-opacity', .8)
+        .style('stroke-width', '1')
+      labels
+        .style("font-size", 14 )
+
+    })
+})
+
+</script>
+  </body>
+</html>

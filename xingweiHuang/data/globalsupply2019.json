@@ -1,0 +1,284 @@
+[
+  {
+    "Country": "Côte d'Ivoire",
+    "Ton": "2,220,000",
+    "Continent": "Africa",
+    "1000Tons": 2220
+  },
+  {
+    "Country": "Ghana",
+    "Ton": "815,000",
+    "Continent": "Africa",
+    "1000Tons": 815
+  },
+  {
+    "Country": "Ecuador",
+    "Ton": "315,000",
+    "Continent": "South America",
+    "1000Tons": 315
+  },
+  {
+    "Country": "Cameroon",
+    "Ton": "280,000",
+    "Continent": "Africa",
+    "1000Tons": 280
+  },
+  {
+    "Country": "Nigeria",
+    "Ton": "250,000",
+    "Continent": "Africa",
+    "1000Tons": 250
+  },
+  {
+    "Country": "Indonesia",
+    "Ton": "220,000",
+    "Continent": "Asia",
+    "1000Tons": 220
+  },
+  {
+    "Country": "Brazil",
+    "Ton": "175,686.40",
+    "Continent": "South America",
+    "1000Tons": 175.6864
+  },
+  {
+    "Country": "Peru",
+    "Ton": "130,000",
+    "Continent": "South America",
+    "1000Tons": 130
+  },
+  {
+    "Country": "Dominican Republic",
+    "Ton": "75,000",
+    "Continent": "North America",
+    "1000Tons": 75
+  },
+  {
+    "Country": "Colombia",
+    "Ton": "60,000",
+    "Continent": "South America",
+    "1000Tons": 60
+  },
+  {
+    "Country": "Papua New Guinea",
+    "Ton": "40,000",
+    "Continent": "Oceania",
+    "1000Tons": 40
+  },
+  {
+    "Country": "Uganda",
+    "Ton": "35,000",
+    "Continent": "Africa",
+    "1000Tons": 35
+  },
+  {
+    "Country": "Mexico",
+    "Ton": "30,000",
+    "Continent": "North America",
+    "1000Tons": 30
+  },
+  {
+    "Country": "Venezuela",
+    "Ton": "25,000",
+    "Continent": "South America",
+    "1000Tons": 25
+  },
+  {
+    "Country": "India",
+    "Ton": "20,000",
+    "Continent": "Asia",
+    "1000Tons": 20
+  },
+  {
+    "Country": "Sierra Leone",
+    "Ton": "15,000",
+    "Continent": "Africa",
+    "1000Tons": 15
+  },
+  {
+    "Country": "Tanzania",
+    "Ton": "15,000",
+    "Continent": "Africa",
+    "1000Tons": 15
+  },
+  {
+    "Country": "Democratic Republic of the Congo",
+    "Ton": "13,000",
+    "Continent": "Africa",
+    "1000Tons": 13
+  },
+  {
+    "Country": "Liberia",
+    "Ton": "12,000",
+    "Continent": "Africa",
+    "1000Tons": 12
+  },
+  {
+    "Country": "Madagascar",
+    "Ton": "11,000",
+    "Continent": "Africa",
+    "1000Tons": 11
+  },
+  {
+    "Country": "Guinea",
+    "Ton": "10,000",
+    "Continent": "Africa",
+    "1000Tons": 10
+  },
+  {
+    "Country": "Togo",
+    "Ton": "10,000",
+    "Continent": "Africa",
+    "1000Tons": 10
+  },
+  {
+    "Country": "Philippines",
+    "Ton": "10,000",
+    "Continent": "Asia",
+    "1000Tons": 10
+  },
+  {
+    "Country": "Nicaragua",
+    "Ton": "6,994.51",
+    "Continent": "North America",
+    "1000Tons": 6.99451
+  },
+  {
+    "Country": "Haiti",
+    "Ton": "5,000",
+    "Continent": "North America",
+    "1000Tons": 5
+  },
+  {
+    "Country": "Solomon Islands",
+    "Ton": "5,000",
+    "Continent": "Oceania",
+    "1000Tons": 5
+  },
+  {
+    "Country": "Republic of Congo",
+    "Ton": "4,000",
+    "Continent": "Africa",
+    "1000Tons": 4
+  },
+  {
+    "Country": "Sao Tome and Principle",
+    "Ton": "4,000",
+    "Continent": "Africa",
+    "1000Tons": 4
+  },
+  {
+    "Country": "Malaysia",
+    "Ton": "3,000",
+    "Continent": "Asia",
+    "1000Tons": 3
+  },
+  {
+    "Country": "Vietnam",
+    "Ton": "3,000",
+    "Continent": "Asia",
+    "1000Tons": 3
+  },
+  {
+    "Country": "Bolivia",
+    "Ton": "2,000",
+    "Continent": "South America",
+    "1000Tons": 2
+  },
+  {
+    "Country": "Vanuatu",
+    "Ton": "2,000",
+    "Continent": "Oceania",
+    "1000Tons": 2
+  },
+  {
+    "Country": "Cuba",
+    "Ton": "1,500",
+    "Continent": "North America",
+    "1000Tons": 1.5
+  },
+  {
+    "Country": "Equatorial Guinea",
+    "Ton": "1,000",
+    "Continent": "Africa",
+    "1000Tons": 1
+  },
+  {
+    "Country": "Thailand",
+    "Ton": "1,000",
+    "Continent": "Asia",
+    "1000Tons": 1
+  },
+  {
+    "Country": "Dominica",
+    "Ton": "1,000",
+    "Continent": "North America",
+    "1000Tons": 1
+  },
+  {
+    "Country": "Honduras",
+    "Ton": "1,000",
+    "Continent": "North America",
+    "1000Tons": 1
+  },
+  {
+    "Country": "Panama",
+    "Ton": "1,000",
+    "Continent": "North America",
+    "1000Tons": 1
+  },
+  {
+    "Country": "Grenada",
+    "Ton": 800,
+    "Continent": "North America",
+    "1000Tons": 0.8
+  },
+  {
+    "Country": "Sri Lanka",
+    "Ton": 654,
+    "Continent": "Asia",
+    "1000Tons": 0.654
+  },
+  {
+    "Country": "Costa Rica",
+    "Ton": 550,
+    "Continent": "North America",
+    "1000Tons": 0.55
+  },
+  {
+    "Country": "Guatemala",
+    "Ton": 500,
+    "Continent": "North America",
+    "1000Tons": 0.5
+  },
+  {
+    "Country": "Jamaica",
+    "Ton": 500,
+    "Continent": "North America",
+    "1000Tons": 0.5
+  },
+  {
+    "Country": "Trinidad and Tobago",
+    "Ton": 500,
+    "Continent": "North America",
+    "1000Tons": 0.5
+  },
+  {
+    "Country": "Belize",
+    "Ton": 100,
+    "Continent": "North America",
+    "1000Tons": 0.1
+  },
+  {
+    "Country": "Fiji",
+    "Ton": 100,
+    "Continent": "Oceania",
+    "1000Tons": 0.1
+  },
+  {
+    "Country": "Total",
+    "Ton": "4,831,885",
+    "Continent": "",
+    "1000Tons": 4831.88491
+  }
+]

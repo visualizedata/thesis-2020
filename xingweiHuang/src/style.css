@@ -1,0 +1,84 @@
+/*this style sheet is not in use*/
+
+::-webkit-scrollbar{width:2px;height:2px;}
+::-webkit-scrollbar-button{width:2px;height:2px;}
+
+div{
+  box-sizing:border-box;
+}
+
+body {
+  /*background: #FFFAF0;*/
+}
+
+.horizontal-scroll-wrapper{
+  position:absolute;
+  display:block;
+  top:0;
+  left:0;
+  width:700px;
+  max-height:1500px;
+  margin:0;
+  background:#000000;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  /*transform:rotate(-90deg) translateY(-850px);*/
+  transform:rotate(-90deg) translateY(-750px);
+  transform-origin:right top;
+}
+
+.section{
+  display:block;
+  padding:10px;
+  background:#FFFAF0;
+  /*transform:rotate(90deg) translateX(700px);*/
+  /*transform-origin: right top;*/
+}
+
+.introsection{
+  display:block;
+  padding:10px;
+  background:#FFFAF0;
+  /*transform:rotate(90deg) translateX(700px);*/
+  /*transform-origin: right top;*/
+}
+
+.squares{
+  padding:50px 0 0 0;
+}
+
+.squares > div{
+  width:700px;
+  height:200px;
+  margin:10px;
+}
+
+#intro{
+ height: 2000px;
+ padding-left:20px;
+
+}
+
+.section:hover {
+  background: tomato;
+  display: block;
+  /*height: 1440px;*/
+  -webkit-transform: scale(0.8);
+  /*-ms-transform: scale(0.8);*/
+  transform: scale(0.8);
+  /*transform: translateY(100px)*/
+}
+
+a {
+  color:black; 
+  padding-left:20px;
+  font-family: gopher, sans-serif;
+}
+
+h1 {
+  transform: rotate(90deg) translateY(350px) translateX(970px);
+  color:#FFFAF0;
+  font-family: gopher, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}

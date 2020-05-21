@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Vignette_2</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <!-- NAVHBAR -->
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="d-flex justify-content-start">
+        <!-- Question here -->
+
+        <span class="navbar-text">
+          What is the diplomatic process of a claim?
+        </span>
+      </div>
+
+      <!-- Previous/Next Links here -->
+
+      <div class="d-flex justify-content-end">
+        <a class="nav-link" href="vignette_a.html" data-toggle="tooltip" data-placement="top" title="Previous Policy Section">PREVIOUS</a>
+        <a class="nav-link" href="vignette_c.html" data-toggle="tooltip" data-placement="top" title="Next Policy Section">NEXT</a>
+        <button
+          class="btn btn-link"
+          type="button"
+          data-toggle="collapse"
+          data-target="#index"
+          aria-expanded="false"
+        >
+          INDEX
+        </button>
+      </div>
+    </nav>
+
+          <!-- Tooltip Function -->
+
+<script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+
+      <!-- More Info Button -->
+
+    <button
+      class="btn btn-link"
+      type="button"
+      id="moreInfoButton"
+      data-toggle="toggle"
+      data-target="#InfoSidebar"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      <svg
+        class="bi bi-plus-circle-fill"
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <!-- MoreInfo Content here -->
+
+    <h5 id="InfoSidebar">
+      All claims are often accompanied by diplomatic reactions from other States. This network visualization takes Japans Claim as a case study and shows claim-related diplomatic reactions on a micro level.
+      A pattern which is often shown in these reactions is, that there are states supporting and confirming the claims, while other states disagree by stating different reasons for this disagreement.
+    </h5>
+
+                  <!-- Index Content here -->
+      
+                  <div class="collapse" id="index">
+                    <div class="card card-body">
+                      <p class="text-center" id="heading">With Compliments <br> to the Secretary General </p>
+                  
+                      <p class="text-right">last updated <br> 05.05.2020</p>
+                      <p class="text-center" id="sub-heading">Visualising Maritime Claims  <br> at the UN in regards <br> to the Continental Shelf</p>
+                      <div id= "overview">
+                        <div id ="scenarios"><b>Scenarios</b></br> 
+                          <a href="./vignette_1.html">Is the sea a common property without borders?</a></br> 
+                          <a href="./vignette_2.html"><u>How much area is claimed by who?</u></a></br>
+                          <a href="./vignette_3.html">Does the UNCLOS aggregate or encounter existing inequalities?</a></br></div>
+                        <div id ="policies"><b>Policies </b></br>
+                          <a href="./vignette_a.html">Does the Convention on the Law of the Sea create an extractive imaginery?</a></br> 
+                          <a href="./vignette_b.html">What is the diplomatic process of a claim?</a></br>
+                          <a href="./vignette_c.html">Which stakeholder reacts to which claim?</a></br>
+                        </div>
+                      </div>
+                      <p class="text-center" id = "imprint"><b><a href="./dashboard.html">Dashboard Tool</a></b></p>
+                      <p class="text-center" id = "imprint"><a href="./imprint.html"></a>This project visualizes and contextualizes</br> all claims in regard of the contintental shelf at the UN. </br> Robin Coenen, 2020.</br></br><a href="./imprint.html"> Imprint, Methodology & Sources </a></p>
+            
+                        </div>
+                  </div>
+    <!-- VIGNETTE CONTENT HERE -->
+
+    <div id="vis"></div>
+    <div id="header">
+      <h1>Diplomatic Process Example</h1>
+      <h2>Japans claim in regard of the Continental Shelf</h2>
+    </div>
+
+    <!-- Visualization specific Styles -->
+
+    <style>
+      path.link {
+        fill: none;
+        stroke-width: 2px;
+      }
+      .node:not(:hover) .nodetext {
+        display: none;
+      }
+      #vis {
+        z-index: -1;
+        padding-top: 10rem;
+        padding-left: 10rem;
+        background-color: black;
+      }
+      svg {
+        z-index: 1;
+        position: fixed;
+        margin-left: 12%;
+        margin-top: 1.5%;
+      }
+      .node {
+        z-index: -1;
+      }
+      .path {
+        z-index: -1;
+      }
+      .imagez {
+        z-index: -1;
+      }
+      a[href^="13.png"] {
+        height: 500px;
+      }
+
+      h1 {
+        font-size: 18px;
+        margin: 5px 0;
+        font-weight: normal;
+        color: white;
+      }
+      h2,
+      h3 {
+        font-size: 36px;
+        margin: 5px 0;
+        font-weight: normal;
+        color: white;
+        mix-blend-mode: difference;
+      }
+      #header {
+        text-align: left;
+        padding-left: 15%;
+        padding-right: 10%;
+        padding-top: 7%;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+    <script>
+      // Hovercolor
+      var tcBlack = "red";
+
+      // rest of vars
+      var w = 1080,
+        h = 760,
+        maxNodeSize = 50,
+        x_browser = 20,
+        y_browser = 25,
+        root;
+
+      var vis;
+      var force = d3.layout.force();
+      vis = d3.select("#vis").append("svg").attr("width", w).attr("height", h);
+
+      d3.json("./data/japan_example.json", function (json) {
+        root = json;
+        root.fixed = true;
+        root.x = w / 2;
+        root.y = h / 4;
+
+        // Build the path
+        var defs = vis.insert("svg:defs").data(["end"]);
+
+        defs.enter().append("svg:path").attr("d", "");
+
+        update();
+      });
+
+      function update() {
+        var nodes = flatten(root),
+          links = d3.layout.tree().links(nodes);
+
+        // Restart the force layout.
+        force
+          .nodes(nodes)
+          .links(links)
+          .gravity(0.04)
+          .charge(-3000)
+          .linkDistance(200)
+          .friction(0.2)
+          .linkStrength(function (l, i) {
+            return 1;
+          })
+          .size([w, h])
+          .on("tick", tick)
+          .start();
+
+        var path = vis.selectAll("path.link").data(links, function (d) {
+          return d.target.id;
+        });
+
+        path
+          .enter()
+          .insert("svg:path")
+          .attr("class", "link")
+
+          //PATH COLOR
+          .style("stroke", "white");
+
+        // Exit any old paths.
+        path.exit().remove();
+
+        // Update the nodes…
+        var node = vis.selectAll("g.node").data(nodes, function (d) {
+          return d.id;
+        });
+
+        // Enter any new nodes.
+        var nodeEnter = node
+          .enter()
+          .append("svg:g")
+          .attr("class", "node")
+          .attr("transform", function (d) {
+            return "translate(" + d.x + "," + d.y + ")";
+          })
+          .on("click", click)
+          .call(force.drag);
+
+        // Append a circle
+        nodeEnter
+          .append("svg:circle")
+          .attr("r", function (d) {
+            return Math.sqrt(d.size) / 20 || 4.5;
+          })
+          .style("fill", "#eee");
+
+        // Append images
+        var images = nodeEnter
+          .append("svg:image")
+          .attr("class", "imagez")
+          .attr("xlink:href", function (d) {
+            return d.img;
+          })
+          .attr("x", function (d) {
+            return -12.5;
+          })
+          .attr("y", function (d) {
+            return -12.5;
+          })
+          .attr("height", 25)
+          .attr("width", 25);
+
+        // make the image grow a little on mouse over and add the text details on click
+        var setEvents = images
+          // Append hero text
+          .on("click", function (d) {
+            d3.select("h1").html(d.state);
+            d3.select("h2").html(d.annotation);
+          })
+
+          .on("mouseenter", function () {
+            // select element in current context
+            d3.select(this)
+              .transition()
+              .attr("x", function (d) {
+                return -60;
+              })
+              .attr("y", function (d) {
+                return -60;
+              })
+              .attr("height", 100)
+              .attr("width", 100);
+          })
+          // set back
+          .on("mouseleave", function () {
+            d3.select(this)
+              .transition()
+              .attr("x", function (d) {
+                return -12.5;
+              })
+              .attr("y", function (d) {
+                return -12.5;
+              })
+              .attr("height", 25)
+              .attr("width", 25);
+          });
+
+        // Append hero name on roll over next to the node as well
+        nodeEnter
+          .append("text")
+          .attr("class", "nodetext")
+          .attr("x", x_browser + 30)
+          .attr("y", y_browser - 30)
+          .attr("fill", tcBlack)
+          .text(function (d) {
+            return d.state;
+          });
+
+        // Exit any old nodes.
+        node.exit().remove();
+
+        // Re-select for update.
+        path = vis.selectAll("path.link");
+        node = vis.selectAll("g.node");
+
+        function tick() {
+          path.attr("d", function (d) {
+            var dx = d.target.x - d.source.x,
+              dy = d.target.y - d.source.y,
+              dr = 0;
+            return (
+              "M" +
+              d.source.x +
+              "," +
+              d.source.y +
+              "A" +
+              dr +
+              "," +
+              dr +
+              " 0 0,1 " +
+              d.target.x +
+              "," +
+              d.target.y
+            );
+          });
+          node.attr("transform", nodeTransform);
+        }
+      }
+
+      /**
+       * Gives the coordinates of the border for keeping the nodes inside a frame
+       * http://bl.ocks.org/mbostock/1129492
+       */
+
+      function nodeTransform(d) {
+        d.x = Math.max(maxNodeSize, Math.min(w - (d.imgwidth / 2 || 16), d.x));
+        d.y = Math.max(maxNodeSize, Math.min(h - (d.imgheight / 2 || 16), d.y));
+        return "translate(" + d.x + "," + d.y + ")";
+      }
+
+      /**
+       * Toggle children on click.
+       */
+
+      function click(d) {
+        if (d.children) {
+          d._children = d.children;
+          d.children = d.children;
+        } else {
+          d.children = d._children;
+          d._children = d.children;
+        }
+
+        update();
+      }
+
+      /**
+       * Returns a list of all nodes under the root.
+       */
+
+      function flatten(root) {
+        var nodes = [];
+        var i = 0;
+
+        function recurse(node) {
+          if (node.children) node.children.forEach(recurse);
+          if (!node.id) node.id = ++i;
+          nodes.push(node);
+        }
+
+        recurse(root);
+        return nodes;
+      }
+    </script>
+
+    <!-- Sideway Sidebar Prototype -->
+    <script>
+      $("[data-toggle='toggle']").click(function () {
+        var selector = $(this).data("target");
+        $(selector).toggleClass("in");
+      });
+    </script>
+
+    <style>
+      #InfoSidebar {
+        height: 250px;
+        width: 0;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        padding-top: 6.5%;
+        transition: 0.5s;
+      }
+      #InfoSidebar.in {
+        width: 40%;
+        height: 100vh;
+        padding-left: 7%;
+        padding-right: 1.8%;
+      }
+
+      #placeholderImg {
+        position: absolute;
+        z-index: -9999;
+        width: 95%;
+        margin-top: 68px;
+      }
+    </style>
+  </body>
+</html>

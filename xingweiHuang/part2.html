@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equix="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>A Guilty Pleasure</title>
+        <link rel="stylesheet" href="https://use.typekit.net/jas4rxq.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+        <!--link for animation-->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="./src/styleP1.css">
+        <link rel="stylesheet" type="text/css" href="./src/slideShow.css">
+        <link rel="stylesheet" type="text/css" href="./src/styleNext.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+        <script src="https://d3js.org/d3.v5.js"></script>
+        
+        <!--link for numbers-->
+        <!--<link rel="stylesheet" href="odometer-theme-minimal.css" />-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <!--<script src="odometer.js"></script>-->
+        
+    </head>
+    <body style="background-color:#000000;">
+        
+<!--2.0 Homepage navigation-->
+        <div class="horizontal-scroll-wrapper squares" id="fixed">
+              <div class="section"><a href="index.html">Homepage</a></div>
+              <div class="section"><a href="part1.html"><b2>1. </b2> Cocoa Affection</a></div>
+              <div class="introsection1" id="intro1">
+                  <h1>Part 2 From Beans To Bars</h1>
+                  <div id="round-unit"></div>
+                  <div id="coverLegend1"><h4>100 cacao beans</h4></div>
+                  <div class="coverLegend1"><h4>1 cacao bean</h4></div>
+              </div>
+              <div class="section"><a href="part3.html"><b2>3. </b2> As Cocoa Grow</a></div>
+              <div class="section"><a href="part4.html"><b2>4. </b2> Behind the Barcode</a></div>
+        </div>
+
+
+<!--2.1 Cocoa Clock -->
+        <div class="slide2">
+            <div class="sticky2">
+                <h5>How much do we consume?</h5>
+                <!--<p>In 2019, we consumed <span class="count"> 305.2 </span> pounds cocoa <b>per second</b>, but what does that mean? How many cacao trees required to produce 1 pound of chocolate?</p>-->
+                <p>In 2019, we consumed <span class="count"> 305.2 </span> pounds cocoa <b>per second</b>. How many cacao trees required to produce this amount of cocoa?</p>
+            </div>
+        </div>        
+
+        <!--2.2.1 Floating Notes-->
+        <!--<div class="slide1">-->
+        <!--    <div id="graph1"></div>-->
+        <!--    <div class="stickyfloating">-->
+                <!--<p>2-1</p>-->
+        <!--        <p>A healthy cacao tree can produce approximately 30 cocoa pods a year in average, and inside each pod typically there are 40 cocoa beans. It’s inevitable that there will be some losses at each stage so roughly <b>1 pound of chocolate</b> needs <b>500 cocoa beans</b> as raw materials. In a nutshell a whole year’s yield from <b>one tree</b> can make <b>2 pounds of chocolate</b>.</p>-->
+        <!--    </div> -->
+        <!--</div>-->
+
+
+<!--2.2 Cocoa Formula -->
+        <div class="slide2">
+            <div class="sticky2">
+                <h5>It equals to how many cacao beans?</h5>
+                <button class="button" onclick="changeTree(1)">Cacao Tree</button>
+                <button class="button" onclick="changePod(1)">Cacao Pod</button>
+                <button class="button" onclick="changeChocolate(1)">Chocolate</button>
+                <div id="calculator"></div>
+            </div>
+            <div class="stickyfloatingRight">
+                <!--<p>2-1</p>-->
+                <p>A healthy cacao tree can produce approximately 30 cocoa pods a year in average, and inside each pod typically there are 40 cocoa beans. It’s inevitable that there will be some losses at each stage so roughly <b>1 pound of chocolate</b> needs <b>500 cocoa beans</b> as raw materials. In a nutshell a whole year’s yield from <b>one tree</b> can make <b>2 pounds of chocolate</b>.</p>
+            </div> 
+        </div> 
+ 
+ 
+     
+
+<!--2.3 Floating Notes   -->
+        <div class="slide1">
+
+            <!--2.3 Country Capita Formula-->
+            <div id="capita"></div>
+            <div class="stickyfloatingRight">
+               <!--<p>In the light of knowing each cocoa tree has limited yield quantity and its produce rate declines as growing old, most cocoa farmers chose to adopt new crops while previous production centers collapsed. This has introduced the <b>first type</b> of deforestation.</p>-->
+               <p>Let's look at cocoa consumption again. Presumably not every cacao tree’s yield is the same as well as each pod’s size is different among species and geographic location, but this will give us an idea that the equation between cocoa beans and chocolate isn’t one to one.</p>
+            </div>        
+        </div>
+  
+  
+<!--2.4 Monoculture Method-->
+    <div class="slide1">
+
+        <!--this is invisible-->
+        <div class="stickyfloatingBlack">
+            <!--<p>2-3</p>-->
+            <p>Second type of deforestation took place at the beginning of each cultivation process...</p>
+        </div> 
+ 
+
+        <!--2.4 Monoculture Slideshow-->
+        <div class="slideshow-container">
+                <div class="mySlides fade">
+                  <div class="numbertext">1 / 6</div>
+                  <img src="./images/3-2.svg" style="width:100%">
+                  <!--<div class="text">Caption Text</div>-->
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">2 / 6</div>
+                  <img src="./images/3-3.svg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">3 / 6</div>
+                  <img src="./images/3-4.svg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">4 / 6</div>
+                  <img src="./images/3-5.svg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">5 / 6</div>
+                  <img src="./images/3-6.svg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                  <div class="numbertext">6 / 6</div>
+                  <img src="./images/3-7.svg" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+
+    </div>
+
+
+        <div class="slide1">
+            <div id="space"></div>
+        </div>    
+        <div class="slide1">
+            <div id="space"></div>
+        </div>    
+        
+        
+<!--2.5 PART2 Takeaway-->
+       <img id="image" style="width:1440px;" src="./images/S2equivalentTrees.svg">
+
+        <!--Space before End navigation-->
+        <!--<div class="slide1">-->
+        <!--    <div id="space"></div>-->
+        <!--</div>-->
+
+<!--2.6 End navigation-->
+        <div class="end squares">
+            
+                <div class="section">
+                    <a href="part1.html">Previous</a>
+                </div>
+                
+                <div class="introsection3" id="end">
+                  <h1>Let's look at the <b>bittersweet price</b> we've paid for each </br> pound of chocolate more closely...</h1>
+                </div>
+                
+                <!--next icon & link   -->
+                <div class="center-con">
+                    <div class="round">
+                        <a href="part3.html">
+                            <div id="cta">
+                                <span class="arrow segunda next2 "></span>
+                            </div>
+                            <h5>Next</h5>
+                        </a>
+                    </div>
+                </div>
+              <!--<div class="continueSection"><a href="part3.html">Continue</a></div>-->
+
+                 
+        </div>
+
+  
+        <!-- References Links -->
+        <script src='https://d3js.org/d3.v5.min.js'></script>
+        <script src="./src/scriptP2.js"></script>
+        <!--<script src="odometer.js"></script>-->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+              // Global settings:
+              disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+              startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+              initClassName: 'aos-init', // class applied after initialization
+              animatedClassName: 'aos-animate', // class applied on animation
+              useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+              disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+              debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+              throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+              
+            
+            //   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            //   offset: 120, // offset (in px) from the original trigger point
+            //   delay: 0, // values from 0 to 3000, with step 50ms
+            //   duration: 400, // values from 0 to 3000, with step 50ms
+            //   easing: 'ease', // default easing for AOS animations
+            //   once: false, // whether animation should happen only once - while scrolling down
+            //   mirror: false, // whether elements should animate out while scrolling past them
+            //   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            
+            });          
+        </script>
+
+
+    </body>
+
+</html>

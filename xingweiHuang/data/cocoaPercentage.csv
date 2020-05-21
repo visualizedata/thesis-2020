@@ -1,0 +1,9 @@
+type,cocoa,milk,sugar,others
+Baking Chocolate,100,0,0,0
+Cocoa Powder,100,0,0,0
+Dark Chocolate,80,0,4,16
+Bittersweet Chocolate,70,5,4,21
+Semi-sweet Chocolate,60,5,4,31
+Milk Chocolate,15,12,10,63
+Buttermilk Chocolate,10,12,20,58
+White Chocolate,0,14,55,31

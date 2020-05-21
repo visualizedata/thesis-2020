@@ -1,0 +1,26 @@
+{
+  "name": "unmask-mask",
+  "version": "1.0.0",
+  "description": "My exceptional Nuxt.js project",
+  "author": "Zui Chen",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate",
+    "deploy": "gh-pages -d dist --dotfiles=true"
+  },
+  "dependencies": {
+    "d3": "^5.15.1",
+    "element-ui": "^2.4.11",
+    "i18n-iso-countries": "^5.3.0",
+    "nuxt": "^2.12.2",
+    "topojson": "^3.0.2",
+    "vuetrend": "^0.3.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.2.0",
+    "vue-datamaps": "^0.2.85"
+  }
+}

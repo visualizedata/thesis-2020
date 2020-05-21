@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Vignette_B</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src='./libraries/src/okzoom.min.js'></script>
+
+
+  </head>
+  <body>
+    <!-- NAVHBAR -->
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="d-flex justify-content-start">
+
+        <!-- Question here -->
+
+        <span class="navbar-text">
+          Imprint
+        </span>
+      </div>
+
+      <!-- Previous/Next Links here -->
+
+      <div class="d-flex justify-content-end">
+        <button
+          class="btn btn-link"
+          type="button"
+          data-toggle="collapse"
+          data-target="#index"
+          aria-expanded="false"
+        >
+          INDEX
+        </button>
+      </div>
+    </nav>
+
+
+     <!-- Index Content -->
+
+    <div class="collapse" id="index">
+      <div class="card card-body">
+        <p class="text-center" id="heading">With Compliments <br> to the Secretary General </p>
+    
+        <p class="text-right">last updated <br> 05.05.2020</p>
+        <p class="text-center" id="sub-heading">Visualising Maritime Claims  <br> at the UN in regards <br> to the Continental Shelf</p>
+        <div id= "overview">
+          <div id ="scenarios"><b>Scenarios</b></br> 
+            <a href="./vignette_1.html">Is the sea a common property without borders?</a></br> 
+            <a href="./vignette_2.html">How much area is claimed by who?</a></br>
+            <a href="./vignette_3.html">Does the UNCLOS aggregate or encounter existing inequalities?</a></br></div>
+          <div id ="policies"><b>Policies </b></br>
+            <a href="./vignette_a.html">Does the Convention on the Law of the Sea create an extractive imaginery?</a></br> 
+            <a href="./vignette_b.html">What is the diplomatic process of a claim?</a></br>
+            <a href="./vignette_c.html">Which stakeholder reacts to which claim?</a></br>
+          </div>
+        </div>
+        <p class="text-center" id = "imprint"><b><a href="./dashboard.html">Dashboard Tool</a></b></p>
+        <p class="text-center" id = "imprint"><a href="./imprint.html"></a>This project visualizes and contextualizes</br> all claims in regard of the contintental shelf at the UN. </br> Robin Coenen, 2020.</br></br><a href="./imprint.html"><u> Imprint, Methodology & Sources</u></a></p>
+    
+          </div>
+    </div>
+
+     <!-- Navigation Tooltip -->
+
+<script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+
+
+      
+
+
+<script>
+  
+
+  
+  // load JSON using d3.json
+  d3.json('./data/images.json')
+    .then( json => {
+        // execute our 
+        // display images function
+        displayImages(json);
+    }); 
+  
+  // DOM elements
+  function displayImages(json){
+
+      
+      let app  = d3.select('#app').text('');
+  
+      // sorting
+      let descending = (a,b) => {
+          return b.date - a.date;
+      }
+      let ascending = (a,b) => {
+          return a.date - b.date;
+      }
+  
+      // sort json
+      let data = json.sort( (a,b)=>descending(a,b) );
+  
+      // define "cards" for each item
+      let card = app.selectAll('div.met-card')
+                  .data(data)
+                  .join('div')
+                  .attr('class', 'met-card')
+                  .attr('id', 'test')
+
+
+    
+      card.append('div')
+          .attr('class', 'image')
+          .append('img')
+          .attr('id', 'l')
+          .attr('src', d => {
+              return './img/claims/' + d.filename
+          })          
+;
+  
+      // create a paragraph that will
+      // hold the object date
+      card.append('p')
+          .attr('class', 'object-date')
+          .text(d=>d.date);
+  
+       //create a heading tag
+       //that will be the object title
+      card.append('h2')
+          .attr('id', 'title')
+          .text(d=>d.title);
+
+          }
+
+          
+          </script>
+
+
+
+
+
+    <style type="text/css">
+      *{
+        margin:0;padding:0;
+        box-sizing: border-box;
+      }
+      
+      #app{
+        display:grid;
+        grid-template-columns:repeat(auto-fill, minmax(100px, 1fr));
+        grid-column-gap: 0.1rem;
+        padding:10%;
+        padding-top:1%;
+
+        background-color:black;
+      }
+      
+    p{        font-size:0.9rem;
+}
+      div.met-card{
+        max-width: 200px;
+        display: inline-block;
+
+        vertical-align:top;
+        white-space:normal;
+      }
+      div.met-card h2{
+        font-size:0.9rem;
+        line-height:1.1;
+        padding-bottom:0.5em;
+        color:white
+      }
+      div.met-card div.image{
+        margin-bottom:1rem;
+        width:50px;height:100px;
+        display:flex;
+        align-items: flex-end;
+      }
+      div.met-card div.image img{
+        max-width:100%;height:auto;
+        max-height:200px;
+      }
+      .object-date{ color:#999; }
+
+      #sources{
+        font-size:18px;
+        margin-top:5%;
+        margin-left:10%;
+        background-color:black;
+        color:white;
+        width: 40%;
+      }
+
+      #sourcesdiv{
+        background-color:black;
+
+      }
+    </style>
+
+
+    <!-- Sideway Sidebar Prototype -->
+    <script>
+      $("[data-toggle='toggle']").click(function () {
+        var selector = $(this).data("target");
+        $(selector).toggleClass("in");
+      });
+    </script>
+
+   <div id="sourcesdiv">        
+      <p class="text-left" id="sources">ABOUT</br>This project is designed, researched & developed by Robin Coenen in partial fulfillment of the requirements for the degree of Master of Science in Data Visualization, at Parsons The New School for Design. 
+        The advisor was Daniel Sauter.</p>
+        <p class="text-left" id="sources">Contact</br>mail@robincoenen.de</p>
+      <p class="text-left" id="sources">Methodology</br>In order to create a dataset of all claims in regard of the Continental Shelf, the Executive Summaries of all Claims as well as related diplomatic notes were scraped from the UN Page. The Coordinates provided by the States in these Executive Summary were digitalised and geographically mapped with QGIS. In order to create the polygon shape, the related EEZ boundaries (taken from the Marine Boundaries V11)  were connected with the provided Point Coordinates. QGIS was furthermore used to measure the area size of all Claim in square kilometres. 
+        Furthermore the most crucial essence of all related diplomatic notes were digitalised and centralised I the dataset with the respective claims.</p>
+      <p class="text-left" id="sources">Sources</br>Dataset with Baselines, Territorial Zone, Contiguos Zone & Exclusive Economic Zone:</br>_Flanders Marine Institute (2019). Maritime Boundaries Geodatabase, version 11. Available online at http://www.marineregions.org/. https://doi.org/10.14284/382.</br>
+      PDFS of Executive Summaries & Diplomatic Notes: </br>_https://www.un.org/Depts/los/clcs_new/commission_submissions.htm
+    </p>
+    <p class="text-left" id="sources">Appendix</br>Claim 46 from the State "Tonga" is not represented on the Map, due to Problems with the Mercator Projection. 
+      Same is valid for parts of Claims from Russia (Claim 01), Denmark (Claim 76) and Canada (Claim 84). All these (except Tongas Claim) are claims related to areas in the Arctic (see Image below) </br>
+      <img src="./img/polar_b.png" alt="Polar Projectionn" height="400">
+    </p>
+    <p class="text-left" id="sources">Cover of all Executive Summaries sorted by Submission Date:</p>
+
+   </div>
+        <div id="app"></div>
+
+  </body>
+</html>

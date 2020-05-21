@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> -->
+    <script src="https://d3js.org/d3.v3.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.15/lodash.min.js"></script>
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script src="https://d3js.org/queue.v1.min.js"></script>
+    <script src="https://d3js.org/topojson.v1.min.js"></script>
+    
+    <!--CSS-->
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/multiline.css">
+    <link rel="stylesheet" href="styles/introchart.css">
+    <link rel="stylesheet" href="styles/nav.css">
+    <link rel="stylesheet" href="styles/dropdown.css">
+    <link rel="stylesheet" href="styles/map_style.css">
+   
+</head>
+
+<body>
+    
+    <!--<div id="navbar">-->
+    <!--    <a href="#carbon_market">Conclusion</a>-->
+    <!--    <a href="#landgrab_analysis">Landgrab</a>-->
+    <!--    <a href="#emission_analysis">Emissions</a>-->
+    <!--    <a href="#deforest_analysis">Deforestation</a>-->
+    <!--    <a href="#introduction">Introduction</a> -->
+    <!--</div>-->
+
+    <!-- Introduction -->
+    <!--<header id="headerStyle">-->
+    <!--    <div>-->
+    <!--        <h2 style="text-align: right;"> ARE <span class="bold_title"> FORESTS </span> </h2>-->
+    <!--        <h1> <span class="bold_title"> MONEY </span> OR<span class="bold_title"> MITIGATION </span> </h1>-->
+    <!--    </div>-->
+    <!--</header>-->
+    
+    <div>
+            <img src="assets/title_1.svg" style="width:100%;">
+    </div>
+
+    <section id="introduction">
+    <!-- Introduction-1 -->
+        <div class="full">
+            <div class="title">
+                <h2>LET&apos;S THINK</h2>
+            </div>
+    
+            <div class="sub-title">
+                <h3>ABOUT CONSERVING ECOSYSTEM</h3>
+            </div>
+            
+            <div class="row">
+                <div class="intro_content_left">
+                    <img class="intro_viz" src="assets/introduction_forest.svg" style="width:100%;"></img>
+                    <h5>Forests cover 31 percent of the world &#39;s land surface, while being home to 80% of the world&#39;s terrestrial biodiversity.</h5>
+                <!--<div class="chart-wrapper" id="forest-area"></div>-->
+                </div>
+                
+                <div class = "intro_content">
+                    <p>Forests are a complex network of dependencies and inter-dependencies supporting the diversity of life. They are also our best shot at <span class="strong_red">climate change mitigation</span> as they are capable of sequestering and storing huge proportions of carbon dioxide from the atmosphere. </p>
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="intro_content">
+                    <img class="intro_viz" src="assets/introduction_land_use.svg" style="width:100%;"></img>
+                    <h5>Farming, grazing of livestock, mining, and drilling combined account for more than half of all deforestation.</h5>
+                <!--<div class="chart-wrapper" id="land-use"></div>-->
+                </div>
+                
+                <div class = "intro_content_left">
+                    <p>They are constantly at high risk due to the global demand for land and resources. Hence, the Parties at the United Nations Framework Convention on Climate Change started designing and developing programs to <span class="strong_red">save forests</span> from deforestation and degradation. </p>
+                </div>
+            </div>
+            
+            <div class = "row">
+                <div class="intro_content_left">
+                <img src="assets/intro_redd.svg" height="60%" width="100%"/> 
+                </div>
+                
+                <div class = "intro_content">
+                    <p>As a result a program known as <span class="strong_red">UN-REDD</span> (United Nations Reducing Emissions from Deforestation and Forest Degradation) was adopted in  collaboration with FAO, UNDP and UNEP to implement national <span class="strong_red">REDD+ strategies in developing countries.</span> </p>
+                </div>
+            </div>
+        </div>
+        <br>
+    
+         <!--Introduction-2 -->
+        <div class="full">
+            <!--<div id=row>-->
+            <div class="title">
+                    <h2>REDD+</h2>
+                    
+                </div>
+            <div class="intro_viz">
+                <div class="sub-title">
+                    <h3>AN INITIATIVE TO COMMODIFY THE ECOSYSTEM SERVICES</h3>
+                </div>
+                
+                <div>
+                    <p>
+                        REDD+ (Reducing Emissions from Deforestation and Forest Degradation) strategies promote sustainable
+                        management, conservation and enhancement of forest carbon stocks by encouraging public and private
+                        investment in developing countries.
+                        <br />
+                        <br />It basically remunerates the developing countries to
+                        <span class="strong_red">keep forests alive</span> without cutting them down as a measure
+                        <span class="strong_red">to prevent greenhouse gas emissions associated with deforestation and forest
+                            degradation</span> from being released.
+                        <br />
+                        <br />As a result,
+                        <span class="strong_red">the forest became a commodity storing carbon</span> and REDD+ was introduced
+                        <span class="strong_red">to conserve that commodity by remunerating the conserver.</span>
+                        <br />
+                    </p>
+                </div>
+                <div>
+                    <h4 id = "strong" style="padding-top:6%">THE POLICIES BASICALLY AIMS TO</h4>
+                </div>
+                <div>
+                    <p id="tick_box"><img src = assets/tick.svg style="vertical-align:middle">   Reduce Deforestation</p>
+                </div>
+                <div>    
+                    <p id="tick_box"><img src = assets/tick.svg style="vertical-align:middle">   Reduce Emissions from Deforestation and Forest Degradation</p>
+                </div>
+                <div>    
+                    <p id="tick_box"><img src = assets/tick.svg style="vertical-align:middle">   Promote Communally Maintained Indigenous Lands</p>
+                </div>
+            </div>
+            <!--</div>-->
+            
+            <div class="intro_content">
+                <img src="assets/timeline.svg" height="100%" width="auto" align="center"/> 
+            </div>
+        </div>
+    </section>    
+ 
+ 
+ 
+
+    <section id="deforest_analysis">
+         <!--Deforest-1 -->
+        <div class="full">
+                <div class="title">
+                    <h2>DEFINE FORESTS</h2>
+                </div>
+                <div class="sub-title">
+                    <h3>HOW THE DEFINITION OF FORESTS CHANGE OUR PERCEPTION ON TOTAL FOREST AREA AND DEFORESTATION</h3>
+                </div>
+                
+                <div class="row">
+                <div class="quater_viz">
+                <img src="assets/fao_forest.svg" height="60%" width="100%"/>
+                </div>
+                
+                <div class = "quater_content">
+                    <p>
+                        According to FAO forest is a<br>
+                        <span class="indent">minimum area of land of <span class="strong_red">0.5 hectares</span></span><br>
+                        <span class="indent">with tree crown cover of more than<span class="strong_red"> 10%</span></span><br>
+                        The definition considers <span class="strong_red">agricultural lands, rubberwood plantations, cork oak stands and industrial plantations </span> as forests.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="quater_viz">
+                <img src="assets/unfccc_forest.svg" height="60%" width="100%"/>
+                </div>
+                
+                <div class = "quater_content">
+                    <p>
+                        According to UNFCCC forest is a<br>
+                        <span class="indent">minimum area of land of <span class="strong_red">0.05-1.0 hectares</span></span><br>
+                        <span class="indent">with tree crown cover of more than<span class="strong_red"> 10-30%</span></span><br>
+                        In some cases <span class="strong_red">industrial plantations and agricultural lands  </span> can be considered forest due to the loose definition.
+                    </p>
+                </div>
+            </div>
+            
+            <div class = "row">
+                <div class="quater_viz">
+                <img src="assets/research_forest.svg" height="60%" width="100%"/> 
+                </div>
+                
+                <div class = "quater_content">
+                    <p>
+                        According to research and suggestions of environmentalists and experts forest is a<br>
+                        <span class="indent">minimum area of land of <span class="strong_red">1.0 hectares</span></span><br>
+                        <span class="indent">with tree crown cover of more than<span class="strong_red"> 50%</span></span><br>
+                        Only some  <span class="strong_red">agroforestry </span> landuse can be considered a forest.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full">
+            <div class="sub-title">
+                    <h4>DEFORESTATION WITH DIFFERENT DEFINITIONS</h4>
+                </div>
+            <div class="quater_viz">
+                <div class="chart-wrapper" id="deforest-line"></div>
+            </div>
+    
+            <div class="quater_content">
+                <p>
+                    There is a lack of consistency with the definitions of forests within the United Nations. Hence, the
+                    participating countries can define their individual definitions within the pre-defined ranges.
+                    <br />
+                    <br />The study visualizes the significant change in forest area and deforestation rates by altering
+                    definitions provided by organizations such as UNFCCC and FAO and comparing it with the upper limit
+                    of definition concluded through research by Nophea Sasaki1 & Francis E. Putz.
+                    <br />
+                    <br />
+                </p>
+            </div>
+        </div>
+    
+    <!--<div id="analysis">-->
+     <!--Deforest-2 -->
+    <!--    <div class="full">-->
+    <!--        <div class="caption">-->
+    <!--            <h4>DEFORESTATION TREND IN 54 UN-REDD PARTNER COUNTRIES</h4>-->
+    <!--        </div>-->
+    
+    <!--        <div class="full-viz">-->
+    <!--            <p>PLACE-HOLDER</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    
+         <!--Deforest-3 -->
+        <div class="full">
+            <div class="half_content_left">
+                <div class="caption">
+                    <h4>THE PROBLEM</h4>
+                </div>
+                <div class="full_content">
+                    <p>
+                        The choice of a forest definition can have a large impact on estimates of deforestation and forest
+                        degradation areas, on the assessment of drivers of deforestation and on the development of a
+                        Reference Emissions Level.
+                        <br />
+                        <br />The definitions of the forest do not differentiate between natural forests and forest
+                        plantations. The ambiguity is these definitions are one the main concerns as the loggers might keep
+                        exploiting until they hit the national threshold leading to huge deforestation, forest degradation,
+                        biodiversity loss and loss of carbon stocks leading to increased emissions.
+                        <br />
+                        <br />
+                    </p>
+                </div>
+            </div>
+            
+            <div class="half_content_right">
+                <!--<div class="caption">-->
+                <!--    <h4>LEARNING</h4>-->
+                <!--</div>-->
+                <!--<div class="full_content">-->
+                <!--    <p>-->
+                <!--        UN-REDD has no / minimal impact on deforestation as it fails to combat the underlying causes of-->
+                <!--        deforestation.-->
+                <!--        <br />-->
+                <!--        <br />The variation in individual definitions gives a distorted perception of global deforestation.-->
+                <!--        <br />-->
+                <!--        <br />-->
+                <!--    </p>-->
+                <!--</div>-->
+                <div>
+                    <h4>THE POLICIES <span class = "cut_off"> BASICALLY AIMS TO </span> ACTUALLY </h4>
+                </div>
+                <div >
+                    <p id="tick_box"><img src = assets/cross.svg style="vertical-align:middle">   Reduce Deforestation</p>
+                </div>
+                <div >    
+                    <p id="tick_box"><img src = assets/tick.svg style="vertical-align:middle">   Reduce Emissions from Deforestation and Forest Degradation</p>
+                </div>
+                <div >    
+                    <p id="tick_box"><img src = assets/tick.svg style="vertical-align:middle">   Promote Communally Maintained Indigenous Lands</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    
+    
+    <section id="emission_analysis">
+         <!--Emission-1 -->
+        <div class="full">
+                <div class="title">
+                    <h2>EMISSIONS FROM DEFORESTATION</h2>
+                </div>
+                <div class="sub-title">
+                    <h3>THE MANIPULATION CONTINUES</h3>
+                </div>
+                
+                <div class="row">
+                <div class="quater_viz">
+                    <img src="assets/forest.svg" height="100%" width="100%" style="padding-bottom:1%"/>
+                </div>
+                
+                <div class = "quater_content">
+                    <p style="margin-top:0%">
+                        Forests are also known as Carbon Sinks as they are capable of sequestering huge proportions of carbon dioxide from the atmosphere. 
+                        <!--<br><br>-->
+                        It's value depends directly on  its carbon storing capacity rather than the diversity it holds. 
+                        <br><br>For example, there are two pieces of land. One is a  biodiversity rich Boreal forest with low carbon accumulation, while the other is a Eucalyptus monoculture plantation with high carbon storage. 
+                        The concerning body would decide to <span class="strong_red">sacrifice the forest instead of monoculture farms due to its carbon accumulation.</span> It misuses equivalences of Carbon dioxide, saying that you can destroy one ecosystem but at the same time preserve the other.
+                        <br><br><img src = assets/atom.svg width="42" height="42" style="vertical-align:middle"> =  10 tC/ha
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="full">
+            <div class="sub-title">
+                    <h4>EMISSION FROM DEFORESTATION WITH DIFFERENT DEFINITIONS</h4>
+                </div>
+            <div class="quater_viz">
+                 <div class="chart-wrapper" id="emission-line"></div>
+            </div>
+    
+            <div class="quater_content">
+                <p>
+                    The policy focuses on reducing emissions from deforestation and degradation.
+                    <br />
+                    <br />The study further visualizes the trend of carbon dioxide emissions driven by
+                    deforestation. It also aims to analyze the trends by previously discussed thresholds to
+                    understand the impact of policy with different standards.
+                    <br />
+                    <br />
+                </p>
+            </div>
+        </div>
+    
+    <!--<div id="analysis">-->
+     <!--Deforest-2 -->
+    <!--    <div class="full">-->
+    <!--        <div class="caption">-->
+    <!--            <h4>DEFORESTATION TREND IN 54 UN-REDD PARTNER COUNTRIES</h4>-->
+    <!--        </div>-->
+    
+    <!--        <div class="full-viz">-->
+    <!--            <p>PLACE-HOLDER</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    
+         <!--Emission-3 -->
+        <div class="full">
+            <div class="half_content_left">
+                <div class="caption">
+                    <h4>THE PROBLEM</h4>
+                </div>
+                <div class="full_content">
+                    <p>
+                    Programs such as REDD+ cannot be perceived as a permanent solution for emission reductions to
+                    mitigate climate change as, by definition, the offset project does not reduce overall emissions. In
+                    most cases, the emissions reductions at one location are claimed as a justification for excess
+                    emission at another location.
+                    <br />
+                    <br />Indigenous forest dwellers or peasants are often criminialized and dispalced for forest
+                    degradation, while the corporations with industrials farms are incentivized for reducing emissions.
+                    <br />
+                    <br />
+                </p>
+                </div>
+            </div>
+            
+            <div class="half_content_right">
+                <!--<div class="caption">-->
+                <!--    <h4>LEARNING</h4>-->
+                <!--</div>-->
+                <!--<div class="full_content">-->
+                    <!--<p>-->
+                    <!--    UN-REDD has no / minimal impact on carbon dioxide emissions related to deforestation and-->
+                    <!--    degradation.-->
+                    <!--    <br />-->
+                    <!--    <br />The programs solely incentivize emission reduction and do not incentivize or encourage-->
+                    <!--    indigenous practices, agroforestry, or other sustainable land management practices.-->
+                    <!--    <br />-->
+                    <!--    <br />-->
+                    <!--</p>-->
+                <!--</div>-->
+                <div>
+                    <h4>THE POLICIES <span class = "cut_off"> BASICALLY AIMS TO </span> ACTUALLY </h4>
+                </div>
+                <div >
+                    <p id="tick_box"><img src = assets/cross.svg style="vertical-align:middle">   Reduce Deforestation</p>
+                </div>
+                <div >    
+                    <p id="tick_box"><img src = assets/cross.svg style="vertical-align:middle">   Reduce Emissions from Deforestation and Forest Degradation</p>
+                </div>
+                <div >    
+                    <p id="tick_box"><img src = assets/tick.svg style="vertical-align:middle">   Promote Communally Maintained Indigenous Lands</p>
+                </div>
+                
+                
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    
+    <section id=landgrab_analysis> 
+    
+         <!--Landgrab-1 -->
+        <div class="full">
+    
+            <div class="title">
+                <h2>INDIGENOUS LANDGRABS</h2>
+            </div>
+    
+            <div class="sub-title">
+                <h3 style="margin-bottom:2%">HOW PAYING THE FOREST LANDOWNERS LED TO A MASSIVE SCHEME OF LANDGRABBING</h3>
+            </div>
+    
+            <div class="quater_viz">
+                <!--<div id="land_grab_human"> </div>-->
+                <div class= "menu" >
+                    <h3 style="margin-bottom:0%">
+                        <div class="container">
+                            <div class="dropdown" id="text">
+                              <label class = "strong">Local confusion or lack of awareness of REDD+</label>
+                              <span>&nbsp</span>
+                                <label>
+                                <input type="checkbox">
+                                <ul>
+                                  <li id = "local_confusion" val="Local confusion or lack of awareness of REDD+" checked>Local confusion or lack of awareness of REDD+</li>
+                                  <li id = "financial_benefits" val="Financial benefits not delivered to local actors">Financial benefits not delivered to local actors</li>
+                                  <li id = "negetive_view" val="Negative local views of REDD+">Negative local views of REDD+</li>
+                                  <li id = "implementationMRV" val="Implementation of measurement, reporting and verification systems"> Implementation of measurement, reporting and verification systems</li>
+                                  <li id = "boundaries" val="New boundaries demarcated as part of REDD+">New boundaries demarcated as part of REDD+</li>
+                                  <li id = "influence" val="REDD+ influence on local tenure arrangements">REDD+ influence on local tenure arrangements</li>
+                                  <li id = "property_demarcation" val="State property demarcation as part of REDD+">State property demarcation as part of REDD+</li>
+                                  <li id = "social" val="Social tension and conflict due to REDD+">Social tension and conflict due to REDD+</li>
+                                  <li id = "forest_clearance" val="Ongoing forest clearance in the target area">Ongoing forest clearance in the target area</li>
+                                  <li id = "leakage" val="Problems with leakage">Problems with leakage</li>
+                                  <li id = "violation" val="Violation of new REDD+ boundaries">Violation of new REDD+ boundaries</li>
+                                </ul>
+                                </label>
+                            </div>
+                        </div>
+                    </h3>
+                <div id="land_grab_human"> </div>
+            </div>
+        </div>
+    
+    
+            <div class="quater_content" style="padding-top=10%">
+                <p>
+                    <!--<br />-->
+                    <!--<br />-->
+                    <!--<br />-->
+                    Indigenous lands are usually managed by a community without individual legal proprietorship.
+                    <!--<br />-->
+                    <!--<br />-->
+                    Due to industrial lobby and corruption, land rights are snatched from these
+                    populations and transferred for <span class="strong_red">so-called environmental projects.</span>
+                    <br />
+                    <br />As the land ownership is transferred, it often leads to biodiversity loss as the carbon stock is evidently just stored in trees and soil. It leads to degradation of forests and ultimately results in deforestation for industrial farming adding up to current emissions.
+                    <br />
+                    <br />
+                    <!--Meanwhile, the indigenous population and peasants are left with no livelihood leading to migration and environmental injustice. These environmental atrocities are now being identified as “ecocides” as such drastic changes have been made to environments.-->
+                    <img src = assets/total_human.svg width="auto" height="42" style="vertical-align:middle"> Total Population under the Study (in %)
+                    <br>
+                    <img src = assets/impact_human.svg width="auto" height="42" style="vertical-align:middle"> Impacted Population under the Study (in %)
+                </p>
+            </div>
+        </div>
+    
+    
+    <!--     Landgrab-2 -->
+    <!--    <div class="full">-->
+    <!--        <div class="caption">-->
+    <!--            <h4>MAPPING LANDGRABS IN 54 UN-REDD PARTNER COUNTRIES</h4>-->
+    <!--        </div>-->
+    
+    <!--        <div class="full-viz">-->
+    <!--            <p>PLACE-HOLDER</p>-->
+    <!--        </div>-->
+    <!--    </div>-->
+    
+    
+    
+    
+        <div class="full">
+            <div class="sub-title">
+                    <h4>GLOBAL LANDGRABS</h4>
+            </div>
+            <div class="row">
+                <div class="map_style">
+                    <div class="full_content">
+                         <iframe src="assets/map/map.html"  scrolling="no" style=" width: 100%; height: 650px;  overflow: hidden;" ></iframe>
+                    </div>
+                </div>
+            </div>
+      </div>   
+    
+    
+    
+    
+    
+    
+        <div class="full">
+                <div class="half_content_left">
+                    <div class="caption">
+                        <h4 style="padding-top:10%">THE PROBLEM</h4>
+                    </div>
+                    <div class="full_content">
+                        <p>
+                            Heinrich B&#246;ll Foundation discusses the contradictions in a research stating, &#34;They can only be
+                            benefited under the program if they portray that they are a threat to their own forest lands
+                            contributing to false perception smallholder land use in the forest is major causes of forest loss.
+                            After all, without evidence of the threat of deforestation, there are no emissions from
+                            deforestation that could be avoided &#45; and there can be no REDD+ payment without proof that REDD+
+                            measures have contributed to reducing emissions that would otherwise have been released.&#34;
+                            <br />
+                            <br />
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="half_content_right">
+                    <!--<div class="caption">-->
+                    <!--    <h4>LEARNING</h4>-->
+                    <!--</div>-->
+                    <!--<div class="full_content">-->
+                        <!--<p>-->
+                        <!--    Hence, programs like REDD+ have been proved to be inefficient to provide financial support to-->
+                        <!--    indigenous forest dwellers or peasants who are least responsible for forest degradation.-->
+                        <!--    <br />-->
+                        <!--    <br />The native population is unaware of the details of the program leading to social conflict.-->
+                        <!--    <br />-->
+                        <!--    <br />-->
+                        <!--</p>-->
+                    <!--</div>-->
+                    <div>
+                        <h4 style="padding-top:10%">THE POLICIES <span class = "cut_off"> BASICALLY AIMS TO </span> ACTUALLY </h4>
+                    </div>
+                    <div >
+                        <p id="tick_box"><img src = assets/cross.svg style="vertical-align:middle">   Reduce Deforestation</p>
+                    </div>
+                    <div >    
+                        <p id="tick_box"><img src = assets/cross.svg style="vertical-align:middle">   Reduce Emissions from Deforestation and Forest Degradation</p>
+                    </div>
+                    <div >    
+                        <p id="tick_box"><img src = assets/cross.svg style="vertical-align:middle">   Promote Communally Maintained Indigenous Lands</p>
+                    </div>
+                    
+                    
+            </div>
+        </div>
+    </section>
+    
+    
+    
+    <section id="carbon_market">
+        
+        <div class="full">
+    
+            <div class="title">
+                <h2>WHY IS PROGRAMS SUCH AS REDD+ A GROWING CONCERN</h2>
+            </div>
+    
+            <div class="sub-title">
+                <h3>AN INITIATIVE IMPACTING THE ALREADY IMPACTED</h3>
+            </div>
+        
+            <div class="half_content_left">
+                 <img src="assets/interconnection_all.svg" height="140%" width="140%" style="padding-top:3%"></img>
+            </div>
+    
+            <div class="quater_content">
+                <p>
+                    They have initiated a new phase of <span class="strong_red">&#34;green grabbing&#34; where land and resource grabs are done with a private agenda in the name of environmental protection.</span>
+                    <br />
+                    <br />Programs such as REDD+ attempts to save the emissions to sell the saved emissions to corporations so they can continue polluting.It&#39;s a luring opportunity for a corporation to invest in forest conservation projects to offset their emissions.
+                    <br />
+                    <!--<br />-->
+                    <br />The program has become a huge economic opportunity as the REDD+ permits are sold in voluntary Carbon Markets. According to a report by Ecosystem Marketplace, Forestry and Land Use activities were used to <span class="strong_red"> offset 50.7 MtCO²e in 2018 </span>, creating a financial market of approximately <span class="strong_red">171.9 million USD</span> in the voluntary carbon market. 
+                    <br />
+                </p>
+            </div>
+        </div>
+        
+        
+        <div class="full">
+    
+            <div class="title">
+                <h2>CARBON MARKETS</h2>
+            </div>
+    
+            <div class="sub-title">
+                <h3>A DISTRACTION FROM THE REAL PROBLEM</h3>
+            </div>
+    
+            <div class="full_content">
+                 <p>
+                     Emissions trading was initiated with a simple goal: to promote a <span class="strong_red"> systemic and affordable transition from fossil fuel energy to clean energy </span>using emission reduction targets. 
+                     The trading consists of two major components:<span class="strong_red"> &#39;cap and trade&#39;</span> and <span class="strong_red">&#39;offsetting&#39;.</span> The combination of this mechanism is also known as <span class="strong_red">&#39;Carbon Market&#39;.</span>
+                 </p>
+            </div>
+        </div>
+        
+        <div class = "full">
+            <div class="intro_content_left">
+                 <h4 id="strong">
+                     Cap and Trade
+                 </h4>
+                 <p>
+                    Under the scheme, governing bodies begin by setting a limit (cap) on permissible emissions for an area. 
+                    <br>
+                    <br>It then distributes emission allowances that total the cap to the major polluters of that area.
+                    <br>
+                    <br>The cap gradually reduces and the corporations that do not have sufficient allowances must either buy extra offsets from auctions, private markets or make reductions in their emissions.
+                 </p>
+                 
+                 <h4 id="strong">
+                     For instance,
+                 </h4>
+                 <p>
+                    The cap on permissible emissions of a particular state is 4 MTCO2e.<img src = assets/circle.svg><img src = assets/circle.svg><img src = assets/circle.svg><img src = assets/circle.svg>
+                    <br>
+                    <br>The government would then distribute the permits to the biggest polluters of the state i.e. two transnational corporations. Under the scheme, both of the corporations would receive permits to emit <img src = assets/circle.svg><img src = assets/circle.svg> with strict compliance. 
+                    <br>
+                    <br>The emissions of A <img src = assets/circle.svg><img src = assets/circle.svg><img src = assets/circle.svg> is and emissions of B is <img src = assets/circle.svg> So A has to buy <img src = assets/circle.svg> permit from B or goverment, or reduce its emssions by <img src = assets/circle.svg>.
+                 </p>
+            </div>
+            <div class="intro_content">
+                <h4 id="strong">
+                     Emission Offsetting
+                 </h4>
+                 <p>
+                    Under the scheme, emission reduction can also be achieved through emission/carbon offsetting.
+                    <br>
+                    <br>An offset is a reduction of GHG emission achieved outside the capped area in order to compensate for emissions made inside the capped area. 
+                    <br>
+                    <br>It could be achieved by actual reductions, land-use reductions, joint implementation and clean development mechanisms.
+                 </p>
+                 
+                 <h4 id="strong">
+                     For instance,
+                 </h4>
+                 <p>
+                    Funding a REDD+  forest conservation project in the forests of developing economies such as the Democratic Republic of Congo, Africa and Peru, South America could be used to offset emissions of a company in a developed economy such as Walt Disney Company, United States. 
+                    <br>
+                    <br>Hence, the company is technically carbon neutral as its&#39; emissions are being offset from a forest on the other side of the world.
+                 </p>
+            </div>
+        </div>
+        <div class="full">
+            <div class="title">
+                <h2>POINT OF CONCERN</h2>
+            </div>
+    
+            <div class="full_content">
+                <p>
+                    The world is just beginning to <span class="strong_red"> commodify complex natural systems into linear capitalist programs.</span> The idea to privatizing natural resources by putting an economic value is a <span class="strong_red">false solution.</span> The consequences have been disastrous leading to increased emission, deforestation, resource grabs and human rights violations. The threats could amplify beyond magnitude if not restricted and stopped immediately.  
+                </p>
+            </div>
+                <img src="assets/market_mech.svg" style="width:100%;padding-top:2%">
+            <div>
+                
+            </div>
+        </div>
+        
+        <div class="full">
+    
+            <div class="title">
+                <h2>THE REAL PROBLEM</h2>
+            </div>
+    
+            <div class="sub-title">
+                <h3>WHAT SHOULD BE CONSIDERED TO ACHIEVING REAL MITIGATION</h3>
+            </div>
+    
+            <div class="full_content">
+                <p>
+                    The root causes of the problem is <span class="strong_red">burning of fossil fuels and excessive consumption </span> of food, timber and metals by developed countries.  Hence, it has to be acknowledged that each community across the globe has unequal contributions. 
+                    <br><br>
+                    The countries of the Global North have contributed the most to this crisis. Hence, now is a good time for them to take an <span class="strong_red"> initiative of system change promoting organized degrowth </span> instead of passing the burden to Global South. 
+                    <br><br>
+                    The other biggest limitation is the <span class="strong_red">privatization of natural resources</span> results in social and environmental stress. Hence, instead of privatizing forest land to individual stakeholders, government and international policies should encourage and assign forest conservation and management to indigenous and peasants communities. 
+                    <br><br>
+                    Communities with community forest management systems in place have been found to have higher levels of biodiversity than those managed by the government or through conservation programs through non-profits or corporations. 
+                    <br><br>
+                    The governments and international organizations should <span class="strong_red"> use the knowledge diversity of indigenous people in creating sustainable societies specifically for forest management and agroforestry.</span>                
+                </p>
+            </div>
+        </div>
+    </section>
+    
+     
+    
+    <section id="sources">
+        
+        
+        <div>
+            <img src="assets/title_2.svg" style="width:100%;">
+    </div>
+        
+        <div class="full">
+             <div class="title">
+                <h2>LEARN MORE</h2>
+            </div>
+            <div class="intro_content_left">
+                <h4>
+                     REFERENCES
+                </h4>
+                <p class="sources">
+                    <a href="https://www.sciencedirect.com/science/article/abs/pii/S1462901113001299" target="_blank">Exploring different forest definitions and their impact on developing REDD+ reference emission levels: A case study for Indonesia.</a>
+                    <br>
+                    <a href="https://www.foei.org/wp-content/uploads/2018/01/REDD_The-carbon-market-and-the-California-Acre-Chiapas-cooperation.pdf" target="_blank">REDD + The Carbon Market and California-Acre-Chiapas Cooperation : Legalizing Mechanisms of Dispossession</a>
+                    <br>
+                    <a href="https://www.forest-trends.org/publications/unlocking-potential/" target="_blank">State of the Voluntary Carbon Markets 2017</a>
+                    <br>
+                    <a href="https://www.boell.de/en/2017/04/13/tipping-point-license-pollute-carbon-markets-and-new-economy-nature" target="_blank">License to pollute - Carbon markets and the new economy of nature</a>
+                    <br>
+                    <a href="https://www.boell.de/en/2016/10/11/market-compliant-forest-conservation-redd" target="_blank">Market-compliant forest conservation (REDD+)</a>
+                    <br>
+                    <a href="http://www.environmentandsociety.org/mml/learning-actually-existing-redd-synthesis-ethnographic-findings" target="_blank">Learning From &#39;Actually Existing&#39; REDD+: A Synthesis of Ethnographic Findings</a>
+                    <br>
+                    <a href="https://mitpress.mit.edu/books/climate-injustice" target="_blank">A Climate of Injustice Global Inequality, North-South Politics, and Climate Policy</a>
+                    <br>
+                    <a href="https://wrm.org.uy/books-and-briefings/redd-a-collection-of-conflicts-contradictions-and-lies/" target="_blank">REDD: A Collection of Conflicts, Contradictions and Lies</a>
+                    <br>
+                    <a href="http://www.environmentandsociety.org/mml/learning-actually-existing-redd-synthesis-ethnographic-findings" target="_blank">Learning From &#39;Actually Existing&#39; REDD+: A Synthesis of Ethnographic Findings</a>
+                    <br>
+                    <a href="https://www.researchgate.net/publication/281464909_Climate_Change_and_Society_Sociological_Perspectives" target="_blank">Climate Change and Society: Sociological Perspectives</a>
+                    <br>
+                    <a href="https://www.academia.edu/32205073/The_Role_of_Indigenous_Peoples_in_Biodiversity_Conservation_The_Natural_but_Often_Forgotten_Partners_THE_WORLD_BANK" target="_blank">The Role of Indigenous Peoples in Biodiversity Conservation The Natural but Often Forgotten Partners</a>
+                    <br>
+                    <a href="https://www.researchgate.net/publication/301673440_The_Road_Through_Paris_Climate_Change_Carbon_and_the_Political_Dynamics_of_Convergence" target="_blank">The Road Through Paris: Climate Change, Carbon, and the Political Dynamics of Convergence</a>
+                    <br>
+                    <a href="http://www.fao.org/3/Y4171E/Y4171E10.htm" target="_blank"> Comparative framework and Options for harmonization of definitions</a>
+                    <br>
+                    <a href="https://unfccc.int/topics/land-use/workstreams/land-use--land-use-change-and-forestry-lulucf" target="_blank">Land Use, Land-Use Change and Forestry (LULUCF)</a>
+                    <br>
+                </p>
+            </div>
+            <div class="intro_content">
+                <h4>
+                     DATA SOURCES
+                </h4>
+                <p>
+                    <a href="https://www.globalforestwatch.org/" target="_blank">Global Forest Watch</a>
+                    <br>
+                    <a href="https://landmatrix.org/" target="_blank">Land Matrix</a>
+                    <br>
+                    <a href="http://www.environmentandsociety.org/mml/learning-actually-existing-redd-synthesis-ethnographic-findings" target="_blank">Learning From &#39;Actually Existing&#39; REDD+: A Synthesis of Ethnographic Findings</a>
+                    <br>
+                    <a href="https://link.springer.com/article/10.1007/s10457-015-9865-z?shared-article-renderer" target="_blank">Carbon stock in agroforestry coffee plantations with different shade trees in Villa Rica, Peru</a>
+                    <br>
+                    <a href="https://www.treehugger.com/natural-sciences/how-much-carbon-do-different-forests-store-what-size-offsets-your-driving-for-a-year.html" target="_blank">How Much Carbon Do Different Forests Store & What Size Offsets Your Driving For a Year?</a>
+               
+                </p>
+            </div>
+        </div>
+    </section>
+    
+ <!--<iframe src="./map.html"></iframe>-->
+ <!--<div>-->
+ <!--    <iframe src="assets/map/map.html"  scrolling="no" style=" width: 100%; height: 650px;  overflow: hidden;" ></iframe>-->
+ <!--</div>-->
+
+    <script src="script/forest-area.js" charset="utf-8"></script>
+    <script src="script/multiline-global.js" charset="utf-8"></script>
+    <script type="text/javascript" src="script/changed-land-use.js"></script>
+    <script type="text/javascript" src="script/nav.js"></script>
+    <script type="text/javascript" src="script/land_grab_human.js"></script>
+    <script type="text/javascript" src="script/dropdown.js"></script>
+    <script type="text/javascript" src="script/d3-tip.js"></script>
+    
+  <!--<script src="d3-tip.js"></script>-->
+  <script type="text/javascript" src="script/map.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>Vignette_3</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://d3js.org/d3.v3.js"></script>
+
+  </head>
+  <body>
+    <!-- NAVHBAR -->
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="d-flex justify-content-start">
+
+        <!-- Question here -->
+
+        <span class="navbar-text">
+          Does the UNCLOS aggregate or encounter existing inequalities?
+        </span>
+      </div>
+
+      <!-- Previous/Next Links here -->
+
+      <div class="d-flex justify-content-end">
+        <a class="nav-link" href="vignette_2.html" data-toggle="tooltip" data-placement="top" title="Previous Scenario Section">PREVIOUS</a>
+        <a class="nav-link" href="vignette_4.html" data-toggle="tooltip" data-placement="top" title="Next Scenario Section">NEXT</a>
+        <button
+          class="btn btn-link"
+          type="button"
+          data-toggle="collapse"
+          data-target="#index"
+          aria-expanded="false"
+        >
+          INDEX
+        </button>
+      </div>
+    </nav>
+
+     <!-- Tooltip Function -->
+
+     <script>$(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })</script>
+
+
+      <!-- More Info Button -->
+
+    <button
+      class="btn btn-link"
+      type="button"
+      id="moreInfoButton"
+      data-toggle="toggle"
+      data-target="#InfoSidebar"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+    >
+      <svg
+        class="bi bi-plus-circle-fill"
+        width="1em"
+        height="1em"
+        viewBox="0 0 16 16"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          d="M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z"
+          clip-rule="evenodd"
+        />
+      </svg>
+    </button>
+
+    <!-- MoreInfo Content here -->
+
+      <h5 id="InfoSidebar">
+        How comes, that claims of some states of the global north contain such huge areas?</br>
+        One reason is that they still profit from former colonized territories.
+        Each circle encodes the total economic exploitable area of France (Exclusive Economic Zone plus potential claimed area in regard of the continental shelf). 
+        On the left related to the Mainland of France, on the right related to the Oversea Territories of France in the carribean, pacific and Indian Ocean. 
+        It shows that France profits from their Oversea Territory with almost 10 Million square kilometres.
+        If all claims of France would be adopted, this number will increase up to 14 Million square kilometres.
+      </h5>
+    </div>
+
+                  <!-- Index Content here -->
+      
+                  <div class="collapse" id="index">
+                    <div class="card card-body">
+                      <p class="text-center" id="heading">With Compliments <br> to the Secretary General </p>
+                  
+                      <p class="text-right">last updated <br> 05.05.2020</p>
+                      <p class="text-center" id="sub-heading">Visualising Maritime Claims  <br> at the UN in regards <br> to the Continental Shelf</p>
+                      <div id= "overview">
+                        <div id ="scenarios"><b>Scenarios</b></br> 
+                          <a href="./vignette_1.html">Is the sea a common property without borders?</a></br> 
+                          <a href="./vignette_2.html"><u>How much area is claimed by who?</u></a></br>
+                          <a href="./vignette_3.html">Does the UNCLOS aggregate or encounter existing inequalities?</a></br></div>
+                        <div id ="policies"><b>Policies </b></br>
+                          <a href="./vignette_a.html">Does the Convention on the Law of the Sea create an extractive imaginery?</a></br> 
+                          <a href="./vignette_b.html">What is the diplomatic process of a claim?</a></br>
+                          <a href="./vignette_c.html">Which stakeholder reacts to which claim?</a></br>
+                        </div>
+                      </div>
+                      <p class="text-center" id = "imprint"><b><a href="./dashboard.html">Dashboard Tool</a></b></p>
+                      <p class="text-center" id = "imprint"><a href="./imprint.html"></a>This project visualizes and contextualizes</br> all claims in regard of the contintental shelf at the UN. </br> Robin Coenen, 2020.</br></br><a href="./imprint.html"> Imprint, Methodology & Sources </a></p>
+            
+                        </div>
+                  </div>
+
+    <!-- VIGNETTE CONTENT HERE -->
+    <div id="clickbutton"></div>
+    <div id="circlez">
+    </div>
+
+      <!-- Vignette Styles -->
+
+    <style>
+      #circlez{background-color:black; height:100vh;}
+      #clickbutton {position: fixed; background-color:white; color:black;font-size:14px; margin-left: 2%; margin-top:5.5%; border: 1px solid; padding: 3px;}
+      line    {stroke:#ddd;shape-rendering: crispEdges;}
+      text    {text-anchor:left;}
+      circle {fill:white;fill-opacity:1;}
+      .axis line {fill:none;stroke:#ddd;shape-rendering: crispEdges;}
+      .axis path  {fill:none;}
+      .axis text {font-size:0.7em;fill:#555;font-family:sans-serif}
+  </style>
+    <script>
+
+            //2 different data arrays
+            var dataArray9745000 = [11.1666666667,324.6666666667];
+            var dataArray13957671 = [11.1666666667,465];
+                       
+            
+            //create main svg element
+            var width = 1640
+            var height = 1080
+
+            var dataIndex=9745000;
+            var xBuffer=450;
+            var yBuffer=height/1.8;
+            var lineLength=400;
+            
+            var svg = d3.select("#circlez")
+            .append("svg")
+            .attr("width", width)
+            .attr("height", height)
+            .style("background-color", "black") 
+
+                //OVERSEA
+                svg.append("text")
+                .attr("x",900)
+                .attr("y",120)
+                .text("9745000 km2 of Economic Exploitable Area")
+                .style("fill","white");
+
+                svg.append("text")
+                .attr("x",900)
+                .attr("y",100)
+                .text("France’s Oversea Territory:")
+                .style("fill","white");
+
+
+                //MAINLAD
+                svg.append("text")
+                .attr("x",300 )
+                .attr("y",100)
+                .text("France’s Mainland:")
+                .style("fill","white")
+
+                svg.append("text")
+                .attr("x",300)
+                .attr("y",120)
+                .text("335000 km2 of Economic Exploitable Area")
+                .style("fill","white")
+            
+            
+            //create basic circles
+            svg.append("g").selectAll("click")
+                .data(eval("dataArray"+dataIndex))
+                .enter()
+                .append("circle")
+                .attr("cx",function(d,i){
+                    var spacing = 600;
+                    return xBuffer+(i*spacing)
+                })
+                .attr("cy",yBuffer)
+                .attr("r",function(d,i){return d});
+            
+            //button to swap over datasets
+            d3.select("#clickbutton").append("click")
+                .text("With Claims")
+                .on("click",function(){
+                    //select new data
+                    if (dataIndex==9745000) {
+                        dataIndex=13957671;  
+                    } else   {
+                        dataIndex=9745000;
+                    }
+                    //rejoin data
+                    var circle = svg.select("g").selectAll("circle")
+                        .data(eval("dataArray"+dataIndex));
+                    
+                   
+
+                    //update all circles to new positions
+                    circle.transition()
+                        .duration(400)
+                        .attr("cx",function(d,i){
+                            var spacing = 600;
+                            return xBuffer+(i*spacing)
+                        })
+                        .attr("cy",yBuffer)
+                        .attr("r",function(d,i){return d});
+
+                    d3.select("text").text(dataIndex+" km2 of Economic Exploitable Area");
+
+                });//end click function
+
+            
+        </script>
+     
+
+
+
+
+    <!-- Sideway Sidebar Prototype -->
+    <script>
+      $("[data-toggle='toggle']").click(function () {
+        var selector = $(this).data("target");
+        $(selector).toggleClass("in");
+      });
+    </script>
+
+    <style>
+      #InfoSidebar {
+        height: 250px;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: white;
+        overflow-x: hidden;
+        padding-top: 6.5%;
+        transition: 0.5s;
+      }
+      #InfoSidebar.in {
+        width: 40%;
+        height: 100vh;
+        padding-left: 7%;
+        padding-right: 1.8%;
+      }
+
+      #placeholderImg {
+        position: absolute;
+        z-index: -9999;
+        width: 95%;
+        margin-top: 68px;
+      }
+
+    </style>
+  </body>
+</html>

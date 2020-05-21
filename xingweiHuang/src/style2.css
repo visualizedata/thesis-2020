@@ -1,0 +1,58 @@
+/*this style sheet is not in use*/
+
+/*::-webkit-scrollbar{width:2px;height:2px;}*/
+/*::-webkit-scrollbar-button{width:2px;height:2px;}*/
+
+/*div{*/
+/*  box-sizing:border-box;*/
+/*}*/
+
+/*body {*/
+/*  background: #FFFAF0;*/
+/*}*/
+
+/*.horizontal-scroll-wrapper{*/
+/*  position:absolute;*/
+/*  display:block;*/
+/*  top:0;*/
+/*  left:0;*/
+/*  width:800px;*/
+/*  max-height:1440px;*/
+/*  margin:0;*/
+/*  background:#FFFAF0;*/
+/*  overflow-y:scroll;*/
+/*  overflow-x:hidden;*/
+/*  transform:rotate(-90deg) translateY(-850px);*/
+/*  transform-origin:right top;*/
+/*}*/
+/*.horizontal-scroll-wrapper > div{*/
+/*  display:block;*/
+/*  padding:5px;*/
+/*  background:#cab;*/
+/*  transform:rotate(90deg) translateX(700px);*/
+/*  transform-origin: right top;*/
+/*}*/
+
+/*.squares{*/
+/*  padding:60px 0 0 0;*/
+/*}*/
+
+/*.squares > div{*/
+/*  width:700px;*/
+/*  height:700px;*/
+/*  margin:10px;*/
+/*}*/
+
+/*.rectangles{*/
+/*  top:100px;*/
+/*  padding:100px 0 0 0;*/
+/*}*/
+/*.rectangles > div{*/
+/*  width:140px;*/
+/*  height:60px;*/
+/*  margin:50px 10px;*/
+/*  padding:5px;*/
+/*  background:#cab;*/
+/*  transform:rotate(90deg) translateY(80px);*/
+/*  transform-origin: right top;*/
+/*}*/

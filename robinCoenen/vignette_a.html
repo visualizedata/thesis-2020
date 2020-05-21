@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Vignette_a</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='./libraries/src/okzoom.min.js'></script>
+  </head>
+  <body>
+
+          <!-- NAVHBAR -->
+
+          <nav class="navbar fixed-top navbar-light bg-light">
+            <div class="d-flex justify-content-start">
+            <!-- Question here -->
+      
+            <span class="navbar-text">
+              Does the Convention on the Law of the Sea create an extractive imaginery?
+              </span>
+            </div>
+
+            <!-- Previous/Next Links here -->
+      
+        <div class="d-flex justify-content-end">
+        <a class="nav-link" href="index.html" data-toggle="tooltip" data-placement="top" title="Landingpage">PREVIOUS</a>
+        <a class="nav-link" href="vignette_b.html" data-toggle="tooltip" data-placement="top" title="Next Policy Section">NEXT</a>
+        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#index" aria-expanded="false">
+          INDEX
+          </button>   
+        </div>
+      </nav>
+      
+
+                <!-- Tooltip Function -->
+
+<script>$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})</script>
+
+      <!-- More Info Button -->
+
+      <button
+      class="btn btn-link"
+      type="button"
+      id="moreInfoButton"
+      data-toggle="toggle"
+      data-target="#InfoSidebar"
+      aria-expanded="false"
+      aria-controls="collapseExample"
+      >
+        <svg
+          class="bi bi-plus-circle-fill"
+          width="1em"
+          height="1em"
+          viewBox="0 0 16 16"
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M16 8A8 8 0 110 8a8 8 0 0116 0zM8.5 4a.5.5 0 00-1 0v3.5H4a.5.5 0 000 1h3.5V12a.5.5 0 001 0V8.5H12a.5.5 0 000-1H8.5V4z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </button>
+  
+      <!-- MoreInfo Content here -->
+  
+      <h5 id="InfoSidebar">
+        Legend
+        <hr>
+        <img src="./img/legends/legend_unclos.svg">
+        </br>
+        </br>
+        Context
+        <hr>
+        UNCLOS is an acronym for „United Nations Convention on the Law of the Sea“ also called the „Law of the Sea Convention“ or the „Law of the Sea treaty“. 
+        This visualization shows the total 200 pages of this treaty, which was concluded inn 1982 and entered into force in 1994. According to the UN the treaty has 157 signatories.</br>
+        The Convention also includes the Article 76; this article give states -under certain geological conditions- the rights to claim exclusive economic territory even beyond 200 nautical miles.
+
+      </br></h5>
+  
+      <script>
+        $("[data-toggle='toggle']").click(function () {
+          var selector = $(this).data("target");
+          $(selector).toggleClass("in");
+        });
+      </script>
+      
+            <!-- Index Content here -->
+      
+                       <!-- Index Content here -->
+      
+                       <div class="collapse" id="index">
+                        <div class="card card-body">
+                          <p class="text-center" id="heading">With Compliments <br> to the Secretary General </p>
+                      
+                          <p class="text-right">last updated <br> 05.05.2020</p>
+                          <p class="text-center" id="sub-heading">Visualising Maritime Claims  <br> at the UN in regards <br> to the Continental Shelf</p>
+                          <div id= "overview">
+                            <div id ="scenarios"><b>Scenarios</b></br> 
+                              <a href="./vignette_1.html">Is the sea a common property without borders?</a></br> 
+                              <a href="./vignette_2.html"><u>How much area is claimed by who?</u></a></br>
+                              <a href="./vignette_3.html">Does the UNCLOS aggregate or encounter existing inequalities?</a></br></div>
+                            <div id ="policies"><b>Policies </b></br>
+                              <a href="./vignette_a.html">Does the Convention on the Law of the Sea create an extractive imaginery?</a></br> 
+                              <a href="./vignette_b.html">What is the diplomatic process of a claim?</a></br>
+                              <a href="./vignette_c.html">Which stakeholder reacts to which claim?</a></br>
+                            </div>
+                          </div>
+                          <p class="text-center" id = "imprint"><b><a href="./dashboard.html">Dashboard Tool</a></b></p>
+                          <p class="text-center" id = "imprint"><a href="./imprint.html"></a>This project visualizes and contextualizes</br> all claims in regard of the contintental shelf at the UN. </br> Robin Coenen, 2020.</br></br><a href="./imprint.html"> Imprint, Methodology & Sources </a></p>
+                
+                            </div>
+                      </div>
+      
+
+          <!-- VIGNETTE CONTENT HERE -->
+
+          <img src="./img/vignette_2/cover.png" data-okimage="./img/vignette_2/mask.png" id="test">
+
+          <script>
+            $(function(){
+              $('#test').okzoom({
+                scaleWidth: 11500,
+                width: 350,
+                height: 350
+              });
+            });
+          </script>
+   <style>
+   #test {
+    position:absolute;
+  height: 100vh;
+  width: 100vw;
+  margin-top:68px;
+
+  }</style>
+      
+   </html>
+   
+
+
+  </body>
+</html>

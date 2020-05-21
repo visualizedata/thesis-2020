@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equix="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>A Guilty Pleasure</title>
+        <link rel="stylesheet" href="https://use.typekit.net/jas4rxq.css">
+        <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,400i,500,500i,700,700i&display=swap" rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="shortcut icon" type="image/png" href="./images/favicon.png">
+        <link rel="stylesheet" type="text/css" href="./src/styleP1.css">
+        <link rel="stylesheet" type="text/css" href="./src/styleNext2.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+        <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.5.0/mapbox-gl.css' rel='stylesheet' />
+        <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+        <script src="https://d3js.org/d3-format.v1.min.js"></script>
+    </head>
+        <body style="background-color:#000000;">
+
+<!--3.1 Section Introduction-->
+                <div class="slide2">
+                    <div class="sticky2">
+                        <h5>Where are cacao beans from?</h5>
+                        <p>Cocoa farming is a major contributor to the economies of several West African countries. The last piece of chocolate you ate likely had its roots in <b>West Africa</b>, where two-thirds of cocoa beans are produced. </p>
+                        <!--<p>Most likely it’s grown up in Ivory Coast (Côte d'Ivoire) where cocoa sales accounting for approximately 10% of the country's GNP.</p>-->
+                    </div>
+                </div> 
+
+<!--3.2 Cocoa Production by Leading Countries-->
+                <div class="slide">
+                    <div class="sticky">
+                      <section id="section1" class="active">
+                        <h2>Biggest Cocoa Supplier</h2>
+                        <p>Most likely it’s grown up in <b>Ivory Coast</b> (Côte d'Ivoire) where cocoa sales accounting for approximately 10% of the country's GNP.</p>
+                        <div id="countrySupply"></div>
+                      </section>
+                    </div>
+                </div>  
+                
+<!--3.3 Ivory Coast Geolocation & Dashboard-->
+                <div class="slide">
+                    <div class="sticky">
+                      <section id="section2">
+                        <h2>Geolocation</h2>
+                        <p>Ivory coast is gifted with an advantageous location in the <b>forest belt</b> where the savanna reaches down to the sea and the seasonal dryness of the climate precludes the planting of drought-sensitive crops like cocoa. It has the highest level of <b>biodiversity</b> in West Africa.</p>
+                      </section>
+                      <div id="dashboard"></div>
+                    </div>
+                </div>  
+
+<!--3.4 Ivory Coast's Exports -->
+                <div class="slide">
+                    <div class="stickyblack">
+                      <section id="section3" style="background-color:#000000;">
+                        <h3>Ivory Coast's Exports</h3>
+                        <h5>Worldwide, 90% of cocoa is grown on small family farms of 2 to 5 hectares. In Ivory Coast, cacao accounts for <b>40%</b> of their total exports and up to 90% of the farmers rely on cocoa for their <b>primary income</b>.</h5>
+                      </section>
+                      <!--take "exports" out of "sticky div" will make it floating-->
+                      <div id="exports"></div>
+                    </div>
+                </div> 
+
+                
+<!--3.5 Cocoa & Ivory Coast's Economy -->
+                <div class="slide">
+                    <div class="sticky">
+                      <section id="section4">
+                        <h2>Cocoa & Ivory Coast's Economy</h2>
+                        <p>When we are discussing the impacts of cocoa production and the potential solution in response to minimize deforestation, it’s not just to solve problems with a big number, we also need to address the qualitative data that’s involved in the process which is someone’s day to day livelihood, solutions for deforestation doesn’t necessarily lie in the complete cut off cocoa plantation.</p>
+                      </section>
+                    </div>
+                    
+                    <div class="buttongroup" style="background-color:#FFFAF0;">
+                        <h2> GDP & Employment</h2>
+                        <button class="button" onclick="update(data1)">GDP</button>
+                        <button class="button" onclick="update(data2)">Unemployment Rate</button>
+                    </div>
+                        
+                    <div id="employment"></div>
+                </div> 
+
+                 <!--Place for map-->
+                <div id="map"></div>
+
+<!--3.6 Tree Cover Loss -->
+                <div class="slide">
+                    <div class="sticky">
+                      <section id="section5">
+                        <!--<h2>Deforestation</h2>-->
+                        <!--<p>Introduce however</p>-->
+                   <img id="image3" src="./images/treeCover.svg">
+                       
+                      </section>
+                    </div>
+                    
+                    <div data-aos="fade-up" class="stickyfloating">
+                      <!--<p>2-1</p>-->
+                      <p>On the other hand, the introduction of cocoa farming brought many economic opportunities to this land, also marking the beginning of <b>deforestation</b>.</p>
+                    </div>
+                </div> 
+
+<!--3.7 Disruption Factors -->
+                <div class="slide2">
+                    <div class="sticky2">
+                        <!--<h5>Damages to the classifies forest of Haut-Sassandra</h5>-->
+                        <!--<button class="button" onclick="changeTree(1)">Cacao Tree</button>-->
+                        <!--<button class="button" onclick="changePod(1)">Cacao Pod</button>-->
+                        <!--<button class="button" onclick="changeChocolate(1)">Chocolate</button>-->
+                        <div id="factors"></div>
+                    </div>
+                    <div class="stickyfloatingRight">
+                        <p>A study focusing on what factors have caused deforestation in one of the classified forests Haut-Sassandra has pointed out that there are <b>twelve kinds of disruption</b> that might cause deforestation. These plantations are between a few months and under ten years old. To sum it up, the most frequent types of disruption are cacao plantations with a frequency rate of 23.32%, around 95% of the disruptions recorded are of anthropic origin and 5% of natural origin.</p>
+                    </div>  
+                </div>   
+
+
+<!--3.8 Deforestation Rate -->
+                <div class="slide">
+                    <div class="sticky">
+                        <h2>Deforestation Rate</h2>
+                        <p><b>Forest Cover Loss: </b>Hectares of forest cover loss at a national level, between 2001-2018, categorized by percent canopy cover. </p>
+                      <div id="deforestation"></div>
+                    </div>
+                </div>  
+
+                <div class="slide">
+                    <div id="method"></div>
+                </div>
+                
+                <!--23 sites map-->
+                <div class="slide">
+                    <div class="stickyblack"></div>
+                    <img id="image" style="width:1440px;" src="./images/protected.svg">
+       
+                    <div data-aos="fade-up" class="stickyfloating">
+                      <!--<p>2-2</p>-->
+                      <p>A research paper published by the Anthropology Department at The Ohio State University has revealed that there is a significant positive correlation between <b>cocoa farming</b> and the <b>absence of primate species</b> inside Ivory Coast’s national parks and reserves. Additionally, one of the explanations for the biodiversity reduction is the disappearance of forests caused by cocoa farming.</p>
+                    </div>
+                </div>  
+                
+<!--3.9 23 Forests -->
+                <div class="slide">
+                    <div class="stickyblack">
+                      <h3>23 Forests</h3>
+                      <h5>Of the 23 forest reserves, 16 of them have exceeded 65% degradation quotients. <b>93%</b>of illegally grown agricultural products in these surveyed national parks is cocoa. Of the approximately <b>4,392 km²</b> surveyed, <b>3,239 km²</b> have already been transformed into cocoa plantations. </h5>
+                    </div>
+                    <div id="forests"></div>
+                </div> 
+
+
+<!--3.10 PART3 Takeaway-->
+                <img id="image" style="width:1440px;" src="./images/S3forests.svg">
+
+
+<!--3.0 Homepage navigation-->
+                <div class="horizontal-scroll-wrapper squares" id="fixed">
+                  <div class="section"><a href="index.html">Homepage</a></div>
+                  <div class="section"><a href="part1.html"><b2>1. </b2> Cocoa Affection</a></div>
+                  <div class="section"><a href="part2.html"><b2>2. </b2> From Beans to Bars</a></div>
+                  <div class="introsection1" id="intro3">
+                      <h1>Part 3 As Cocoa Grows</h1>
+                        <div id="svg-container"></div>
+                  </div>
+                  <div class="section"><a href="part4.html"><b2>4. </b2> Behind the Barcode</a></div>
+                </div>
+
+
+<!--3.11 End navigation-->
+                <div class="end squares">
+                        <div class="section">
+                            <a href="part2.html">Previous</a>
+                        </div>
+
+                        <div id ="part3" style="background-color:#000000;">
+                                <div class="introsection3" id="end3">
+                                  <!--<h2>We can show that we care about the actual ‘cost’ that we are paying for each chocolate bar by purchasing chocolate which has a clear label of where the cocoa beans were coming from.</h2>                        -->
+                                  <h2>Customers shouldn’t be kept from unethical cocoa sources with its aftereffects attached, because in the end we are the one who is going to pay the “price”.</h2>
+                                </div>
+                                <!--next icon & link   -->
+                                <div class="center-con">
+                                    <div class="round">
+                                        <a href="part4.html">
+                                            <div id="cta">
+                                                <span class="arrow segunda next2 "></span>
+                                            </div>
+                                            <h5>Next</h5>
+                                        </a>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+
+        <!-- References Links -->
+        <script src='https://d3js.org/d3.v5.min.js'></script>
+        <script src="./src/scriptP3.js"></script>
+        <script src="./src/scriptP3_2.js"></script>
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+              // Global settings:
+              disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+              startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+              initClassName: 'aos-init', // class applied after initialization
+              animatedClassName: 'aos-animate', // class applied on animation
+              useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+              disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+              debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+              throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+              
+            
+              // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+              offset: 120, // offset (in px) from the original trigger point
+              delay: 0, // values from 0 to 3000, with step 50ms
+              duration: 400, // values from 0 to 3000, with step 50ms
+              easing: 'ease', // default easing for AOS animations
+              once: false, // whether animation should happen only once - while scrolling down
+              mirror: false, // whether elements should animate out while scrolling past them
+              anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+            
+            });          
+        </script>
+
+
+
+        </body>
+
+</html>

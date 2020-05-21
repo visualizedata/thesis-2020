@@ -1,0 +1,37 @@
+body {
+  font: 8px sans-serif;
+  margin: 0;
+}
+
+.league {
+  display: inline-block;
+}
+
+.teams {
+  fill: none;
+  stroke: #bfbfbf;
+}
+
+.axis line, 
+.axis path { 
+  fill: none;
+  stroke: #000;
+  stroke-opacity: .05;
+  shape-rendering: crispEdges;
+}
+
+.tick.major line {
+
+  stroke: steelblue;
+
+}
+
+.x.axis .tick text  {
+
+  display: none;
+}
+
+.x.axis .tick.major text {
+
+  display: block;
+}

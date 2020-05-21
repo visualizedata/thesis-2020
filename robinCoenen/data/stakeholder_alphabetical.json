@@ -1,0 +1,1503 @@
+{
+  "nodes": [
+  {
+    "id": 1,
+    "name": "Angola"
+  },
+  {
+    "id": 2,
+    "name": "Argentina"
+  },
+  {
+    "id": 2,
+    "name": "Argentina"
+  },
+  {
+    "id": 3,
+    "name": "Australia"
+  },
+  {
+    "id": 4,
+    "name": "Bahamas"
+  },
+  {
+    "id": 5,
+    "name": "Bangladesh"
+  },
+  {
+    "id": 6,
+    "name": "Barbados"
+  },
+  {
+    "id": 6,
+    "name": "Barbados"
+  },
+  {
+    "id": 7,
+    "name": "Benin"
+  },
+  {
+    "id": 8,
+    "name": "Brazil"
+  },
+  {
+    "id": 8,
+    "name": "Brazil"
+  },
+  {
+    "id": 8,
+    "name": "Brazil"
+  },
+  {
+    "id": 8,
+    "name": "Brazil"
+  },
+  {
+    "id": 9,
+    "name": "Cabo Verde"
+  },
+  {
+    "id": 10,
+    "name": "Canada"
+  },
+  {
+    "id": 10,
+    "name": "Canada"
+  },
+  {
+    "id": 11,
+    "name": "China"
+  },
+  {
+    "id": 12,
+    "name": "Cote d'Ivoire"
+  },
+  {
+    "id": 13,
+    "name": "Cuba"
+  },
+  {
+    "id": 14,
+    "name": "Denmark"
+  },
+  {
+    "id": 14,
+    "name": "Denmark"
+  },
+  {
+    "id": 14,
+    "name": "Denmark"
+  },
+  {
+    "id": 14,
+    "name": "Denmark"
+  },
+  {
+    "id": 14,
+    "name": "Denmark"
+  },
+  {
+    "id": 15,
+    "name": "Federated States of Micronesia"
+  },
+  {
+    "id": 16,
+    "name": "Fiji"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 17,
+    "name": "France"
+  },
+  {
+    "id": 18,
+    "name": "Gabon"
+  },
+  {
+    "id": 19,
+    "name": "Ghana"
+  },
+  {
+    "id": 20,
+    "name": "Guinea"
+  },
+  {
+    "id": 21,
+    "name": "Guinea-Bissau"
+  },
+  {
+    "id": 22,
+    "name": "Guyana"
+  },
+  {
+    "id": 23,
+    "name": "Iceland"
+  },
+  {
+    "id": 24,
+    "name": "India"
+  },
+  {
+    "id": 25,
+    "name": "Indonesia"
+  },
+  {
+    "id": 25,
+    "name": "Indonesia"
+  },
+  {
+    "id": 26,
+    "name": "Ireland"
+  },
+  {
+    "id": 26,
+    "name": "Ireland"
+  },
+  {
+    "id": 27,
+    "name": "Japan"
+  },
+  {
+    "id": 28,
+    "name": "Kenya"
+  },
+  {
+    "id": 29,
+    "name": "Kiribati"
+  },
+  {
+    "id": 30,
+    "name": "Liberia"
+  },
+  {
+    "id": 31,
+    "name": "Madagascar"
+  },
+  {
+    "id": 32,
+    "name": "Malaysia"
+  },
+  {
+    "id": 32,
+    "name": "Malaysia"
+  },
+  {
+    "id": 33,
+    "name": "Maldives"
+  },
+  {
+    "id": 34,
+    "name": "Mauritania"
+  },
+  {
+    "id": 35,
+    "name": "Mauritius"
+  },
+  {
+    "id": 35,
+    "name": "Mauritius"
+  },
+  {
+    "id": 35,
+    "name": "Mauritius"
+  },
+  {
+    "id": 36,
+    "name": "Mexico"
+  },
+  {
+    "id": 36,
+    "name": "Mexico"
+  },
+  {
+    "id": 37,
+    "name": "Micronesia"
+  },
+  {
+    "id": 38,
+    "name": "Mozambique"
+  },
+  {
+    "id": 39,
+    "name": "Myanmar"
+  },
+  {
+    "id": 40,
+    "name": "Namibia"
+  },
+  {
+    "id": 41,
+    "name": "New Zealand"
+  },
+  {
+    "id": 41,
+    "name": "New Zealand"
+  },
+  {
+    "id": 42,
+    "name": "Nicaragua"
+  },
+  {
+    "id": 43,
+    "name": "Nigeria"
+  },
+  {
+    "id": 44,
+    "name": "Norway"
+  },
+  {
+    "id": 44,
+    "name": "Norway"
+  },
+  {
+    "id": 45,
+    "name": "Oman"
+  },
+  {
+    "id": 46,
+    "name": "Pakistan"
+  },
+  {
+    "id": 47,
+    "name": "Palau"
+  },
+  {
+    "id": 48,
+    "name": "Papua New Guinea"
+  },
+  {
+    "id": 49,
+    "name": "Philippines"
+  },
+  {
+    "id": 50,
+    "name": "Portugal"
+  },
+  {
+    "id": 51,
+    "name": "Republic of Korea"
+  },
+  {
+    "id": 52,
+    "name": "Russian Federation"
+  },
+  {
+    "id": 52,
+    "name": "Russian Federation"
+  },
+  {
+    "id": 52,
+    "name": "Russian Federation"
+  },
+  {
+    "id": 53,
+    "name": "Senegal"
+  },
+  {
+    "id": 54,
+    "name": "Seychelles"
+  },
+  {
+    "id": 54,
+    "name": "Seychelles"
+  },
+  {
+    "id": 55,
+    "name": "Sierra Leone"
+  },
+  {
+    "id": 56,
+    "name": "Solomon Islands"
+  },
+  {
+    "id": 57,
+    "name": "Somalia"
+  },
+  {
+    "id": 58,
+    "name": "South Africa"
+  },
+  {
+    "id": 58,
+    "name": "South Africa"
+  },
+  {
+    "id": 59,
+    "name": "Spain"
+  },
+  {
+    "id": 59,
+    "name": "Spain"
+  },
+  {
+    "id": 59,
+    "name": "Spain"
+  },
+  {
+    "id": 60,
+    "name": "Sri Lanka"
+  },
+  {
+    "id": 61,
+    "name": "Suriname"
+  },
+  {
+    "id": 62,
+    "name": "The Cook Islands"
+  },
+  {
+    "id": 63,
+    "name": "The Gambia"
+  },
+  {
+    "id": 64,
+    "name": "Togo"
+  },
+  {
+    "id": 65,
+    "name": "Tonga"
+  },
+  {
+    "id": 65,
+    "name": "Tonga"
+  },
+  {
+    "id": 66,
+    "name": "Trinidad and Tobago"
+  },
+  {
+    "id": 67,
+    "name": "Tuvalu"
+  },
+  {
+    "id": 68,
+    "name": "ited Kingdom of Great Britain and Northern Ireland"
+  },
+  {
+    "id": 68,
+    "name": "ited Kingdom of Great Britain and Northern Ireland"
+  },
+  {
+    "id": 68,
+    "name": "ited Kingdom of Great Britain and Northern Ireland"
+  },
+  {
+    "id": 68,
+    "name": "ited Kingdom of Great Britain and Northern Ireland"
+  },
+  {
+    "id": 70,
+    "name": "ited Republic of Tanzania"
+  },
+  {
+    "id": 71,
+    "name": "Uruguay"
+  },
+  {
+    "id": 72,
+    "name": "Viet Nam"
+  },
+  {
+    "id": 72,
+    "name": "Viet Nam"
+  },
+  {
+    "id": 73,
+    "name": "Yemen"
+  },
+  {
+    "id": 74,
+    "name": "USA"
+  },
+  {
+    "id": 75,
+    "name": "Venezuela"
+  },
+  {
+    "id": 76,
+    "name": "Morocco"
+  },
+  {
+    "id": 77,
+    "name": "Congo"
+  },
+  {
+    "id": 78,
+    "name": "Netherlands"
+  },
+  {
+    "id": 79,
+    "name": "Panama"
+  },
+  {
+    "id": 80,
+    "name": "Jamaica"
+  },
+  {
+    "id": 81,
+    "name": "Costa Rica"
+  },
+  {
+    "id": 82,
+    "name": "Philippines"
+  },
+  {
+    "id": 83,
+    "name": "Korea"
+  },
+  {
+    "id": 84,
+    "name": "Somali"
+  },
+  {
+    "id": 85,
+    "name": "Colombia"
+  },
+  {
+    "id": 86,
+    "name": "Chile"
+  },
+  {
+    "id": 87,
+    "name": "Germany"
+  },
+  {
+    "id": 88,
+    "name": "Cook Islands"
+  },
+  {
+    "id": 89,
+    "name": "Tanzania"
+  },
+  {
+    "id": 90,
+    "name": "Vanuatu"
+  },
+  {
+    "id": 91,
+    "name": "Timor-Leste"
+  },
+  {
+    "id": 92,
+    "name": "Trinidad"
+  }
+
+  ],
+  "links": [
+      {
+    "source": 1,
+    "target": 77
+  },
+  {
+    "source": 1,
+    "target": 18
+  },
+  {
+    "source": 1,
+    "target": 77
+  },
+  {
+    "source": 2,
+    "target": 74
+  },
+  {
+    "source": 2,
+    "target": 52
+  },
+  {
+    "source": 2,
+    "target": 78
+  },
+  {
+    "source": 2,
+    "target": 27
+  },
+  {
+    "source": 2,
+    "target": 24
+  },
+  {
+    "source": 2,
+    "target": 68
+  },
+  {
+    "source": 2,
+    "target": 68
+  },
+  {
+    "source": 2,
+    "target": 86
+  },
+  {
+    "source": 2,
+    "target": 2
+  },
+  {
+    "source": 2,
+    "target": 2
+  },
+  {
+    "source": 3,
+    "target": 74
+  },
+  {
+    "source": 3,
+    "target": 52
+  },
+  {
+    "source": 3,
+    "target": 27
+  },
+  {
+    "source": 3,
+    "target": 91
+  },
+  {
+    "source": 3,
+    "target": 17
+  },
+  {
+    "source": 3,
+    "target": 78
+  },
+  {
+    "source": 3,
+    "target": 87
+  },
+  {
+    "source": 3,
+    "target": 24
+  },
+  {
+    "source": 4,
+    "target": 74
+  },
+  {
+    "source": 4,
+    "target": 74
+  },
+  {
+    "source": 5,
+    "target": 39
+  },
+  {
+    "source": 5,
+    "target": 24
+  },
+  {
+    "source": 6,
+    "target": 75
+  },
+  {
+    "source": 6,
+    "target": 64
+  },
+  {
+    "source": 6,
+    "target": 61
+  },
+  {
+    "source": 6,
+    "target": 92
+  },
+  {
+    "source": 6,
+    "target": 75
+  },
+  {
+    "source": 6,
+    "target": 64
+  },
+  {
+    "source": 6,
+    "target": 61
+  },
+  {
+    "source": 6,
+    "target": 92
+  },
+  {
+    "source": 8,
+    "target": 74
+  },
+  {
+    "source": 9,
+    "target": 76
+  },
+  {
+    "source": 10,
+    "target": 14
+  },
+  {
+    "source": 10,
+    "target": 10
+  },
+  {
+    "source": 10,
+    "target": 74
+  },
+  {
+    "source": 10,
+    "target": 17
+  },
+  {
+    "source": 10,
+    "target": 74
+  },
+  {
+    "source": 10,
+    "target": 14
+  },
+  {
+    "source": 11,
+    "target": 27
+  },
+  {
+    "source": 11,
+    "target": 11
+  },
+  {
+    "source": 11,
+    "target": 11
+  },
+  {
+    "source": 11,
+    "target": 27
+  },
+  {
+    "source": 12,
+    "target": 19
+  },
+  {
+    "source": 12,
+    "target": 19
+  },
+  {
+    "source": 13,
+    "target": 74
+  },
+  {
+    "source": 13,
+    "target": 36
+  },
+  {
+    "source": 14,
+    "target": 74
+  },
+  {
+    "source": 14,
+    "target": 52
+  },
+  {
+    "source": 14,
+    "target": 10
+  },
+  {
+    "source": 14,
+    "target": 23
+  },
+  {
+    "source": 14,
+    "target": 23
+  },
+  {
+    "source": 14,
+    "target": 23
+  },
+  {
+    "source": 14,
+    "target": 44
+  },
+  {
+    "source": 14,
+    "target": 14
+  },
+  {
+    "source": 14,
+    "target": 10
+  },
+  {
+    "source": 14,
+    "target": 44
+  },
+  {
+    "source": 14,
+    "target": 44
+  },
+  {
+    "source": 37,
+    "target": 25
+  },
+  {
+    "source": 16,
+    "target": 41
+  },
+  {
+    "source": 16,
+    "target": 16
+  },
+  {
+    "source": 16,
+    "target": 90
+  },
+  {
+    "source": 16,
+    "target": 90
+  },
+  {
+    "source": 17,
+    "target": 90
+  },
+  {
+    "source": 17,
+    "target": 78
+  },
+  {
+    "source": 17,
+    "target": 61
+  },
+  {
+    "source": 17,
+    "target": 58
+  },
+  {
+    "source": 17,
+    "target": 27
+  },
+  {
+    "source": 17,
+    "target": 10
+  },
+  {
+    "source": 17,
+    "target": 17
+  },
+  {
+    "source": 17,
+    "target": 41
+  },
+  {
+    "source": 17,
+    "target": 17
+  },
+  {
+    "source": 17,
+    "target": 17
+  },
+  {
+    "source": 17,
+    "target": 17
+  },
+  {
+    "source": 20,
+    "target": 76
+  },
+  {
+    "source": 21,
+    "target": 76
+  },
+  {
+    "source": 22,
+    "target": 75
+  },
+  {
+    "source": 22,
+    "target": 22
+  },
+  {
+    "source": 23,
+    "target": 14
+  },
+  {
+    "source": 23,
+    "target": 14
+  },
+  {
+    "source": 23,
+    "target": 44
+  },
+  {
+    "source": 24,
+    "target": 39
+  },
+  {
+    "source": 24,
+    "target": 5
+  },
+  {
+    "source": 24,
+    "target": 45
+  },
+  {
+    "source": 25,
+    "target": 24
+  },
+  {
+    "source": 25,
+    "target": 25
+  },
+  {
+    "source": 26,
+    "target": 23
+  },
+  {
+    "source": 26,
+    "target": 23
+  },
+  {
+    "source": 26,
+    "target": 14
+  },
+  {
+    "source": 26,
+    "target": 14
+  },
+  {
+    "source": 26,
+    "target": 14
+  },
+  {
+    "source": 27,
+    "target": 74
+  },
+  {
+    "source": 27,
+    "target": 47
+  },
+  {
+    "source": 27,
+    "target": 83
+  },
+  {
+    "source": 27,
+    "target": 83
+  },
+  {
+    "source": 27,
+    "target": 27
+  },
+  {
+    "source": 27,
+    "target": 27
+  },
+  {
+    "source": 27,
+    "target": 27
+  },
+  {
+    "source": 27,
+    "target": 27
+  },
+  {
+    "source": 27,
+    "target": 27
+  },
+  {
+    "source": 27,
+    "target": 11
+  },
+  {
+    "source": 27,
+    "target": 11
+  },
+  {
+    "source": 28,
+    "target": 84
+  },
+  {
+    "source": 28,
+    "target": 28
+  },
+  {
+    "source": 28,
+    "target": 28
+  },
+  {
+    "source": 28,
+    "target": 60
+  },
+  {
+    "source": 28,
+    "target": 84
+  },
+  {
+    "source": 28,
+    "target": 84
+  },
+  {
+    "source": 29,
+    "target": 74
+  },
+  {
+    "source": 32,
+    "target": 11
+  },
+  {
+    "source": 32,
+    "target": 11
+  },
+  {
+    "source": 32,
+    "target": 82
+  },
+  {
+    "source": 32,
+    "target": 25
+  },
+  {
+    "source": 32,
+    "target": 32
+  },
+  {
+    "source": 32,
+    "target": 32
+  },
+  {
+    "source": 32,
+    "target": 49
+  },
+  {
+    "source": 32,
+    "target": 72
+  },
+  {
+    "source": 32,
+    "target": 72
+  },
+  {
+    "source": 32,
+    "target": 11
+  },
+  {
+    "source": 33,
+    "target": 68
+  },
+  {
+    "source": 33,
+    "target": 35
+  },
+  {
+    "source": 33,
+    "target": 35
+  },
+  {
+    "source": 34,
+    "target": 76
+  },
+  {
+    "source": 35,
+    "target": 68
+  },
+  {
+    "source": 39,
+    "target": 5
+  },
+  {
+    "source": 39,
+    "target": 5
+  },
+  {
+    "source": 39,
+    "target": 24
+  },
+  {
+    "source": 39,
+    "target": 24
+  },
+  {
+    "source": 39,
+    "target": 5
+  },
+  {
+    "source": 39,
+    "target": 28
+  },
+  {
+    "source": 39,
+    "target": 60
+  },
+  {
+    "source": 41,
+    "target": 65
+  },
+  {
+    "source": 41,
+    "target": 41
+  },
+  {
+    "source": 41,
+    "target": 41
+  },
+  {
+    "source": 41,
+    "target": 27
+  },
+  {
+    "source": 41,
+    "target": 17
+  },
+  {
+    "source": 41,
+    "target": 16
+  },
+  {
+    "source": 41,
+    "target": 78
+  },
+  {
+    "source": 42,
+    "target": 81
+  },
+  {
+    "source": 42,
+    "target": 80
+  },
+  {
+    "source": 42,
+    "target": 79
+  },
+  {
+    "source": 42,
+    "target": 79
+  },
+  {
+    "source": 42,
+    "target": 42
+  },
+  {
+    "source": 42,
+    "target": 81
+  },
+  {
+    "source": 42,
+    "target": 85
+  },
+  {
+    "source": 42,
+    "target": 85
+  },
+  {
+    "source": 42,
+    "target": 81
+  },
+  {
+    "source": 42,
+    "target": 79
+  },
+  {
+    "source": 42,
+    "target": 85
+  },
+  {
+    "source": 42,
+    "target": 81
+  },
+  {
+    "source": 42,
+    "target": 79
+  },
+  {
+    "source": 43,
+    "target": 19
+  },
+  {
+    "source": 44,
+    "target": 52
+  },
+  {
+    "source": 44,
+    "target": 44
+  },
+  {
+    "source": 44,
+    "target": 44
+  },
+  {
+    "source": 44,
+    "target": 23
+  },
+  {
+    "source": 44,
+    "target": 59
+  },
+  {
+    "source": 44,
+    "target": 14
+  },
+  {
+    "source": 44,
+    "target": 52
+  },
+  {
+    "source": 44,
+    "target": 74
+  },
+  {
+    "source": 44,
+    "target": 78
+  },
+  {
+    "source": 44,
+    "target": 27
+  },
+  {
+    "source": 44,
+    "target": 24
+  },
+  {
+    "source": 46,
+    "target": 45
+  },
+  {
+    "source": 46,
+    "target": 45
+  },
+  {
+    "source": 46,
+    "target": 46
+  },
+  {
+    "source": 47,
+    "target": 47
+  },
+  {
+    "source": 47,
+    "target": 82
+  },
+  {
+    "source": 47,
+    "target": 27
+  },
+  {
+    "source": 47,
+    "target": 27
+  },
+  {
+    "source": 47,
+    "target": 37
+  },
+  {
+    "source": 50,
+    "target": 59
+  },
+  {
+    "source": 50,
+    "target": 59
+  },
+  {
+    "source": 50,
+    "target": 59
+  },
+  {
+    "source": 50,
+    "target": 76
+  },
+  {
+    "source": 50,
+    "target": 50
+  },
+  {
+    "source": 50,
+    "target": 59
+  },
+  {
+    "source": 50,
+    "target": 76
+  },
+  {
+    "source": 51,
+    "target": 27
+  },
+  {
+    "source": 51,
+    "target": 83
+  },
+  {
+    "source": 51,
+    "target": 27
+  },
+  {
+    "source": 51,
+    "target": 83
+  },
+  {
+    "source": 51,
+    "target": 27
+  },
+  {
+    "source": 52,
+    "target": 74
+  },
+  {
+    "source": 52,
+    "target": 44
+  },
+  {
+    "source": 52,
+    "target": 27
+  },
+  {
+    "source": 52,
+    "target": 14
+  },
+  {
+    "source": 52,
+    "target": 10
+  },
+  {
+    "source": 52,
+    "target": 14
+  },
+  {
+    "source": 52,
+    "target": 74
+  },
+  {
+    "source": 52,
+    "target": 27
+  },
+  {
+    "source": 52,
+    "target": 10
+  },
+  {
+    "source": 53,
+    "target": 76
+  },
+  {
+    "source": 55,
+    "target": 76
+  },
+  {
+    "source": 57,
+    "target": 73
+  },
+  {
+    "source": 57,
+    "target": 89
+  },
+  {
+    "source": 57,
+    "target": 28
+  },
+  {
+    "source": 57,
+    "target": 73
+  },
+  {
+    "source": 58,
+    "target": 58
+  },
+  {
+    "source": 58,
+    "target": 58
+  },
+  {
+    "source": 59,
+    "target": 50
+  },
+  {
+    "source": 59,
+    "target": 76
+  },
+  {
+    "source": 59,
+    "target": 76
+  },
+  {
+    "source": 59,
+    "target": 50
+  },
+  {
+    "source": 59,
+    "target": 76
+  },
+  {
+    "source": 60,
+    "target": 33
+  },
+  {
+    "source": 60,
+    "target": 24
+  },
+  {
+    "source": 60,
+    "target": 5
+  },
+  {
+    "source": 61,
+    "target": 66
+  },
+  {
+    "source": 61,
+    "target": 17
+  },
+  {
+    "source": 61,
+    "target": 6
+  },
+  {
+    "source": 62,
+    "target": 41
+  },
+  {
+    "source": 62,
+    "target": 88
+  },
+  {
+    "source": 62,
+    "target": 88
+  },
+  {
+    "source": 63,
+    "target": 76
+  },
+  {
+    "source": 65,
+    "target": 41
+  },
+  {
+    "source": 65,
+    "target": 16
+  },
+  {
+    "source": 65,
+    "target": 16
+  },
+  {
+    "source": 66,
+    "target": 61
+  },
+  {
+    "source": 68,
+    "target": 78
+  },
+  {
+    "source": 68,
+    "target": 27
+  },
+  {
+    "source": 68,
+    "target": 68
+  },
+  {
+    "source": 68,
+    "target": 68
+  },
+  {
+    "source": 68,
+    "target": 14
+  },
+  {
+    "source": 68,
+    "target": 23
+  },
+  {
+    "source": 68,
+    "target": 14
+  },
+  {
+    "source": 68,
+    "target": 2
+  },
+  {
+    "source": 70,
+    "target": 54
+  },
+  {
+    "source": 71,
+    "target": 2
+  },
+  {
+    "source": 72,
+    "target": 11
+  },
+  {
+    "source": 72,
+    "target": 11
+  },
+  {
+    "source": 72,
+    "target": 82
+  },
+  {
+    "source": 72,
+    "target": 25
+  },
+  {
+    "source": 72,
+    "target": 32
+  },
+  {
+    "source": 72,
+    "target": 32
+  },
+  {
+    "source": 72,
+    "target": 49
+  },
+  {
+    "source": 72,
+    "target": 72
+  },
+  {
+    "source": 72,
+    "target": 72
+  },
+  {
+    "source": 72,
+    "target": 11
+  },
+  {
+    "source": 72,
+    "target": 49
+  },
+  {
+    "source": 72,
+    "target": 11
+  },
+  {
+    "source": 72,
+    "target": 72
+  },
+  {
+    "source": 72,
+    "target": 72
+  },
+  {
+    "source": 72,
+    "target": 72
+  },
+  {
+    "source": 73,
+    "target": 84
+  }
+  ]
+}

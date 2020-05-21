@@ -1,0 +1,618 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="css/main.css" />
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.js'></script>
+    <script   src="https://code.jquery.com/jquery-3.5.0.min.js"   integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="   crossorigin="anonymous"></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v1.9.1/mapbox-gl.css' rel='stylesheet' />
+    
+<style>
+	body { margin: 0; padding: 0; }
+	#map { position: absolute; top: 61px; bottom: 0; width: 100%; }
+</style>
+  </head>
+  <body>
+
+        <!-- NAVHBAR -->
+
+    <nav class="navbar fixed-top navbar-light bg-light">
+      <div class="d-flex justify-content-start">
+
+        <!-- Question here -->
+
+        <span class="navbar-text">
+          Which areas are claimed in the Sea – and who are the Stakeholders? 
+          </span>
+          </div>
+
+        <!-- Previous/Next Links here -->
+        <div class="d-flex justify-content-ennd">
+
+    <a class="nav-link" href="index.html" >NEXT</a>
+    <button
+    class="btn btn-link"
+    type="button"
+    data-toggle="collapse"
+    data-target="#index"
+    aria-expanded="false"
+    aria-controls="collapseExample"
+  >
+    INDEX
+  </button>
+  </nav>
+  </div>
+
+        <!-- Index Content here -->
+
+        <div class="collapse" id="index">
+          <div class="card card-body">
+            <p class="text-center" id="heading">With Compliments <br> to the Secretary General </p>
+        
+            <p class="text-right">last updated <br> 05.05.2020</p>
+            <p class="text-center" id="sub-heading">Visualising Maritime Claims  <br> at the UN in regards <br> to the Continental Shelf</p>
+            <div id= "overview">
+              <div id ="scenarios"><b>Scenarios</b></br> 
+                <a href="./vignette_1.html">Is the sea a common property without borders?</a></br> 
+                <a href="./vignette_2.html"><u>How much area is claimed by who?</u></a></br>
+                <a href="./vignette_3.html">Does the UNCLOS aggregate or encounter existing inequalities?</a></br></div>
+              <div id ="policies"><b>Policies </b></br>
+                <a href="./vignette_a.html">Does the Convention on the Law of the Sea create an extractive imaginery?</a></br> 
+                <a href="./vignette_b.html">What is the diplomatic process of a claim?</a></br>
+                <a href="./vignette_c.html">Which stakeholder reacts to which claim?</a></br>
+              </div>
+            </div>
+            <p class="text-center" id = "imprint"><b><a href="./dashboard.html">Dashboard Tool</a></b></p>
+            <p class="text-center" id = "imprint"><a href="./imprint.html"></a>This project visualizes and contextualizes</br> all claims in regard of the contintental shelf at the UN. </br> Robin Coenen, 2020.</br></br><a href="./imprint.html"> Imprint, Methodology & Sources </a></p>
+        
+              </div>
+        </div>
+
+          <!-- VIGNETTE CONTENT HERE -->
+
+          <div class='sidebar pad2'>Timeline</div>
+          <div id='map' class='map pad2'>Map</div>
+
+          <div class='sidebar'>
+            <div class='heading'>
+              <h1> Dashboard: </h1>
+            </div>
+            <div id='listings' class='listings'></div>
+          </div>
+
+          <!-- Dashboard Styling -->
+          <style>
+.sidebar {
+  width: 33.3333%;
+}
+
+.map {
+  position: absolute;
+  left: 33.3333%;
+  width: 66.6666%;
+  top: 50px;
+  bottom: 0;
+}
+
+.pad2 {
+  background-color: white;
+  padding: 20px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 22px;
+  margin: 0;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 20px 2px;
+}
+
+a {
+  color: #404040;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #101010;
+}
+
+.sidebar {
+  position: absolute;
+  width: 33.3333%;
+  height: 100%;
+  top: 61px;
+  left: 0;
+  overflow: hidden;
+  border-right: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.pad2 {
+  padding: 20px;
+}
+
+.map {
+  position: absolute;
+  left: 33.3333%;
+  width: 66.6666%;
+  top: 0;
+  bottom: 0;
+}
+
+.heading {
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  height: 60px;
+  line-height: 60px;
+  padding: 0 28px;
+}
+
+
+details {
+  display: block;
+  white-space: normal;
+
+
+}
+.grid-claims  {
+  display: grid;
+  white-space: normal;
+  grid-template-columns: 20% 75%;
+  grid-column-gap:1rem;
+  grid-row-gap:0.5rem;
+
+}
+
+
+/* .grid-claims-items  {
+box-shadow: 5px 0px black;
+} */
+
+.listings {
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+.listings .item {
+  border-bottom: 1px solid #eee;
+  padding: 10px;
+  padding-left:28px;
+  text-decoration: none;
+}
+
+.listings .item:last-child { border-bottom: none; }
+
+.listings .item .title {
+  display: block;
+  color: grey;
+  font-weight: 700;
+}
+
+.listings .item .title small { font-weight: 400; }
+
+.listings .item.active .title,
+.listings .item .title:hover { color: #000; }
+
+.listings .item.active {
+  box-shadow: inset  0.3em 0.1em gold;;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+  height: 3px;
+  border-left: 0;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border-radius: 0;
+}
+
+.clearfix { display: block; }
+
+.clearfix::after {
+  content: '.';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+/* Marker tweaks */
+.mapboxgl-popup-close-button {
+  display: none;
+
+}
+
+.mapboxgl-popup-content {
+  font: 400 15px/22px 'Source Sans Pro', 'Helvetica Neue', Sans-serif;
+  padding: 0;
+  width: 180px;
+}
+
+.mapboxgl-popup-content-wrapper {
+  padding: 1%;
+}
+
+.mapboxgl-popup-content h3 {
+  background: #000;
+  font-family: Simplon-Regular;
+  font-size: 24px;
+  color: #fff;
+  margin: 0;
+  display: block;
+  padding: 10px;
+  border-radius: 3px 3px 0 0;
+  margin-top: -15px;
+}
+
+.mapboxgl-popup-content h4 {
+  margin: 0;
+  font-family: Simplon-Regular;
+  font-size:14px;
+  display: block;
+  padding: 10px;
+  font-weight: 400;
+
+}
+
+.mapboxgl-popup-content div {
+  padding: 10px;
+}
+
+.mapboxgl-container .leaflet-marker-icon {
+  cursor: pointer;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-content {
+  margin-top: 15px;
+}
+
+.mapboxgl-popup-anchor-top > .mapboxgl-popup-tip {
+  border-bottom-color: #000;
+}
+          </style>
+
+          
+
+
+            <script>
+              mapboxgl.accessToken = 'pk.eyJ1IjoidmlzLWludCIsImEiOiJjanI2NWppYTIwNGR2NDRwaGI1N2xzZXBxIn0.dmZ6dkYdM95wixqH0mQb_w';
+              var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/vis-int/ck8sib48n12h91ilhpa6rk5jl',
+                center: [-100.04, 38.907],
+                zoom: 2,
+                minZoom: 2
+              });
+
+              var hoveredStateId = null;
+
+              var cont_claims 
+    $.ajax({
+        url: "https://raw.githubusercontent.com/robincoenen/thesis/master/continental_shelf_claims_v1.geojson",
+        async: false,
+        dataType: 'json',
+        success: function(data) {
+            cont_claims = data;
+        }
+    });
+
+
+cont_claims.features.forEach(function(store, i){
+        store.properties.id = i;
+      });
+
+      map.on('load', function (e) {
+        map.addLayer({
+                  "id": "locations",
+                  'type': 'fill',
+                  "source":  {
+                    "type": "geojson",
+                    "data": cont_claims
+                  },
+                  "paint": {
+                    'fill-color': 'rgba(253, 190, 33, 1)',
+                    'fill-outline-color': 'rgba(253, 190, 33, 0.8)'
+                  }
+                });
+
+
+                map.addSource('outli', {
+'type': 'geojson',
+'data':'https://raw.githubusercontent.com/robincoenen/thesis/master/continental_shelf_claims_v1.geojson',
+'generateId': true
+});
+                map.addLayer({
+'id': 'state-borders',
+'type': 'fill',
+'source': 'outli',
+'layout': {},
+'paint': {
+'fill-color': 'rgba(255, 255, 255, 1)',
+'fill-opacity': [
+'case',
+['boolean', ['feature-state', 'hover'], false],
+1,
+0]
+
+}
+});
+
+        buildLocationList(cont_claims);
+        addMarkers();
+      });
+
+     
+       /*Add a marker*/
+      function addMarkers() {
+        /* For each feature in the GeoJSON object above: */
+        cont_claims.features.forEach(function(marker) {
+          /* Create a div element for the marker. */
+          var el = document.createElement('div');
+          /* Assign a unique `id` to the marker. */
+          el.id = "marker-" + marker.properties.id;
+          /* Assign the `marker` class to each marker for styling. */
+          el.className = 'marker';
+          
+          
+          new mapboxgl.Marker(el, { offset: [0, -23] })
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(map);
+
+          /* Interactivity */
+          el.addEventListener('click', function(e){
+            /* Fly to the point */
+            flyToStore(marker);
+            /* Close all other popups and display popup for clicked store */
+            createPopUp(marker);
+            /* Highlight listing in sidebar */
+            var activeItem = document.getElementsByClassName('active');
+            e.stopPropagation();
+            if (activeItem[0]) {
+              activeItem[0].classList.remove('active');
+            }
+            var listing = document.getElementById('listing-' + marker.properties.id);
+            listing.classList.add('active');
+          });
+        });
+      }
+
+      /* Eventlistener */
+      function buildLocationList(data) {
+        data.features.forEach(function(store, i){
+       /* My Shortcut  */
+
+          var prop = store.properties;
+
+          /* Add a new listing section to the sidebar. */
+          var listings = document.getElementById('listings');
+          var listing = listings.appendChild(document.createElement('div'));
+          /* Assign a unique `id` to the listing. */
+          listing.id = "listing-" + prop.id;
+          /* Assign the `item` class to each listing for styling. */
+          listing.className = 'item';
+
+          /* Add the link to the individual listing created above. */
+          var link = listing.appendChild(document.createElement('a'));
+          link.href = '#';
+          link.className = 'title';
+          link.id = "link-" + prop.id;
+          link.innerHTML = prop.state;
+
+          /* Add details to the individual listing. */
+          var claimContent = listing.appendChild(document.createElement('div'));
+    claimContent.innerHTML = "<em> in regard of " + prop.rz_anno + "</em></br>"
+                        + "<b>"+prop.rz_sub_date + "</b> claim submitted</br></br>"
+                        + "<details><summary>Diplomatic Exchange</summary></br><div class='grid-claims'><b style='text-align:right;'>"+prop.rz_UN_note_date + "</b>" 
+                        + "UN Circular Note informing all Member States about the Claim</br></br>"
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_1 + "</b>"
+                        + prop.rz_dipl_note_state_1 + "</br>"
+                        + prop.rz_dipl_note_cont_1+ "</br></br>" 
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_2 + "</b>"
+                        + prop.rz_dipl_note_state_2 + "</br>"
+                        + prop.rz_dipl_note_cont_2 + "</br></br>"
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_3 + "</b>"
+                        + prop.rz_dipl_note_state_3 + "</br>"
+                        + prop.rz_dipl_note_cont_3 +"</br></br>"
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_4 +"</b>"
+                        + prop.rz_dipl_note_state_4 + "</br>"
+                        + prop.rz_dipl_note_cont_4+"</br></br>"
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_5 + "</b>"
+                        + prop.rz_dipl_note_state_5 + "</br>"
+                        + prop.rz_dipl_note_cont_5+"</br></br></div>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_6 + "</b>"
+                        + prop.rz_dipl_note_state_6 + "</br>"
+                        + prop.rz_dipl_note_cont_6+"</br></br></div></details>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_7 + "</b>"
+                        + prop.rz_dipl_note_state_7 + "</br>"
+                        + prop.rz_dipl_note_cont_7+"</br></br></div></details>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_8 + "</b>"
+                        + prop.rz_dipl_note_state_8 + "</br>"
+                        + prop.rz_dipl_note_cont_8+"</br></br></div></details>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_9 + "</b>"
+                        + prop.rz_dipl_note_state_9 + "</br>"
+                        + prop.rz_dipl_note_cont_8+"</br></br></div></details>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_10 + "</b>"
+                        + prop.rz_dipl_note_state_10 + "</br>"
+                        + prop.rz_dipl_note_cont_10+"</br></br></div></details>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_11 + "</b>"
+                        + prop.rz_dipl_note_state_11 + "</br>"
+                        + prop.rz_dipl_note_cont_11+"</br></br></div></details>";
+                        + "<b style='text-align:right;'>" + prop.rz_dipl_note_date_12 + "</b>"
+                        + prop.rz_dipl_note_state_12 + "</br>"
+                        + prop.rz_dipl_note_cont_12+"</br></br></div></details>";
+          /**
+           * Listen to the element and when it is clicked, do four things:
+           * 1. Update the `currentFeature` to the store associated with the clicked link
+           * 2. Fly to the point
+           * 3. Close all other popups and display popup for clicked store
+           * 4. Highlight listing in sidebar (and remove highlight for all other listings)
+          **/
+          link.addEventListener('click', function(e){
+            for (var i=0; i < data.features.length; i++) {
+              if (this.id === "link-" + data.features[i].properties.id) {
+                var clickedListing = data.features[i];
+                flyToStore(clickedListing);
+                createPopUp(clickedListing);
+              }
+            }
+            var activeItem = document.getElementsByClassName('active');
+            if (activeItem[0]) {
+              activeItem[0].classList.remove('active');
+            }
+            this.parentNode.classList.add('active');
+          });
+        });
+      }
+
+      /* Flyto Effect */
+      function flyToStore(currentFeature) {
+        map.flyTo({
+          center: currentFeature.geometry.coordinates[0][0][5],
+          zoom: 6
+        });
+      }
+
+      /**
+       * Create a Mapbox GL JS `Popup`.
+      **/
+      function createPopUp(currentFeature) {
+        var popUps = document.getElementsByClassName('mapboxgl-popup');
+        if (popUps[0]) popUps[0].remove();
+        var popup = new mapboxgl.Popup({closeOnClick: true})
+          .setLngLat(currentFeature.geometry.coordinates[0][0][5])
+          .setHTML('<h3>Claimed by ' + currentFeature.properties.state + '</h3>'+
+            '<h4> claim size: '+ currentFeature.properties.rz_claim_size + 'km2</h4>'+
+            '<h4> stakeholder: </br>' + currentFeature.properties.rz_dipl_note_state_1 +'</br>' + 
+              currentFeature.properties.rz_dipl_note_state_2 +'</br>' +
+              currentFeature.properties.rz_dipl_note_state_3 +'</br>'
+              + '</h4>')
+          .addTo(map);
+      }
+
+      
+
+
+
+
+//MOUSE HOVER EFFECT WHITE
+
+      map.on('mousemove', 'state-borders', function(e) {
+if (e.features.length > 0) {
+if (hoveredStateId) {
+map.setFeatureState(
+{ source: 'outli', id: hoveredStateId },
+{ hover: false }
+);
+}
+hoveredStateId = e.features[0].id;
+map.setFeatureState(
+{ source: 'outli', id: hoveredStateId },
+{ hover: true }
+);
+}
+});
+ 
+// When the mouse leaves the state-fill layer, update the feature state of the
+// previously hovered feature.
+map.on('mouseleave', 'state-borders', function() {
+if (hoveredStateId) {
+map.setFeatureState(
+{ source: 'outli', id: hoveredStateId },
+{ hover: false }
+);
+}
+hoveredStateId = null;
+});
+
+
+//CLICK EFFECT
+map.on('click', 'locations', function(e) {
+new mapboxgl.Popup({closeOnClick: true})
+.setLngLat(e.lngLat)
+.setHTML('<h3>Claimed by ' + e.features[0].properties.state + '</h3>'+
+            '<h4> claim size: '+ e.features[0].properties.rz_claim_size + 'km2</h4>'+
+            '<h4> stakeholder: </br>' + e.features[0].properties.rz_dipl_note_state_1 +'</br>' + 
+              e.features[0].properties.rz_dipl_note_state_2 +'</br>' +
+              e.features[0].properties.rz_dipl_note_state_3 +'</br>'
+              + '</h4>')
+.addTo(map);
+
+var activeItem = document.getElementsByClassName('active');
+    if (activeItem[0]) {
+      activeItem[0].classList.remove('active');
+    }
+    var listing = document.getElementById('listing-' + e.features[0].properties.id);
+    listing.classList.add('active');
+  
+});
+
+//map.on('click', function(e) {
+//  /* Determine if a feature in the "locations" layer exists at that point. */ 
+//  var features = map.queryRenderedFeatures(e.point, {
+//    layers: ['locations']
+//  });
+//
+//  /* If yes, then: */
+//  if (features.length) {
+//    var testPoint = features[0]
+//    var clickedPoint = features[0];
+//    console.log(testPoint);
+//    console.log(clickedPoint);
+//    
+//    /* Fly to the point */
+//    flyToStore(e.lngLat);
+//    
+//    /* Close all other popups and display popup for clicked store */
+//    createPopUp(e.lngLat);
+//    
+//    /* Highlight listing in sidebar (and remove highlight for all other listings) */
+//    var activeItem = document.getElementsByClassName('active');
+//    if (activeItem[0]) {
+//      activeItem[0].classList.remove('active');
+//    }
+//    var listing = document.getElementById('listing-' + clickedPoint.properties.id);
+//    listing.classList.add('active');
+//  }
+//});
+
+
+
+    </script>
+
+
+
+
+            </script>
+    
+
+
+    
+  </body>
+</html>
