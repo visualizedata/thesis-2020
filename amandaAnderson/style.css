@@ -1,0 +1,142 @@
+body {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+    color:#222323;
+    margin: 0px;
+    /* background-color:#dcd4d1; */
+    background-color: #e9e4e2;
+  }
+
+  .layout{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 1em;
+    padding: 1em;
+    margin-left: 2em;
+  }
+
+  .title {
+    font-family: 'Playfair Display', serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 400px;
+    margin-bottom: 500px;
+  }
+
+  .intro {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    font-family: 'Barlow', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+    margin-bottom: 120px;
+    background-color: #222323;
+    color:#e9e4e2;;
+    padding: 20px;
+  }
+
+  /* paragraph titles */
+  h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  /* paragraph text content */
+  h3 {
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  /* visual titles */
+  h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+  }
+
+  .fullStretch {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 3em;
+    margin-bottom: 200px;
+  }
+
+  .wideDescript {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1em;
+    padding: 1em;
+    margin-left: 2em;
+  }
+
+  .description {
+    margin-right: 30px;
+    position: sticky;
+  }
+
+  .visContainer {
+    padding: 2em;
+    /* margin-top: 10px; */
+    margin-left: 30px;
+    margin-bottom: 100px;
+  }
+
+  .mySlides {display:none;}
+
+  h5{
+    font-family: 'Playfair Display', serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
+  }
+  
+  .transition {
+    margin-top: 300px;
+    margin-bottom: 300px;
+  }
+
+  .factoid {
+    /* padding: 3em; */
+    font-family: 'Playfair Display', serif;
+    font-size: 40px;
+    font-weight: normal;
+    text-align: center;
+    text-justify: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 300px;
+    margin-bottom: 300px;
+  }
+
+  .methodology {
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Barlow', sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+    /* margin-top: 100px; */
+    /* margin-bottom: 100px; */
+    padding: 5em;
+
+  }
+
+  
+button {
+    margin-top: 30px;
+    border: none;
+    background-color: #222323;
+    color: #e9e4e2;
+    height: 40px;
+    width: 120px;
+    font-size: 14px;
+  } 
