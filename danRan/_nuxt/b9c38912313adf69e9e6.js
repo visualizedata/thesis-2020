@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{366:function(e,n,o){"use strict";o.r(n);var t=o(315),c=o(288),r={components:{CrimeGraph:t.a,Logo:c.a}},l=o(27),component=Object(l.a)(r,(function(){var e=this.$createElement,n=this._self._c||e;return n("div",[n("Logo")],1)}),[],!1,null,"b0c6fd9c",null);n.default=component.exports}}]);
