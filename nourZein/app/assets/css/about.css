@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+} /* by default it's on content box. It calculates padding. Good to always include */
+html,
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #19191f;
+  /* #19191f; */
+  color: white;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  /* #f2efe9; */
+}
+p,
+ul {
+  padding-left: 15px;
+  margin: 0;
+  font-family: "Lato", sans-serif;
+}
+#container {
+  padding: 30px;
+  padding-left: 50px;
+  line-height: 1.5;
+  width: 75vw;
+  font-size: 18px;
+}
+.headings {
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+.nav-bar {
+  height: 5vh;
+  /* background: #058500; */
+  /* background: linear-gradient(-90deg, #6ae27a, #058500); */
+  background: rgb(40, 40, 70);
+  box-shadow: rgba(0, 0, 0, 0.97) 0px 11px 40px -11px inset;
+  display: flex;
+}
+
+#extras {
+  display: flex;
+  /* margin: 15px; */
+  position: absolute;
+  right: 5px;
+}
+.extra {
+  margin: 10px;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 12px;
+  text-decoration: none;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+}
+.data {
+  color: rgba(255, 255, 255);
+  text-decoration: underline;
+}
+.logos {
+  padding-left: 20px;
+}
+#about {
+  border-bottom: 3px solid rgba(0, 230, 15, 0.5);
+  color: rgba(255, 255, 255, 0.7);
+}
+
+h1 {
+  text-align: left;
+  padding: 10px;
+  padding-left: 0px;
+  font-size: 17px;
+  width: 600px;
+}
+#nav-heading {
+  padding-left: 15px;
+}
+
+#subheader {
+  font-size: 15px;
+  padding-left: 15px;
+  color: rgba(93, 95, 122);
+  font-style: italic;
+}
+h2 {
+  text-align: left;
+  /* border-bottom: 1px solid rgba(93, 95, 122); */
+  font-size: 22px;
+  width: 350px;
+  padding: 0px 5px 9px 12px;
+  margin-bottom: 24px;
+  border-bottom: 3px solid #5cff87;
+}
