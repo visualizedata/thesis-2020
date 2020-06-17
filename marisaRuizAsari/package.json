@@ -19,7 +19,7 @@
     "element-ui": "^2.4.11",
     "gsap": "^3.2.6",
     "intersection-observer": "^0.7.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "nuxt": "^2.0.0",
     "nuxt-leaflet": "0.0.21",
     "vue-chartjs": "^3.5.0",
